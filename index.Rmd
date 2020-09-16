@@ -1,0 +1,55 @@
+--- 
+title: "The COMPADRE and COMADRE User Guide and Data Entry Protocol"
+author: "The Compadre Team"
+date: "Last updated on `r Sys.Date()`"
+site: bookdown::bookdown_site
+pandoc_args: --listings
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        collapse: section
+    includes:
+      in_header: extras.css
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+    papersize: a4
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+classoption: a4paper
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "The COMPADRE and COMADRE User Guide and Data Entry Protocol"
+
+---
+
+```{r setOptions, include=FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE, message = FALSE
+)
+```
+
+# Welcome
+
+The COMPADRE and COMADRE plant and animal matrix databases contain demographic data in the form of matrix population models for hundreds of plant and animal species, as well as algae, fungi, bacteria, and viruses!
+
+COMPADRE is a long-term enterprise initiated in 1989 by Jonathan Silvertown and Miguel Franco. COMADRE was instituted by Salguero-Gómez in 2011. Currently these databases are supported and hosted at the Max Planck Institute for Demographic Research (Germany). 
+
+To access data and to learn more about the project, who's involved, and how it is funded, please visit the main web site for COMPADRE and COMADRE databases at https://www.compadre-db.org.
+
+## This site
+
+This web site provides reference material about the variables contained in the databases (**User Guide**), and about how data are entered into the databases (**Data Entry Protocol**). Use the navigation facility to find the area you are interested in.
+
+
+```{block, type="do-something"}
+**Note:** The book is a "work in progress" and will change during the course. The latest version can always be found at the website.
+
+It is currently maintained by Owen Jones ([jones@biology.sdu.dk](mailto:jones@biology.sdu.dk)).
+We welcome reports of errors and suggestions for improvement.
+```
+

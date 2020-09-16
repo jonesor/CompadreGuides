@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol</title>
+  <meta name="description" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  
+  <meta name="twitter:description" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  
+
+<meta name="author" content="The Compadre Team" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="user-guide.html"/>
+
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+
+.warning-box {
+  border: 3px solid #e60000;
+  margin:  25px;
+  padding: 10px 10px 5px 10px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.advanced-box {
+  border: 3px solid #268bd2;
+  margin:  25px;
+  padding: 10px 10px 5px 10px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.do-something {
+  border: 3px solid #803e00;
+  margin:  25px;
+  padding: 10px 10px 5px 10px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+</style>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CompadreGuides</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#this-site"><i class="fa fa-check"></i><b>1.1</b> This site</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="user-guide.html"><a href="user-guide.html"><i class="fa fa-check"></i><b>2</b> User Guide</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="user-guide.html"><a href="user-guide.html#variables-in-metadata"><i class="fa fa-check"></i><b>2.1</b> Variables in <code>metadata</code></a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="user-guide.html"><a href="user-guide.html#speciesauthor-population-form-and-the-species-form"><i class="fa fa-check"></i><b>2.1.1</b> <code>SpeciesAuthor</code> (Population form and the Species form)</a></li>
+<li class="chapter" data-level="2.1.2" data-path="user-guide.html"><a href="user-guide.html#speciesaccepted-population-form"><i class="fa fa-check"></i><b>2.1.2</b> <code>SpeciesAccepted</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.3" data-path="user-guide.html"><a href="user-guide.html#commonname-population-form"><i class="fa fa-check"></i><b>2.1.3</b> <code>CommonName</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.4" data-path="user-guide.html"><a href="user-guide.html#genus"><i class="fa fa-check"></i><b>2.1.4</b> <code>Genus</code></a></li>
+<li class="chapter" data-level="2.1.5" data-path="user-guide.html"><a href="user-guide.html#family"><i class="fa fa-check"></i><b>2.1.5</b> <code>Family</code></a></li>
+<li class="chapter" data-level="2.1.6" data-path="user-guide.html"><a href="user-guide.html#order"><i class="fa fa-check"></i><b>2.1.6</b> <code>Order</code></a></li>
+<li class="chapter" data-level="2.1.7" data-path="user-guide.html"><a href="user-guide.html#class"><i class="fa fa-check"></i><b>2.1.7</b> <code>Class</code></a></li>
+<li class="chapter" data-level="2.1.8" data-path="user-guide.html"><a href="user-guide.html#phylum"><i class="fa fa-check"></i><b>2.1.8</b> <code>Phylum</code></a></li>
+<li class="chapter" data-level="2.1.9" data-path="user-guide.html"><a href="user-guide.html#kingdom"><i class="fa fa-check"></i><b>2.1.9</b> <code>Kingdom</code></a></li>
+<li class="chapter" data-level="2.1.10" data-path="user-guide.html"><a href="user-guide.html#organismtype-species-form"><i class="fa fa-check"></i><b>2.1.10</b> <code>OrganismType</code> (Species Form)</a></li>
+<li class="chapter" data-level="2.1.11" data-path="user-guide.html"><a href="user-guide.html#dicotmonoc-species-form"><i class="fa fa-check"></i><b>2.1.11</b> <code>DicotMonoc</code> (Species form)</a></li>
+<li class="chapter" data-level="2.1.12" data-path="user-guide.html"><a href="user-guide.html#angiogymno-species-table"><i class="fa fa-check"></i><b>2.1.12</b> <code>AngioGymno</code> (Species table)</a></li>
+<li class="chapter" data-level="2.1.13" data-path="user-guide.html"><a href="user-guide.html#authors-publication-form"><i class="fa fa-check"></i><b>2.1.13</b> <code>Authors</code> (Publication Form)</a></li>
+<li class="chapter" data-level="2.1.14" data-path="user-guide.html"><a href="user-guide.html#journal-publication-form"><i class="fa fa-check"></i><b>2.1.14</b> <code>Journal</code> (Publication form)</a></li>
+<li class="chapter" data-level="2.1.15" data-path="user-guide.html"><a href="user-guide.html#yearpublication-publication-form"><i class="fa fa-check"></i><b>2.1.15</b> <code>YearPublication</code> (Publication form)</a></li>
+<li class="chapter" data-level="2.1.16" data-path="user-guide.html"><a href="user-guide.html#doiisbn-publication-form"><i class="fa fa-check"></i><b>2.1.16</b> <code>DOI/ISBN</code> (Publication form)</a></li>
+<li class="chapter" data-level="2.1.17" data-path="user-guide.html"><a href="user-guide.html#additionalsource-publication-form"><i class="fa fa-check"></i><b>2.1.17</b> <code>AdditionalSource</code> (Publication form)</a></li>
+<li class="chapter" data-level="2.1.18" data-path="user-guide.html"><a href="user-guide.html#studyduration-this-is-calculated-using-the-fields-study-end-and-study-start-publication-form"><i class="fa fa-check"></i><b>2.1.18</b> <code>StudyDuration</code> (This is calculated using the fields Study End and Study Start; publication form)</a></li>
+<li class="chapter" data-level="2.1.19" data-path="user-guide.html"><a href="user-guide.html#studystart-publication-form"><i class="fa fa-check"></i><b>2.1.19</b> <code>StudyStart</code> (publication form)</a></li>
+<li class="chapter" data-level="2.1.20" data-path="user-guide.html"><a href="user-guide.html#studyend-publication-form"><i class="fa fa-check"></i><b>2.1.20</b> <code>StudyEnd</code> (publication form)</a></li>
+<li class="chapter" data-level="2.1.21" data-path="user-guide.html"><a href="user-guide.html#annualperiodicity-now-projection-interval-matrix-form"><i class="fa fa-check"></i><b>2.1.21</b> <code>AnnualPeriodicity</code> (now Projection Interval; matrix form)</a></li>
+<li class="chapter" data-level="2.1.22" data-path="user-guide.html"><a href="user-guide.html#numberpopulations-this-has-to-be-calculated-it-is-not-a-field-at-least-not-one-that-can-be-observed-on-our-end."><i class="fa fa-check"></i><b>2.1.22</b> <code>NumberPopulations</code> (This has to be calculated, it is not a field, at least not one that can be observed on our end).</a></li>
+<li class="chapter" data-level="2.1.23" data-path="user-guide.html"><a href="user-guide.html#matrixcriteriasize-population-form"><i class="fa fa-check"></i><b>2.1.23</b> <code>MatrixCriteriaSize</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.24" data-path="user-guide.html"><a href="user-guide.html#matrixcriteriaontogeny-population-form"><i class="fa fa-check"></i><b>2.1.24</b> <code>MatrixCriteriaOntogeny</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.25" data-path="user-guide.html"><a href="user-guide.html#matrixcriteriaage-population-form"><i class="fa fa-check"></i><b>2.1.25</b> <code>MatrixCriteriaAge</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.26" data-path="user-guide.html"><a href="user-guide.html#matrixpopulation-now-population-name-population-form"><i class="fa fa-check"></i><b>2.1.26</b> <code>MatrixPopulation</code> (Now Population name; population form)</a></li>
+<li class="chapter" data-level="2.1.27" data-path="user-guide.html"><a href="user-guide.html#lat-from-the-coordinates-field.-if-it-was-recorded-in-dms-then-it-is-transformed-to-decimal-degrees-population-form"><i class="fa fa-check"></i><b>2.1.27</b> <code>Lat</code> (From the coordinates field. If it was recorded in DMS then it is transformed to decimal degrees; population form)</a></li>
+<li class="chapter" data-level="2.1.28" data-path="user-guide.html"><a href="user-guide.html#lon-from-the-coordinates-field.-if-it-was-recorded-in-dms-then-it-is-transformed-to-decimal-degrees-population-form"><i class="fa fa-check"></i><b>2.1.28</b> <code>Lon</code> (From the coordinates field. If it was recorded in DMS then it is transformed to decimal degrees; population form)</a></li>
+<li class="chapter" data-level="2.1.29" data-path="user-guide.html"><a href="user-guide.html#altitude-population-form"><i class="fa fa-check"></i><b>2.1.29</b> <code>Altitude</code> (population form)</a></li>
+<li class="chapter" data-level="2.1.30" data-path="user-guide.html"><a href="user-guide.html#country-population-form"><i class="fa fa-check"></i><b>2.1.30</b> <code>Country</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.31" data-path="user-guide.html"><a href="user-guide.html#continent-population-form"><i class="fa fa-check"></i><b>2.1.31</b> <code>Continent</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.32" data-path="user-guide.html"><a href="user-guide.html#ecoregion-population-form"><i class="fa fa-check"></i><b>2.1.32</b> <code>Ecoregion</code> (Population form)</a></li>
+<li class="chapter" data-level="2.1.33" data-path="user-guide.html"><a href="user-guide.html#studiedsex-matrix-form"><i class="fa fa-check"></i><b>2.1.33</b> <code>StudiedSex</code> (Matrix form)</a></li>
+<li class="chapter" data-level="2.1.34" data-path="user-guide.html"><a href="user-guide.html#matrixcomposite-now-composition-matrix-form"><i class="fa fa-check"></i><b>2.1.34</b> <code>MatrixComposite</code> (Now Composition; matrix form)</a></li>
+<li class="chapter" data-level="2.1.35" data-path="user-guide.html"><a href="user-guide.html#matrixtreatment-now-treatment-matrix-form"><i class="fa fa-check"></i><b>2.1.35</b> <code>MatrixTreatment</code> (now Treatment; matrix form)</a></li>
+<li class="chapter" data-level="2.1.36" data-path="user-guide.html"><a href="user-guide.html#matrixcaptivity-now-captivity-matrix-form"><i class="fa fa-check"></i><b>2.1.36</b> <code>MatrixCaptivity</code> (now captivity; matrix form)</a></li>
+<li class="chapter" data-level="2.1.37" data-path="user-guide.html"><a href="user-guide.html#matrixstartyear"><i class="fa fa-check"></i><b>2.1.37</b> <code>MatrixStartYear</code></a></li>
+<li class="chapter" data-level="2.1.38" data-path="user-guide.html"><a href="user-guide.html#matrixstartseason-now-seasonal-plus-2-more-fields-start-season-and-end-seaon-matrix-form"><i class="fa fa-check"></i><b>2.1.38</b> <code>MatrixStartSeason</code> (now Seasonal PLUS 2 more fields: Start Season and End Seaon; Matrix form)</a></li>
+<li class="chapter" data-level="2.1.39" data-path="user-guide.html"><a href="user-guide.html#matrixstartmonth-start-month-matrix-form"><i class="fa fa-check"></i><b>2.1.39</b> <code>MatrixStartMonth</code> (Start Month; matrix form)</a></li>
+<li class="chapter" data-level="2.1.40" data-path="user-guide.html"><a href="user-guide.html#matrixendyear-end-year-matrix-form"><i class="fa fa-check"></i><b>2.1.40</b> <code>MatrixEndYear</code> (End Year; matrix form)</a></li>
+<li class="chapter" data-level="2.1.41" data-path="user-guide.html"><a href="user-guide.html#matrixendseason-end-season-matrix-form"><i class="fa fa-check"></i><b>2.1.41</b> <code>MatrixEndSeason</code> (End Season; matrix form)</a></li>
+<li class="chapter" data-level="2.1.42" data-path="user-guide.html"><a href="user-guide.html#matrixendmonth-end-month-matrix-form"><i class="fa fa-check"></i><b>2.1.42</b> <code>MatrixEndMonth</code> (End Month; matrix form)</a></li>
+<li class="chapter" data-level="2.1.43" data-path="user-guide.html"><a href="user-guide.html#matrixsplit-split-matrix-form"><i class="fa fa-check"></i><b>2.1.43</b> <code>MatrixSplit</code> (Split; matrix form)</a></li>
+<li class="chapter" data-level="2.1.44" data-path="user-guide.html"><a href="user-guide.html#matrixfec-fec-matrix-form"><i class="fa fa-check"></i><b>2.1.44</b> <code>MatrixFec</code> (Fec; matrix form)</a></li>
+<li class="chapter" data-level="2.1.45" data-path="user-guide.html"><a href="user-guide.html#observation-matrix-form"><i class="fa fa-check"></i><b>2.1.45</b> <code>Observation</code> (Matrix form)</a></li>
+<li class="chapter" data-level="2.1.46" data-path="user-guide.html"><a href="user-guide.html#matrixdimension-dimensions-matrix-form"><i class="fa fa-check"></i><b>2.1.46</b> <code>MatrixDimension</code> (Dimensions; matrix form)</a></li>
+<li class="chapter" data-level="2.1.47" data-path="user-guide.html"><a href="user-guide.html#survivalissue-this-is-not-a-field-it-needs-to-be-calculated-from-the-survival-matrix.-it-is-the-summation-of-each-column-in-the-survival-matrix.-if-a-column-sums-to-1-then-theres-an-issue"><i class="fa fa-check"></i><b>2.1.47</b> <code>SurvivalIssue</code> (This is not a field, it needs to be calculated from the survival matrix. It is the summation of each column in the survival matrix. If a column sums to 1, then there’s an issue)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="user-guide.html"><a href="user-guide.html#variables-in-matrixclass"><i class="fa fa-check"></i><b>2.2</b> Variables in <code>matrixClass</code></a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="user-guide.html"><a href="user-guide.html#matrixclassauthor-class-author-matrix-form"><i class="fa fa-check"></i><b>2.2.1</b> <code>MatrixClassAuthor</code> (Class Author; matrix form)</a></li>
+<li class="chapter" data-level="2.2.2" data-path="user-guide.html"><a href="user-guide.html#matrixclassorganized-class-organized-matrix-form"><i class="fa fa-check"></i><b>2.2.2</b> <code>MatrixClassOrganized</code> (Class Organized; matrix form)</a></li>
+<li class="chapter" data-level="2.2.3" data-path="user-guide.html"><a href="user-guide.html#matrixclassnumber-has-to-be-calculated-from-matrix-class-organized.-the-number-of-classes-in-a-matrix"><i class="fa fa-check"></i><b>2.2.3</b> <code>MatrixClassNumber</code> (has to be calculated from matrix class organized. The number of classes in a matrix)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="user-guide.html"><a href="user-guide.html#variables-in-mat"><i class="fa fa-check"></i><b>2.3</b> Variables in <code>mat</code></a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="user-guide.html"><a href="user-guide.html#mata-matrix"><i class="fa fa-check"></i><b>2.3.1</b> <code>matA</code> (matrix)</a></li>
+<li class="chapter" data-level="2.3.2" data-path="user-guide.html"><a href="user-guide.html#matu-survival-matrix"><i class="fa fa-check"></i><b>2.3.2</b> <code>matU</code> (survival matrix)</a></li>
+<li class="chapter" data-level="2.3.3" data-path="user-guide.html"><a href="user-guide.html#matf-fecundity-matrix"><i class="fa fa-check"></i><b>2.3.3</b> <code>matF</code> (fecundity matrix)</a></li>
+<li class="chapter" data-level="2.3.4" data-path="user-guide.html"><a href="user-guide.html#matc-clonal-matrix"><i class="fa fa-check"></i><b>2.3.4</b> <code>matC</code> (clonal matrix)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="user-guide.html"><a href="user-guide.html#variables-in-version"><i class="fa fa-check"></i><b>2.4</b> Variables in <code>version</code></a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="user-guide.html"><a href="user-guide.html#datecreated"><i class="fa fa-check"></i><b>2.4.1</b> <code>DateCreated</code></a></li>
+<li class="chapter" data-level="2.4.2" data-path="user-guide.html"><a href="user-guide.html#numberacceptedspecies"><i class="fa fa-check"></i><b>2.4.2</b> <code>NumberAcceptedSpecies</code></a></li>
+<li class="chapter" data-level="2.4.3" data-path="user-guide.html"><a href="user-guide.html#numberstudies"><i class="fa fa-check"></i><b>2.4.3</b> <code>NumberStudies</code></a></li>
+<li class="chapter" data-level="2.4.4" data-path="user-guide.html"><a href="user-guide.html#numbermatrices"><i class="fa fa-check"></i><b>2.4.4</b> <code>NumberMatrices</code></a></li>
+<li class="chapter" data-level="2.4.5" data-path="user-guide.html"><a href="user-guide.html#agreement"><i class="fa fa-check"></i><b>2.4.5</b> <code>Agreement</code></a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="user-guide.html"><a href="user-guide.html#appendix---the-calculation-of-mean-matrix-population-models"><i class="fa fa-check"></i><b>2.5</b> Appendix - The calculation of mean matrix population models</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html"><i class="fa fa-check"></i><b>3</b> Data Entry Protocol</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#preamble"><i class="fa fa-check"></i><b>3.1</b> Preamble</a></li>
+<li class="chapter" data-level="3.2" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#general-information"><i class="fa fa-check"></i><b>3.2</b> General information</a></li>
+<li class="chapter" data-level="3.3" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#values-used-throughout-the-database"><i class="fa fa-check"></i><b>3.3</b> Values used throughout the database</a></li>
+<li class="chapter" data-level="3.4" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#important-references"><i class="fa fa-check"></i><b>3.4</b> Important References</a></li>
+<li class="chapter" data-level="3.5" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#protocol-for-the-publication-form"><i class="fa fa-check"></i><b>3.5</b> Protocol for the publication form</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#status"><i class="fa fa-check"></i><b>3.5.1</b> Status</a></li>
+<li class="chapter" data-level="3.5.2" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#node-assignment"><i class="fa fa-check"></i><b>3.5.2</b> Node Assignment</a></li>
+<li class="chapter" data-level="3.5.3" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#assigned-to"><i class="fa fa-check"></i><b>3.5.3</b> Assigned to</a></li>
+<li class="chapter" data-level="3.5.4" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#database"><i class="fa fa-check"></i><b>3.5.4</b> Database</a></li>
+<li class="chapter" data-level="3.5.5" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#attach-a-document"><i class="fa fa-check"></i><b>3.5.5</b> Attach a document</a></li>
+<li class="chapter" data-level="3.5.6" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#doiisbn"><i class="fa fa-check"></i><b>3.5.6</b> DOI/ISBN</a></li>
+<li class="chapter" data-level="3.5.7" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#authors"><i class="fa fa-check"></i><b>3.5.7</b> Authors</a></li>
+<li class="chapter" data-level="3.5.8" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#reference-type"><i class="fa fa-check"></i><b>3.5.8</b> Reference type</a></li>
+<li class="chapter" data-level="3.5.9" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#purposes"><i class="fa fa-check"></i><b>3.5.9</b> Purposes</a></li>
+<li class="chapter" data-level="3.5.10" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#embargo"><i class="fa fa-check"></i><b>3.5.10</b> Embargo</a></li>
+<li class="chapter" data-level="3.5.11" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#additional-source"><i class="fa fa-check"></i><b>3.5.11</b> Additional source</a></li>
+<li class="chapter" data-level="3.5.12" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#additional-notes"><i class="fa fa-check"></i><b>3.5.12</b> Additional Notes</a></li>
+<li class="chapter" data-level="3.5.13" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#missing-data"><i class="fa fa-check"></i><b>3.5.13</b> Missing data</a></li>
+<li class="chapter" data-level="3.5.14" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#treatment"><i class="fa fa-check"></i><b>3.5.14</b> Treatment</a></li>
+<li class="chapter" data-level="3.5.15" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#within-site-replication"><i class="fa fa-check"></i><b>3.5.15</b> Within Site Replication</a></li>
+<li class="chapter" data-level="3.5.16" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#study-start-year-study-end-year"><i class="fa fa-check"></i><b>3.5.16</b> Study start (year)/ Study End (year)</a></li>
+<li class="chapter" data-level="3.5.17" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#release-version"><i class="fa fa-check"></i><b>3.5.17</b> Release version</a></li>
+<li class="chapter" data-level="3.5.18" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#database-source"><i class="fa fa-check"></i><b>3.5.18</b> Database source</a></li>
+<li class="chapter" data-level="3.5.19" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#under-author-contacts-tab"><i class="fa fa-check"></i><b>3.5.19</b> Under “Author contacts” tab</a></li>
+<li class="chapter" data-level="3.5.20" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#corresponding-author"><i class="fa fa-check"></i><b>3.5.20</b> Corresponding author</a></li>
+<li class="chapter" data-level="3.5.21" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#date-contacted"><i class="fa fa-check"></i><b>3.5.21</b> Date contacted</a></li>
+<li class="chapter" data-level="3.5.22" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#date-contacted-again"><i class="fa fa-check"></i><b>3.5.22</b> Date contacted again</a></li>
+<li class="chapter" data-level="3.5.23" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#sent-email-content"><i class="fa fa-check"></i><b>3.5.23</b> Sent email content</a></li>
+<li class="chapter" data-level="3.5.24" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#authors-reply-email-content"><i class="fa fa-check"></i><b>3.5.24</b> Author’s reply email content</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#protocol-for-the-population-form"><i class="fa fa-check"></i><b>3.6</b> Protocol for the Population form</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#status-1"><i class="fa fa-check"></i><b>3.6.1</b> Status</a></li>
+<li class="chapter" data-level="3.6.2" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#species-accepted"><i class="fa fa-check"></i><b>3.6.2</b> Species Accepted</a></li>
+<li class="chapter" data-level="3.6.3" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#species-author"><i class="fa fa-check"></i><b>3.6.3</b> Species Author</a></li>
+<li class="chapter" data-level="3.6.4" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#population-name"><i class="fa fa-check"></i><b>3.6.4</b> Population name</a></li>
+<li class="chapter" data-level="3.6.5" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#species-common-name"><i class="fa fa-check"></i><b>3.6.5</b> Species common name</a></li>
+<li class="chapter" data-level="3.6.6" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#ecoregion"><i class="fa fa-check"></i><b>3.6.6</b> Ecoregion</a></li>
+<li class="chapter" data-level="3.6.7" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#country"><i class="fa fa-check"></i><b>3.6.7</b> Country</a></li>
+<li class="chapter" data-level="3.6.8" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#population-nautical-miles"><i class="fa fa-check"></i><b>3.6.8</b> Population nautical miles</a></li>
+<li class="chapter" data-level="3.6.9" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#continent"><i class="fa fa-check"></i><b>3.6.9</b> Continent</a></li>
+<li class="chapter" data-level="3.6.10" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#matrix-criteria-size"><i class="fa fa-check"></i><b>3.6.10</b> Matrix criteria size</a></li>
+<li class="chapter" data-level="3.6.11" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#matrix-criteria-ontogeny"><i class="fa fa-check"></i><b>3.6.11</b> Matrix Criteria Ontogeny</a></li>
+<li class="chapter" data-level="3.6.12" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#matrix-criteria-age"><i class="fa fa-check"></i><b>3.6.12</b> Matrix Criteria Age</a></li>
+<li class="chapter" data-level="3.6.13" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#coordinates-and-altitude"><i class="fa fa-check"></i><b>3.6.13</b> Coordinates and Altitude</a></li>
+<li class="chapter" data-level="3.6.14" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#coordinates-format"><i class="fa fa-check"></i><b>3.6.14</b> Coordinates Format</a></li>
+<li class="chapter" data-level="3.6.15" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#latitude-degrees-latitude-minutes-latitude-seconds"><i class="fa fa-check"></i><b>3.6.15</b> Latitude Degrees / Latitude Minutes / Latitude Seconds</a></li>
+<li class="chapter" data-level="3.6.16" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#latitude-n-or-s"><i class="fa fa-check"></i><b>3.6.16</b> Latitude N or S</a></li>
+<li class="chapter" data-level="3.6.17" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#longitude-degrees-longitude-minutes-longitude-seconds"><i class="fa fa-check"></i><b>3.6.17</b> Longitude Degrees / Longitude Minutes / Longitude Seconds</a></li>
+<li class="chapter" data-level="3.6.18" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#longitude-w-or-e"><i class="fa fa-check"></i><b>3.6.18</b> Longitude W or E</a></li>
+<li class="chapter" data-level="3.6.19" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#altitude"><i class="fa fa-check"></i><b>3.6.19</b> Altitude</a></li>
+<li class="chapter" data-level="3.6.20" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#general-notes-on-location-information"><i class="fa fa-check"></i><b>3.6.20</b> General notes on location information</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#protocol-for-the-matrix-metadata-form"><i class="fa fa-check"></i><b>3.7</b> Protocol for the matrix metadata form</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#composition"><i class="fa fa-check"></i><b>3.7.1</b> Composition</a></li>
+<li class="chapter" data-level="3.7.2" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#seasonal"><i class="fa fa-check"></i><b>3.7.2</b> Seasonal</a></li>
+<li class="chapter" data-level="3.7.3" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#dimensions"><i class="fa fa-check"></i><b>3.7.3</b> Dimensions</a></li>
+<li class="chapter" data-level="3.7.4" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#class-author"><i class="fa fa-check"></i><b>3.7.4</b> Class Author</a></li>
+<li class="chapter" data-level="3.7.5" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#class-organized"><i class="fa fa-check"></i><b>3.7.5</b> Class Organized</a></li>
+<li class="chapter" data-level="3.7.6" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#start-year"><i class="fa fa-check"></i><b>3.7.6</b> Start Year</a></li>
+<li class="chapter" data-level="3.7.7" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#end-year"><i class="fa fa-check"></i><b>3.7.7</b> End Year</a></li>
+<li class="chapter" data-level="3.7.8" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#start-monthend-month"><i class="fa fa-check"></i><b>3.7.8</b> Start Month/End Month</a></li>
+<li class="chapter" data-level="3.7.9" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#start-seasonend-season"><i class="fa fa-check"></i><b>3.7.9</b> Start Season/End Season</a></li>
+<li class="chapter" data-level="3.7.10" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#census-type"><i class="fa fa-check"></i><b>3.7.10</b> Census type</a></li>
+<li class="chapter" data-level="3.7.11" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#projection-interval"><i class="fa fa-check"></i><b>3.7.11</b> Projection interval</a></li>
+<li class="chapter" data-level="3.7.12" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#split"><i class="fa fa-check"></i><b>3.7.12</b> Split</a></li>
+<li class="chapter" data-level="3.7.13" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#treatment-1"><i class="fa fa-check"></i><b>3.7.13</b> Treatment</a></li>
+<li class="chapter" data-level="3.7.14" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#captivity"><i class="fa fa-check"></i><b>3.7.14</b> Captivity</a></li>
+<li class="chapter" data-level="3.7.15" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#studied-sex"><i class="fa fa-check"></i><b>3.7.15</b> Studied Sex</a></li>
+<li class="chapter" data-level="3.7.16" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#sources"><i class="fa fa-check"></i><b>3.7.16</b> Sources</a></li>
+<li class="chapter" data-level="3.7.17" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#fec-matrix-fecundity"><i class="fa fa-check"></i><b>3.7.17</b> Fec (Matrix fecundity)</a></li>
+<li class="chapter" data-level="3.7.18" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#observations"><i class="fa fa-check"></i><b>3.7.18</b> Observations</a></li>
+<li class="chapter" data-level="3.7.19" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#createedit-matrix"><i class="fa fa-check"></i><b>3.7.19</b> Create/Edit Matrix</a></li>
+<li class="chapter" data-level="3.7.20" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#notes-for-matrix-construction"><i class="fa fa-check"></i><b>3.7.20</b> Notes for Matrix construction</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#protocol-for-reporting-an-error"><i class="fa fa-check"></i><b>3.8</b> Protocol for reporting an error</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="data-entry-protocol.html"><a href="data-entry-protocol.html#report-error-button"><i class="fa fa-check"></i><b>3.8.1</b> Report Error button</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The COMPADRE and COMADRE User Guide and Data Entry Protocol</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-entry-protocol" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Data Entry Protocol</h1>
+<div id="preamble" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Preamble</h2>
+<p>The COMPADRE Plant Matrix Database (COMPADRE hereafter) and the COMADRE Animal Matrix Database (COMADRE hereafter) are compiled from (mostly) published literature. The majority of this literature was published as peer-reviewed articles in academic journals, with a smaller number of data obtained from books, conference presentations, etc.</p>
+<p>The data digitisation team (The COMPADRinos) carefully examine the literature and extract information in order to reconstruct the matrix population models analysed by the original researchers. The extracted data are entered into our web-based digitization forms, which are then stored as structured SQL tables. Wherever there are doubts about aspects of the data source, the team attempts to contact the researchers to resolve them. There are three types of digitization forms in COMPADRE/COMADRE: (1) The PUBLICATION form which contains metadata on the publication, such as bibliographic and study level information; (2) The POPULATION form with metadata that allows for the interpretation of the matrix data, and it pertains to information at the species/population level; and (3) the MATRIX form, which contain the matrix population models themselves, as well as information that is matrix-specific.</p>
+<p>These data are compiled using a set of R scripts and released to the public as open access data via the website: www.compadre-db.org.</p>
+<p>This document outlines the way that the digitisation team enters data into our website. It is primarily intended for internal use and, as such, it includes information on some variables which are not released into the public domain. Nevertheless, following our philosophy on open access, replicability and transparency, we provide open access to the document here. Users external to our team with questions can direct them at <a href="mailto:compadrecontact@gmail.com" class="email">compadrecontact@gmail.com</a>. Specific questions can also be directed to Rob Salguero-Gómez (<a href="mailto:rob.salguero@zoo.ox.ac.uk" class="email">rob.salguero@zoo.ox.ac.uk</a>) or Owen Jones (<a href="mailto:jones@biology.sdu.dk" class="email">jones@biology.sdu.dk</a>).</p>
+</div>
+<div id="general-information" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> General information</h2>
+<ul>
+<li>If you find additional sources <em>always</em> attach them and note them in “Additional Source”. An additional source is a paper that references matrices from another source already in the database.</li>
+<li>Download the PDF attached to the publication form assigned to you, all pieces of information extracted from PDFs must be highlighted directly on the PDF in yellow and re-upload the PDF to the publication form.</li>
+<li>If a PDF contains matrices/data from other papers and/or studies, this must be noted as “Not primary source” in the notes variable of the publication form.</li>
+<li>If additional publications are found with respect to a given species, these must be inspected for any additional matrix population models with different model assumptions (e.g. different stages) and/or different study years, populations and/or treatments. If the paper provides new information, it must be included in the database as a new publication.</li>
+<li>Authors must only be contacted from the official email: <a href="mailto:compadrecontact@gmail.com" class="email">compadrecontact@gmail.com</a>.</li>
+<li>Where matrices can be split, please always include an “A” matrix as well as “U”, “F” &amp; “C” matrices (for explanation see here in the protocol for matrix form). Present matrices from left-to-right in the order A, U, F, C. <strong>Always</strong> split matrices when possible.</li>
+<li>There are also species that do not fall into the Kingdoms Plantae or Animalia. Fungi and Algae should be included in COMPADRE, with the plants. Any other species (e.g. bacteria) should be included in COMADRE.</li>
+</ul>
+</div>
+<div id="values-used-throughout-the-database" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Values used throughout the database</h2>
+<p>The following values are commonly used throughout the database.</p>
+<ul>
+<li><code>NA</code> - <em>Not available</em> - The information is not available either because the author does not have it or because the information is not recognized as “priority” (see below) for the digitisation.</li>
+<li><code>AFI</code> - <em>Asked for it</em> - The information is not yet in the database, but the COMPADRino has already contacted the author requesting it (i.e. the author has not yet replied).</li>
+<li><code>NDY</code> - <em>Not digitised yet</em> - The information has not yet been digitised. This is likely to occur when some priority information has been digitised for a given species, and the COMPADRino has moved onto another species without contacting an author for the missing information.</li>
+<li><code>NC</code> - <em>Not calculated</em> - Information was not calculated because its calculation is not sensible. For instance, latitudes and longitudes of various populations of the same species are not averaged and assigned to the grand-mean population matrix of the species. This is the same for ranges, where author provides a range of latitudes and longitudes for a given population. Ranges are instead noted in the observation column.</li>
+<li><code>LAB</code> - <em>Laboratory</em> - The author collected demographic data for the studied species in a laboratory or under greenhouse conditions. Controlled, typically indoor, conditions that mean the study population is not affected by the environmental conditions typical of the <strong>actual</strong> geographic location of the study.</li>
+<li><code>FRANK</code> - <em>Frankenstein matrix</em> - Frankenstein matrices are MPMs where the author parameterised their model using demographic data from 2+ other papers/sources; in other words, when the matrix values come from a source that was not affected by the same conditions as the rest of the matrix. These MPMs should be clearly indicated with “<code>FRANK</code>” in the observation column. Furthermore, geographic location data, time information (start/end year, season etc.) should be recorded only if the author reports ONE main location for the matrix; if multiple locations are reported, then it should be recorded as <code>FRANK</code> and not <code>NA.</code></li>
+<li><code>Simulation</code> - <em>A simulated matrix</em> - The matrix model is a simulation, and perhaps only loosely based on a specific real species. Typically, these simulated matrices are used to explore the behaviour of a population in a theoretical way. In those cases, there is no geographic location, ecoregion etc. For these data we do not calculate averages or ranges for locations and time periods but instead enter <code>Simulation</code> (not <code>NA</code>).</li>
+</ul>
+</div>
+<div id="important-references" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Important References</h2>
+<ul>
+<li>Caswell, H. (2001) Matrix population models. Second Edition. Sunderland, MA: Sinauer Associates.</li>
+<li>Olson, D.M., Dinerstein, E., Wikramanayake, E.D., Burgess, N.D., Powell, G.V., Underwood, E.C., D’amico, J.A., Itoua, I., Strand, H.E. &amp; Morrison, J.C. (2001) Terrestrial Ecoregions of the World: A New Map of Life on Earth A new global map of terrestrial ecoregions provides an innovative tool for conserving biodiversity. BioScience, 51, 933–938.</li>
+<li>Salguero-Gómez, R., Jones, O. R., Archer, C. R., Buckley, Y. M., Che-Castaldo, J., Caswell, H., Hodgson, D., Scheuerlein, A., Conde, D. A., Brinks, E., de Buhr, H., Farack, C., Gottschalk, F., Hartmann, A., Henning, A., Hoppe, G., Römer, G., Runge, J., Ruoff, T., Wille, J., Zeh, S., Davison, R., Vieregg, D., Baudisch, A., Altwegg, R., Colchero, F., Dong, M., de Kroon, H., Lebreton, J.-D., Metcalf, C. J. E., Neel, M. M., Parker, I. M., Takada, T., Valverde, T., Vélez-Espino, L. A., Wardle, G. M., Franco, M., Vaupel, J. W. (2015), The COMPADRE Plant Matrix Database: an open online repository for plant demography. Journal of Ecology, 103: 202–218. <a href="https://doi.org/10.1111/1365-2745.12334" class="uri">https://doi.org/10.1111/1365-2745.12334</a></li>
+<li>Kendall, B.E., Fujiwara, M., Diaz-Lopez, J., Schneider, S., Voigt, J., Wiesner, S. 2019. Persistent problems in the construction of matrix population models. Ecological Modelling 406, 33–43 <a href="https://doi.org/10.1016/j.ecolmodel.2019.03.011" class="uri">https://doi.org/10.1016/j.ecolmodel.2019.03.011</a></li>
+</ul>
+</div>
+<div id="protocol-for-the-publication-form" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Protocol for the publication form</h2>
+<div id="status" class="section level3" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Status</h3>
+<p>This is the status for the publication. Please READ the website-status protocol to determine the status that should be assigned to the publication.</p>
+<ul>
+<li><code>Assigned</code> – the publication has been assigned to a node. The compadrino will get publications in this status. Once the compadrino has started working on the publication, it should be changed to “Digitizing”</li>
+<li><code>Digitizing</code> – compadrino is working/editing the population</li>
+<li><code>Rejected/Deleted</code></li>
+<li><code>Awaiting info</code> – compadrino has determined s/he requires more information to complete digitization</li>
+<li><code>Review-Ready</code> – the population is ready to be reviewed by a database curator</li>
+<li><code>Released</code> – population can be now seen by public users</li>
+<li><code>Error</code> – an error has been found in the population and needs to be corrected</li>
+</ul>
+</div>
+<div id="node-assignment" class="section level3" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Node Assignment</h3>
+<p>The node the publication has been assigned for. Only coordinators and Admins edit this field.</p>
+</div>
+<div id="assigned-to" class="section level3" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Assigned to</h3>
+<p>The name of the compadrino that has claimed or has been assigned the publication.</p>
+</div>
+<div id="database" class="section level3" number="3.5.4">
+<h3><span class="header-section-number">3.5.4</span> Database</h3>
+<p>The database to which the publication belongs to, either Compadre (plants) or Comadre (animals). Usually determined by the database coordinator. When you are assigned a publication, always make sure the assigned database is correct.</p>
+<ul>
+<li><code>Compadre</code> (plants)</li>
+<li><code>Comadre</code> (animals)</li>
+</ul>
+</div>
+<div id="attach-a-document" class="section level3" number="3.5.5">
+<h3><span class="header-section-number">3.5.5</span> Attach a document</h3>
+<p>Attach all files used to digitize this publication. Include original journal article, additional sources, appendices, files from author communications, etc. Usually all proposed/assigned publication will have attached the original journal article.</p>
+</div>
+<div id="doiisbn" class="section level3" number="3.5.6">
+<h3><span class="header-section-number">3.5.6</span> DOI/ISBN</h3>
+<p>The DOI of the journal article. If you have the DOI, you could automatically fill the bibliographic information fields. Check to make sure those fields were populated correctly.</p>
+</div>
+<div id="authors" class="section level3" number="3.5.7">
+<h3><span class="header-section-number">3.5.7</span> Authors</h3>
+<p>Publication authors. This is usually done by the database coordinator. Make sure all authors have been added and are in the right order. If an author is missing search for the last name in the search box; make sure to select the correct author. If the author is not in the list, use the button “Create author” to add a new one:</p>
+<ul>
+<li><em>Author name</em>: The last name of the author.</li>
+<li><em>Author initials</em>: The initials of the first, middle and other names of the author, do not include the last name initials.</li>
+<li><em>Author email</em>: if it is the corresponding author, include the contact email.</li>
+</ul>
+</div>
+<div id="reference-type" class="section level3" number="3.5.8">
+<h3><span class="header-section-number">3.5.8</span> Reference type</h3>
+<p>Record the type of reference from which data were sourced.</p>
+<ul>
+<li><em>Book</em>: Matrices are from a book</li>
+<li><em>Book Chapter</em>: Matrices are from a single chapter in a book</li>
+<li><em>Journal Article</em>: Matrices come from a Journal paper.
+<ul>
+<li><em>Journal name</em>: Record the standard abbreviation of the journal using the BIOSIS format. For journal abbreviations, click “Full list of journal abbreviation” (<a href="https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html" class="uri">https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html</a>). If no abbreviation is available in the list, search past records of the journal from the website or look for it in the left corner of the paper.</li>
+<li><em>Year</em>: the year the paper was published.</li>
+</ul></li>
+<li><em>Thesis</em>: Matrices are from a thesis such as PhD thesis, MSc thesis, etc.
+<ul>
+<li><em>Thesis type</em>: Select the correct option.</li>
+</ul></li>
+<li><em>Report</em>: Matrices are from a report.</li>
+<li><em>Conference</em>: Matrices are from a conference in forms such as a talk or a poster.</li>
+<li><em>Others</em>: Matrices are from other sources including, but not limited to archives.</li>
+</ul>
+</div>
+<div id="purposes" class="section level3" number="3.5.9">
+<h3><span class="header-section-number">3.5.9</span> Purposes</h3>
+<p>Select all that apply. Describes the purpose(s) of the study detailed in the manuscript. This information is usually obvious from the abstract and the last paragraph of the introduction. Several purposes are possible per study.</p>
+<p>We have categorised the purposes as follows:</p>
+<ul>
+<li><em>Comparative demography</em> - When the authors studied two or more species</li>
+<li><em>Spatial demography</em> - When the authors studied the demography of two or more populations within the same species</li>
+<li><em>Abiotic impacts</em> - When the authors studied the effects of abiotic factors (e.g fire, hurricanes, rain, fertilisers, droughts, etc)</li>
+<li><em>PVA</em> - When the authors report a Population Viability Analysis of an endangered species</li>
+<li><em>Species dynamics description</em> - When there is no actual treatment in the study (Unmanipulated). Instead, the goal was to describe the natural dynamics of a species</li>
+<li><em>Interspecific interactions</em> - When the authors studied the interactions between different species (e.g herbivory, pollinators, inter-specific competition, predation, parasitism, etc)</li>
+<li><em>Management evaluation</em> - When the authors explored the effects of a specific management plan (e.g. to eradicate an invasive species, to preserve an endangered species or assess effects of management on other species).</li>
+<li><em>Methodological advancement</em> - When the novelty of the paper is not an ecological question, but mostly to introduce a new mathematical tool often using already published matrices.</li>
+</ul>
+</div>
+<div id="embargo" class="section level3" number="3.5.10">
+<h3><span class="header-section-number">3.5.10</span> Embargo</h3>
+<p>If the author does not wish to make personally communicated data available, the data will be under embargo until this date. On that date, an automatic reminder will go out to assigned Compadrino, Admin and Coordinator. The data will not become public until explicit permission has been given by the author. Update the embargo date if the author sets a new date. Leave blank when there is no embargo.</p>
+</div>
+<div id="additional-source" class="section level3" number="3.5.11">
+<h3><span class="header-section-number">3.5.11</span> Additional source</h3>
+<p>Record all additional sources used to construct matrices or to obtain additional ancillary data. Additional sources should be formatted as LastName Journal YearPublished additional information (e.g. Godinez-Alvarez Bot Rev 2003, Schmidt J Ecol 2007 Appendix A1) both here and in the attached file names. Be sure to update both whenever changes are made to the data associated with the publication. Attach the necessary PDF/excel files/documents to the “Attach a document” field.</p>
+</div>
+<div id="additional-notes" class="section level3" number="3.5.12">
+<h3><span class="header-section-number">3.5.12</span> Additional Notes</h3>
+<p>This field is intended to record any important issues or general notes about the data for the use of the COMPADRINO team. These entries should only include sensible informative key points that others can understand. Use English only.</p>
+</div>
+<div id="missing-data" class="section level3" number="3.5.13">
+<h3><span class="header-section-number">3.5.13</span> Missing data</h3>
+<p>Data that is not yet available and thus not yet digitized for this publication. Update this information whenever changes are made to populations and matrices associated with this publication.</p>
+</div>
+<div id="treatment" class="section level3" number="3.5.14">
+<h3><span class="header-section-number">3.5.14</span> Treatment</h3>
+<p>Record all treatment categories used in the study. Include both environmental and experimental treatments. Write “No” if nothing was manipulated.</p>
+</div>
+<div id="within-site-replication" class="section level3" number="3.5.15">
+<h3><span class="header-section-number">3.5.15</span> Within Site Replication</h3>
+<p>Number of plots or transects sampled at each population and the size description of the plots. For example, 6(4x4m^2) means that in each population, there were 6 permanent plots of 4x4m2. If different populations have different plot sizes, record all of them separated by semicolon. (e.g. A: 2(15ha); B: 3(20ha))</p>
+</div>
+<div id="study-start-year-study-end-year" class="section level3" number="3.5.16">
+<h3><span class="header-section-number">3.5.16</span> Study start (year)/ Study End (year)</h3>
+<p>An alert will appear if the start year is greater than the end year, or if the year recorded is greater than 2020</p>
+</div>
+<div id="release-version" class="section level3" number="3.5.17">
+<h3><span class="header-section-number">3.5.17</span> Release version</h3>
+<p>The Version number of the database where the data were released (no longer applies). Do not enter anything here.</p>
+</div>
+<div id="database-source" class="section level3" number="3.5.18">
+<h3><span class="header-section-number">3.5.18</span> Database source</h3>
+<p>The institute that collated the data together in a mini database before COMPADRE and COMADRE were developed.</p>
+</div>
+<div id="under-author-contacts-tab" class="section level3" number="3.5.19">
+<h3><span class="header-section-number">3.5.19</span> Under “Author contacts” tab</h3>
+<p>Add <em>one or more</em> authors. Use “<code>Add author contact</code>” button to add all the authors that falls into the following categories:</p>
+<ul>
+<li>The corresponding author of the publication</li>
+<li>Other authors contacted when the corresponding author of the study was unreachable</li>
+<li>The authors were referred to by the corresponding author</li>
+<li>Authors of additional sources contacted for information</li>
+</ul>
+</div>
+<div id="corresponding-author" class="section level3" number="3.5.20">
+<h3><span class="header-section-number">3.5.20</span> Corresponding author</h3>
+<p>Select the corresponding author from the list of the authors in the bibliographic information. If the author is not added into the database yet, click “Create New Author” to add a new author.</p>
+<pre><code>`Create New Author` and `Add New Author buttons`</code></pre>
+<ul>
+<li>Author email: If the email of the author is provided, add the email address</li>
+</ul>
+<p><code>Edit author</code> button in <code>Manage Authors</code> tab</p>
+<ul>
+<li>Update the contact information of the author. Put year or “dead” in parentheses to keep track of multiple emails. (e.g. <a href="mailto:aaa@compadre.org" class="email">aaa@compadre.org</a> (dead); <a href="mailto:aaa@compadre.org" class="email">aaa@compadre.org</a> (2016); <a href="mailto:xxx@compadre.org" class="email">xxx@compadre.org</a> (2019))</li>
+</ul>
+</div>
+<div id="date-contacted" class="section level3" number="3.5.21">
+<h3><span class="header-section-number">3.5.21</span> Date contacted</h3>
+<p>Record the date(s) when the publication author was contacted asking for information in US date format (mm/dd/yyyy). Authors should always be contacted from the <a href="mailto:compadrecontact@gmail.com" class="email">compadrecontact@gmail.com</a> email address rather than a personal email address.</p>
+<p>Procedure for lack of response depends on the Year of Publication of the source:</p>
+<ul>
+<li>For papers older than 1990: When the corresponding author does not reply to your third email, or you cannot find their email address (e.g. in old publication) or reach their coauthors, then change the publication status from “Digitizing” to “Review-ready.”</li>
+<li>For more recent papers (published after 1990): If the authors (and coauthors) do not reply after the third time you have contacted them, please pass the email address that you have sent them, together with a brief summary of the information you are after and the attached PDF to Owen and Rob. If they do not make successful contact with the authors, they will change the publication status from “Digitizing” to “Review-ready.”</li>
+</ul>
+<p>If you were not able to find an email address of any of the authors of a paper (and also Rob and Owen don’t know one), but that paper has a matrix population model that can be digitised – enter the matrix and all information that are available from the paper. All missing information get an NA and we list the species as “Review-Ready”, still enter the missing information into Missing Data field.</p>
+</div>
+<div id="date-contacted-again" class="section level3" number="3.5.22">
+<h3><span class="header-section-number">3.5.22</span> Date contacted again</h3>
+<p>Date(s) of the other attempts to contact this corresponding author. (mm/dd/yyyy; mm/dd/yyyy). Make another attempt to contact the author again if there has not been a response in 3 months.</p>
+</div>
+<div id="sent-email-content" class="section level3" number="3.5.23">
+<h3><span class="header-section-number">3.5.23</span> Sent email content</h3>
+<p>This records the information that was requested from the author. Use the same format as for “Missing Data” above. If multiple pieces of information are requested, separate with “;”. If the author has been asked for something other than the standard missing information, a short note should be left, e.g. “is the species clonal?”</p>
+</div>
+<div id="authors-reply-email-content" class="section level3" number="3.5.24">
+<h3><span class="header-section-number">3.5.24</span> Author’s reply email content</h3>
+<p>Did the author reply to a request for further information. This should record a brief answer given by the author, or “No” (no response yet). Note: Always change Author’s Reply from “<code>NA</code>”" / “<code>Nothing</code>” to “<code>No</code>” when author has been contacted and update the entry as soon as a reply is received. Always reply to the author with a short thank-you note when a reply is received.
+Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when the information was received from the author. If the author has been asked for information other than the standard information, make a short note of what it is. Also, record the date author replied next to the information received. (e.g. <code>M; S (11/11/2018)</code>)</p>
+</div>
+</div>
+<div id="protocol-for-the-population-form" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Protocol for the Population form</h2>
+<div id="status-1" class="section level3" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> Status</h3>
+<p>This is the status for the population. Please <strong>READ</strong> the website-status protocol to determine the status that should be assigned to the population.
+* <code>Digitizing</code> – compadrino is working/editing the population
+* <code>Rejected/Deleted</code>
+* <code>Awaiting info</code> – compadrino has determined s/he requires more information to complete digitization
+* <code>Review-Ready</code> – the population is ready to be reviewed by a database curator
+* <code>Released</code> – population can be now seen by public users
+* <code>Error</code> – an error has been found in the population and needs to be corrected</p>
+</div>
+<div id="species-accepted" class="section level3" number="3.6.2">
+<h3><span class="header-section-number">3.6.2</span> Species Accepted</h3>
+<p>Currently accepted Latin binomial name for the species.</p>
+<ul>
+<li>Search for the correct species name. This might be different from the Latin name the author used (e.g. author used an old Latin name for the species). If you cannot find the correct species name in this field contact a website Admin.</li>
+</ul>
+</div>
+<div id="species-author" class="section level3" number="3.6.3">
+<h3><span class="header-section-number">3.6.3</span> Species Author</h3>
+<p>The Latin binomial name of the species as reported in the publication. Note that this may not be the same as the current accepted name. If an author uses a Latin name with a typo, please leave it as is, as this variable represents the name as used by the authors. This applies, as well, if the author(s) used an outdated taxonomic name</p>
+<ul>
+<li>Record as Genus_species.</li>
+<li>When intra-specific names are given by authors, record them as <code>Genus_species_subsp._subspecies</code>, <code>Genus_species_var._variety</code>, or <code>Genus_species_cf._colour form</code>. (e.g. <code>Sarracenia_alata</code>, <code>Sambucus_racemosa_subsp._sieboldiana</code>)</li>
+<li>Always use an underscore “<code>_</code>” to substitute spaces (e.g. write “<code>Cryptantha_flava</code>” instead of “<code>Cryptantha flava</code>”). This only applies to the <em>Species Author</em> field</li>
+</ul>
+</div>
+<div id="population-name" class="section level3" number="3.6.4">
+<h3><span class="header-section-number">3.6.4</span> Population name</h3>
+<p>The name of the population where the data for the matrix was recorded. Usually given by the author. When no name provided, use other characteristic information, such as a brief geographic location. If there are multiple populations in the study and their names are not pertinent/available, sequential names in alphabetical order are assigned for each population in the study.</p>
+</div>
+<div id="species-common-name" class="section level3" number="3.6.5">
+<h3><span class="header-section-number">3.6.5</span> Species common name</h3>
+<p>The common name for the species. This is pulled automatically from the selected species but can be overwritten if desired/needed.</p>
+</div>
+<div id="ecoregion" class="section level3" number="3.6.6">
+<h3><span class="header-section-number">3.6.6</span> Ecoregion</h3>
+<p>Description of the Ecoregion for the study. Follow the link to obtain the ecoregion for the set of coordinates the population is located in: <a href="https://patrickbarks.shinyapps.io/biomes/" class="uri">https://patrickbarks.shinyapps.io/biomes/</a></p>
+<p>The options are:</p>
+<p><strong>Terrestrial ecoregions</strong></p>
+<ul>
+<li><code>TMB</code> tropical and subtropical moist broadleaf forests</li>
+<li><code>TDB</code> tropical and subtropical dry broadleaf forests</li>
+<li><code>TSC</code> tropical and subtropical coniferous forests</li>
+<li><code>TBM</code> temperate broadleaf and mixed forests</li>
+<li><code>TCF</code> temperate coniferous forests</li>
+<li><code>BOR</code> boreal forests/ taiga</li>
+<li><code>TGV</code> tropical and subtropical grasslands, savannas and shrublands</li>
+<li><code>TGS</code> temperate grasslands, savannas, and shrublands</li>
+<li><code>FGS</code> flooded grasslands and savannas</li>
+<li><code>MON</code> montane grasslands and shrublands</li>
+<li><code>TUN</code> tundra</li>
+<li><code>MED</code> Mediterranean forests, woodlands and scrubs</li>
+<li><code>DES</code> deserts and xeric shrublands</li>
+<li><code>MAN</code> mangroves</li>
+</ul>
+<p><strong>Freshwater ecoregions</strong></p>
+<ul>
+<li><code>LRE</code> large river ecosystems</li>
+<li><code>LRH</code> large river headwater ecosystems</li>
+<li><code>LRD</code> large river delta ecosystems</li>
+<li><code>SRE</code> small river ecosystems</li>
+<li><code>SLE</code> small lake ecosystems</li>
+<li><code>LLE</code> large lake ecosystems</li>
+<li><code>XBE</code> xeric basin ecosystems</li>
+</ul>
+<p><strong>Marine ecoregions</strong></p>
+<ul>
+<li><code>POE</code> polar ecosystems</li>
+<li><code>TSS</code> temperate shelf and seas ecosystems</li>
+<li><code>TEU</code> temperate upwellings</li>
+<li><code>TRU</code> tropical upwellings</li>
+<li><code>TRC</code> tropical coral</li>
+</ul>
+<p>For a more inclusive description of water ecoregions, see <a href="http://worldwildlife.org/biomes" class="uri">http://worldwildlife.org/biomes</a></p>
+</div>
+<div id="country" class="section level3" number="3.6.7">
+<h3><span class="header-section-number">3.6.7</span> Country</h3>
+<p>Choose the ISO 3 Country Code(s) of where the study took place. You can search by the country’s name or the country’s code.</p>
+</div>
+<div id="population-nautical-miles" class="section level3" number="3.6.8">
+<h3><span class="header-section-number">3.6.8</span> Population nautical miles</h3>
+<p>For oceanic studies, this is the distance in nautical miles from the closest land mass. If the population was studied both in French and Spanish waters 22 miles from land the country code field would be FRA; SPA and the nautical miles field would be NODC-22. If it was only studied in international waters (normally defined as 12 nautical miles) then you would record it as NODC-22.</p>
+</div>
+<div id="continent" class="section level3" number="3.6.9">
+<h3><span class="header-section-number">3.6.9</span> Continent</h3>
+<p>Continent where study took place. Select the appropriate one:</p>
+<ul>
+<li><code>Africa</code></li>
+<li><code>Asia</code></li>
+<li><code>Europe</code></li>
+<li><code>N America</code> (includes Canada, USA and Mexico)</li>
+<li><code>S America</code> (incluces the rest of the countries in the Americas not outlined in “<code>N America</code>”)</li>
+<li><code>Antarctica</code></li>
+<li><code>Oceania</code> (various definitions for Oceania exist, but here we opted for this one: <a href="https://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_population" class="uri">https://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_population</a>)</li>
+</ul>
+</div>
+<div id="matrix-criteria-size" class="section level3" number="3.6.10">
+<h3><span class="header-section-number">3.6.10</span> Matrix criteria size</h3>
+<p>Records whether the matrix model is based on size (e.g. stem length/number, body length/mass, etc).</p>
+<ul>
+<li><code>Yes</code> - The matrix population model contains stages based on size.</li>
+<li><code>No</code> - The matrix population model is not based on size.</li>
+</ul>
+</div>
+<div id="matrix-criteria-ontogeny" class="section level3" number="3.6.11">
+<h3><span class="header-section-number">3.6.11</span> Matrix Criteria Ontogeny</h3>
+<p>Records whether the matrix model is based on ontogenetic stage (e.g. seedbank, reproductive, vegetative, dormant, etc).</p>
+<ul>
+<li><code>Yes</code> - The matrix population model contains at least one class that is based on development/ontogeny (e.g. seedbank, reproductive, vegetative, dormant, etc).</li>
+<li><code>No</code> - Matrix population model is not based on ontogeny.</li>
+</ul>
+</div>
+<div id="matrix-criteria-age" class="section level3" number="3.6.12">
+<h3><span class="header-section-number">3.6.12</span> Matrix Criteria Age</h3>
+<p>Records whether there are any classes that are based on age.</p>
+<ul>
+<li><code>Yes</code> - The matrix population model contains at least one class that is based on age (e.g. individuals of 0 year old)</li>
+<li><code>No</code> - The matrix population model is not based on age</li>
+</ul>
+</div>
+<div id="coordinates-and-altitude" class="section level3" number="3.6.13">
+<h3><span class="header-section-number">3.6.13</span> Coordinates and Altitude</h3>
+<p>Get coordinates from <a href="https://www.gps-coordinates.net/" class="uri">https://www.gps-coordinates.net/</a></p>
+<p>Estimate the geographic coordinates to the nearest location possible. Check if they reasonably fit the location of the study by looking them up on Google maps or Google Earth. If the terrestrial plant or animal has aquatic coordinates, obtain the coordinates by estimating them from the study site provided by the authors.</p>
+<p>When geographic coordinates are not attainable, select an option that corresponds with the study situation. The possible options are <code>LAB</code>, <code>Simulation</code>, <code>NC</code>, <code>FRANK</code>, and <code>AFI.</code></p>
+<ul>
+<li><p><code>NC</code> (Not Calculated): When the matrices are built from mean or pooled data of multiple populations with different study locations. Record each geographic coordinate in the observation of matrix metadata.</p></li>
+<li><p><code>LAB</code> (Laboratory): When the study was carried out in a laboratory or under greenhouse conditions where study populations were not affected by the environmental conditions of the actual geographic location.</p></li>
+<li><p><code>FRANK</code> (Frankenstein matrix): When the matrices are constructed from two or more sources that were in different conditions. Enter the main geographic coordinates when available. For FRANK studies, specify that it is a FRANK study in the observation with a brief summary of the methods. (e.g. FRANK; Survival rates estimated from the field study, but fecundity values obtained from a greenhouse study).</p></li>
+<li><p><code>Simulation</code>: theoretic studies that are not or are loosely based on a real population.</p></li>
+<li><p><code>AFI</code> (Asked for it): contacted the author for the information but the author hasn’t replied yet.</p></li>
+</ul>
+</div>
+<div id="coordinates-format" class="section level3" number="3.6.14">
+<h3><span class="header-section-number">3.6.14</span> Coordinates Format</h3>
+<p>Select the adequate format for the coordinates of the population. Options include:</p>
+<ul>
+<li><code>Degrees, minutes and seconds (DMS)</code></li>
+<li><code>Decimal degrees</code></li>
+<li><code>LAB</code></li>
+<li><code>Simulation</code></li>
+<li><code>NC</code></li>
+<li><code>Frank</code></li>
+<li><code>AFI</code></li>
+</ul>
+</div>
+<div id="latitude-degrees-latitude-minutes-latitude-seconds" class="section level3" number="3.6.15">
+<h3><span class="header-section-number">3.6.15</span> Latitude Degrees / Latitude Minutes / Latitude Seconds</h3>
+<p>Record the degree (0-90), minute (0-60) and second (0-60) values of the locations of the matrix.</p>
+<p>Note: if there are no seconds (or minutes) given, you should record as NA rather than 0.</p>
+</div>
+<div id="latitude-n-or-s" class="section level3" number="3.6.16">
+<h3><span class="header-section-number">3.6.16</span> Latitude N or S</h3>
+<p>Cardinal direction
+* <code>N</code> - North
+* <code>S</code> - South</p>
+<p>Note: Cardinal direction might be given with a “+” or “-“ whereat “+” means North and “-“ means South.</p>
+</div>
+<div id="longitude-degrees-longitude-minutes-longitude-seconds" class="section level3" number="3.6.17">
+<h3><span class="header-section-number">3.6.17</span> Longitude Degrees / Longitude Minutes / Longitude Seconds</h3>
+<p>Records the degree (0-90), minute (0-60) and second (0-60) values of the locations of the matrix.</p>
+</div>
+<div id="longitude-w-or-e" class="section level3" number="3.6.18">
+<h3><span class="header-section-number">3.6.18</span> Longitude W or E</h3>
+<p>Cardinal direction
+* <code>W</code> - West
+* <code>E</code> - East
+Note: Cardinal direction might be given with a “+” or “-“ wherby “+” means East and “-“ means West.</p>
+<p>The following link is useful for converting between different ways of presenting lat/long information: <a href="http://www.earthpoint.us/Convert.aspx" class="uri">http://www.earthpoint.us/Convert.aspx</a></p>
+</div>
+<div id="altitude" class="section level3" number="3.6.19">
+<h3><span class="header-section-number">3.6.19</span> Altitude</h3>
+<p>Altitude of studied population in m = Height above sea level of specific population in meters e.g. <code>208</code> (without “m”).</p>
+<p>Note: Altitude is either given in the paper, by author communication, or we look it up with <em>Google Maps</em>. If you enter the coordinates into <em>Google Maps</em> you’ll see the altitude at the bottom right corner of the window. If you scroll around in <em>Google Maps</em> with your mouse the altitude will change, so pay attention that you read the altitude directly after entering the coordinates without scrolling around!</p>
+</div>
+<div id="general-notes-on-location-information" class="section level3" number="3.6.20">
+<h3><span class="header-section-number">3.6.20</span> General notes on location information</h3>
+<p>If you don’t have a detailed description of the geolocation-coordinates enter the following sentence into the Observation-Column: The GPS coordinates were approximated to the closest geographic location described in the reference.
+Sometimes the Lat and Long given in the paper do NOT match the study area. In this case enter the following in the <code>Observation</code>-Column: GPS co-ordinates cited exactly as reported in original paper. These do not match written study site description.</p>
+<p>Pay attention to the means: We don’t calculate ranges for mean matrices. In that case, choose the option <code>NC</code> for “not calculated” in the “<code>Coordinates format</code>” field.</p>
+</div>
+</div>
+<div id="protocol-for-the-matrix-metadata-form" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Protocol for the matrix metadata form</h2>
+<div id="composition" class="section level3" number="3.7.1">
+<h3><span class="header-section-number">3.7.1</span> Composition</h3>
+<p>Indicates the type of matrix population model</p>
+<ul>
+<li><code>Individual</code> - single population studied over a single time period, for example, over one year</li>
+<li><code>Mean</code> - a mean matrix was calculated by averaging across more than one population studied over a single time period, for example, over one year</li>
+<li><code>Pooled</code> - a matrix was calculated by pooling data across more than one population studied over a single time period, for example, over one year</li>
+<li><code>NDY</code> - not done yet / unset</li>
+</ul>
+</div>
+<div id="seasonal" class="section level3" number="3.7.2">
+<h3><span class="header-section-number">3.7.2</span> Seasonal</h3>
+<p>A matrix population that does not describe a full annual transition, but rather a seasonal transition.</p>
+<ul>
+<li>Specify the seasons in the “Start Season” and “End Season” fields of the matrix form.</li>
+</ul>
+<p>A matrix can be seasonal even if it is constructed over several years e.g. spring in years 2000-2012. Make sure you detail that there are multiple years data in the observation column.</p>
+<p><img src="figures/image1.2.png" /></p>
+<p>This figure is a schematic showing how mean population matrix models are derived from all available population matrix models in a study.
+A. For annual population matrix models (those that follow population dynamics from one year to the next, or sometimes more – some tree species are studied with a 5-year interval), element-by-element means are first calculated across the population matrix models describing the population dynamics for time periods within each population. Then the grand element-by-element mean is calculated across the matrix population models for the different populations. This procedure is repeated for models describing dynamics under each imposed treatment (pink matrices below) and for those describing the dynamics of unmanipulated populations (gray). Note that mean population matrix models are only calculated from population matrix models that share the same treatment (or absence of treatment).
+B. For seasonal or periodic population matrix models (e.g. for annual species), the mean seasonal population matrix model is calculated within populations and then across populations, both for matrices describing treated populations and for those describing populations with no imposed treatment (i.e. unmanipulated).</p>
+</div>
+<div id="dimensions" class="section level3" number="3.7.3">
+<h3><span class="header-section-number">3.7.3</span> Dimensions</h3>
+<p>Select the dimension of the matrix.</p>
+<ul>
+<li>Expand the drop-down menu and type in the number to navigate faster.</li>
+</ul>
+</div>
+<div id="class-author" class="section level3" number="3.7.4">
+<h3><span class="header-section-number">3.7.4</span> Class Author</h3>
+<p>The stage description as indicated in the source by the publication author.</p>
+<ul>
+<li>If author has used abbreviations, include the explanations of it.</li>
+<li>Use periods (.) for decimals instead of commas (,).<br />
+</li>
+<li>Always include stage names, stage categories and units. (e.g. S (Seedlings): 1.5 cm ≤ stem height &lt; 3.5 cm, Adult: age 5+ yrs, etc.).</li>
+<li>Keep the authors’ descriptions even if the paper is written in another language.</li>
+<li>Always add units (when possible) (e.g. 0-9 cm DBH, not 0-9 DBH)</li>
+<li>Be clear in what is described (e.g. 0-9 cm DBH/ height, not only 0-9 cm)</li>
+<li>Make sure that there is space between the number and the unit (e.g. 1.45 cm, not 1.45cm)</li>
+<li>Also write down abbreviations - if the author used them frequently (e.g. if the author explains his stages in the text and after that only uses “S1, S2, J1, J2, J3, A, R” write them down, too (= s1 = dormant seeds)</li>
+</ul>
+</div>
+<div id="class-organized" class="section level3" number="3.7.5">
+<h3><span class="header-section-number">3.7.5</span> Class Organized</h3>
+<p>We standardise all stages in a given population matrix model to one of three stages (prop, active, dorm) to facilitate analyses.</p>
+<ul>
+<li>prop - Propagule (seed). This applies to every stage defined by the author as seed bank or seed. Users are encouraged to carefully examine matrices with these stages and to implement the appropriate calculations to avoid a spurious additional year being added when no seedbank exists in the study species, as explained by Caswell (2001, p. 60).</li>
+<li>active - This includes stages that can neither be placed in the “prop” nor “dorm” (see below) stages.</li>
+<li>dorm - A stage that is vegetatively dormant after having germinated and becoming established.</li>
+</ul>
+</div>
+<div id="start-year" class="section level3" number="3.7.6">
+<h3><span class="header-section-number">3.7.6</span> Start Year</h3>
+<p>First year of study. Year t in annual matrix population model that describes population dynamics from time t to t+1. e.g. <code>1995.</code></p>
+</div>
+<div id="end-year" class="section level3" number="3.7.7">
+<h3><span class="header-section-number">3.7.7</span> End Year</h3>
+<p>Last year of study. Year t+1 in matrix population model that describes population dynamics from time t to t+1. e.g. <code>2001.</code></p>
+</div>
+<div id="start-monthend-month" class="section level3" number="3.7.8">
+<h3><span class="header-section-number">3.7.8</span> Start Month/End Month</h3>
+<p>Record the start and end months if provided</p>
+<ul>
+<li>For monthly transition matrices, record the start month and end month (m to m+1).</li>
+<li>If demographic information was collected during a period of time, please state the period separated by a hyphen (e.g. <code>6-8</code> for June through August) in observations.</li>
+</ul>
+</div>
+<div id="start-seasonend-season" class="section level3" number="3.7.9">
+<h3><span class="header-section-number">3.7.9</span> Start Season/End Season</h3>
+<p>Record the start season and end season for the seasonal matrices.</p>
+</div>
+<div id="census-type" class="section level3" number="3.7.10">
+<h3><span class="header-section-number">3.7.10</span> Census type</h3>
+<p>Choose the type of sampling census the authors use (see Kendall et al. 2019 for additional details). The authors may have specified if they sampled before or after reproductive events. If this is not provided in the publication, please contact the corresponding author.</p>
+<ul>
+<li><code>Prebreeding</code> – censused the population just before breeding occurred.</li>
+<li><code>Postbreeding</code> – censused the population just after breeding occurred.</li>
+<li><code>NDY</code></li>
+<li><code>AFI</code></li>
+<li><code>NA</code></li>
+</ul>
+</div>
+<div id="projection-interval" class="section level3" number="3.7.11">
+<h3><span class="header-section-number">3.7.11</span> Projection interval</h3>
+<p>The time step (periodicity) of the transition matrix. Be aware this is NOT equal to sampling frequency. If a matrix has 6-month projection interval, it would be <code>0.5</code> since it is 0.5 years. In the same way, if a matrix has 5-year projection interval, it would be <code>5</code>.</p>
+</div>
+<div id="split" class="section level3" number="3.7.12">
+<h3><span class="header-section-number">3.7.12</span> Split</h3>
+<p>Divisible if enough information is given to divide the survival and reproductive portions of the matrix. The matrix is divisible when there is no reproductive portion in the A matrix. Usually, indivisible matrices contain mixed cells in A matrix that cannot be divided into U, F, and C matrices due to insufficient information.</p>
+<ul>
+<li>An <strong>A</strong> matrix should ALWAYS be recorded, even if no reproduction data was available.</li>
+<li><code>Divided</code> - The matrix population model A has successfully been divided into the process-based sub matrices U, F and C.</li>
+<li><code>Indivisible</code> - The matrix population model A has not been divided into the process-based sub-matrices U, F and C (see Figure below for further details) because insufficient information is available to classify the various demographic processes for each sub-matrix. In indivisible matrices, only A (see below) is presented</li>
+</ul>
+<p>This is how a divided matrix could look like (species: <em>Troglodytes troglodytes</em>):</p>
+<p><img src="figures/image2.1.png" /></p>
+<p>This is how an indivisible matrix could look like (species: <em>Syngonanthus nitens</em>):</p>
+<p><img src="figures/image2.2.png" /></p>
+<p>The diagram below shows the life cycle of two hypothetical plant populations based on age (A) and size (B), with their corresponding matrix population models. A, and underlying basic demographic processes of survival (U sub-matrix; solid arrows), sexual reproduction (F sub-matrix; dashed arrows) and clonal reproduction (C sub-matrix; dotted arrows). This model includes “retrogression” or shrinkage in addition to “progression” or growth. In the Leslie matrix model example (A), the division of sub-matrices is more straightforward than in the Lefkovitch matrix model example (B). In the latter imaginary example, individuals can transition into the same stage as they can contribute with sexual and/or clonal offspring (e.g. small stage). In these cases, splitting A into sub-matrices U, F and C is only feasible when sufficient information is provided by the authors (see variable Split).</p>
+<p><img src="figures/image2.3.png" /></p>
+</div>
+<div id="treatment-1" class="section level3" number="3.7.13">
+<h3><span class="header-section-number">3.7.13</span> Treatment</h3>
+<p>A brief description of experimental treatments of the population intentionally imposed by humans.</p>
+<ul>
+<li>Write “Unmanipulated” if no experimental, human-imposed treatment was applied. Natural events of non-intentional occurrence should be recorded in the treatment in the publication form and in observations column here, especially if they are used as an explanatory factor in the study.<br />
+</li>
+<li>For example, population dynamics could be compared in disturbed vs. undisturbed areas. In these cases MatrixTreatment should be recorded as “Unmanipulated”, a note should be added in Observation and the name of the population should include a clear indication of the conditions. e.g. “Population 1 - disturbed”, “Population 2 - undisturbed”.</li>
+</ul>
+</div>
+<div id="captivity" class="section level3" number="3.7.14">
+<h3><span class="header-section-number">3.7.14</span> Captivity</h3>
+<p>Select the following options:</p>
+<ul>
+<li><code>W</code> – Wild: Studied in natural conditions</li>
+<li><code>C</code> – Captive: studied for most part of the life cycle of the species in a botanical garden, greenhouse, laboratory, etc.</li>
+<li><code>CW</code> – Captured from wild: if the species was taken from a wild population but studied in labs or garden.</li>
+<li><code>C;W</code> – Mixed studies that incorporate vital rates from both captive and wild populations</li>
+</ul>
+</div>
+<div id="studied-sex" class="section level3" number="3.7.15">
+<h3><span class="header-section-number">3.7.15</span> Studied Sex</h3>
+<p>Indication of the sex(es) considered when constructing the matrix population model.</p>
+<ul>
+<li><code>M</code> - Studied only males</li>
+<li><code>F</code> - Studied only females</li>
+<li><code>H</code> - Hermaphrodites</li>
+<li><code>M/F</code> - Males and females separately in the same population matrix model</li>
+<li><code>A</code> - All sexes together</li>
+<li><code>NA</code> - There are no distinct sexes (e.g. a virus)</li>
+</ul>
+</div>
+<div id="sources" class="section level3" number="3.7.16">
+<h3><span class="header-section-number">3.7.16</span> Sources</h3>
+<p>Where the data was obtained to construct the matrix. If the data is from an appendix that is attached at the end of the original publication, record it as “Paper” and NOT as “Online Appendix”. “Online Appendix” is only for appendices that are in separate documents. Reselect the option to unselect it.
+If sources other than those below are used, a short but useful description should be given. The aim of this field is that everybody can find the related information ASAP e.g. if something needs to be fixed.</p>
+<ul>
+<li>Author communication - Matrices derived from personal communication with author.</li>
+<li>Paper - Matrices derived from a published manuscript</li>
+<li>Old matrices - Matrices derived from an old matrices file (no more detailed description is available)</li>
+<li>Database - Matrices derived from one of the various databases that have been merged into COMPADRE/COMADRE see Database above.</li>
+<li>Book: Matrices come from a book or book chapter</li>
+<li>Online appendix: The matrices come from an online appendix that is not attached at the end of the original publication. Most be a separate document.</li>
+<li>Calculated: compadrino self-calculated the matrix from a life table or other data sources. Include what the original data type is (e.g. life table, integral projection model, individual-based model, etc.) and information on how you calculated the matrix in the observation field.</li>
+<li>Altered: the original published matrix was altered for accuracy. Include specific reason(s) for why the changes were made (e.g., seed bank issue, typo corrected through author communications, recalculating from pre-breeding to post-breeding, etc.) and information on how you calculated the matrix in the observation field.</li>
+</ul>
+</div>
+<div id="fec-matrix-fecundity" class="section level3" number="3.7.17">
+<h3><span class="header-section-number">3.7.17</span> Fec (Matrix fecundity)</h3>
+<p>This records whether fecundity was measured at all for this matrix model. This will help distinguish whether a 0 in the fecundity transition(s) indicates no fecundity or fecundity was not measured. We include fecundity, recruitment, or sexual reproduction here ignoring the technical differences.</p>
+<p>The rationale for this is that a fecundity (in the F matrix) may be recorded as 0 either because it was not measured, or because reproduction was estimated to be zero. As a general rule, if any values for fecundity (e.g. in the F matrix) are non-zero, then Fec should be recorded as ‘Yes’. If all values are zero, then you should check the paper carefully to check whether this is because no fecundity was detected, or whether no attempt was made to measure fecundity. There are some technical differences between fecundity, sexual reproduction, and recruitment. For the purposes of Fec these differences do not matter - if estimates fecundity, recruitment or sexual reproduction are collected, Fec = “<code>Yes</code>”.</p>
+<ul>
+<li><code>Yes</code> - fecundity was measured for the matrix</li>
+<li><code>No</code> - fecundity was not measured for the matrix</li>
+<li><code>NA</code> - it is not known whether fecundity was measured for the matrix</li>
+</ul>
+</div>
+<div id="observations" class="section level3" number="3.7.18">
+<h3><span class="header-section-number">3.7.18</span> Observations</h3>
+<p>Add any useful information about the population matrix. (e.g. geographic coordinates of pooled populations, unusual estimations or treatments, etc.)</p>
+<p>Some standardised sentences:</p>
+<ul>
+<li>The GPS coordinates were approximated to the closest geographic location described in the reference. (see Geolocation)</li>
+<li>GPS co-ordinates cited exactly as reported in original paper. These do not match written study site description. (see Geolocation)</li>
+<li>Geolocation / Altitude from descriptor: (if no matrices are entered yet but a geolocation information are available)</li>
+<li>Matrix is calculated with stochastic model</li>
+<li>X years since last fire</li>
+<li>Calculated with demographic data from Author JournalName YearPublished</li>
+<li>Data is from a greenhouse experiment</li>
+<li>Matrix Class Author is not clarified</li>
+</ul>
+</div>
+<div id="createedit-matrix" class="section level3" number="3.7.19">
+<h3><span class="header-section-number">3.7.19</span> Create/Edit Matrix</h3>
+<p>The population matrix models. Including the overall matrix (A) and, where possible, the sub-matrices U (survival), F (fecundity), C (clonality). A range of numeric values is possible in each element of the matrix. Sometimes only a U matrix is available because data on reproduction were not collected. In these cases the U matrix should be used as the A matrix, and a note taken in Observations (see the rest of this section for more details). i.e. an A matrix.</p>
+<ul>
+<li>The A matrix - The overall matrix including all processes. The A matrix can usually be “split” into consituent processes represented by the U, F and C sub-matrices such that A = U + F + C. Transition probabilities are constrained between 0 and 1. Reproductive values are always positive but have no upper bound.</li>
+<li>The U matrix - The population sub-matrix model U (a sub-matrix of A), describes the survival-dependent dynamics of a population under the conditions described above. Values are constrained to be between 0 and 1. These include only survival-dependent vital rates (no sexual or clonal reproduction). If only the U matrix is available, it should also be used as the A matrix (see “The F matrix” below).</li>
+<li>The F matrix - The population sub-matrix model F (a sub-matrix of A), which describes the sexual-reproduction dynamics of a population under the conditions described above. A range of numeric values possible, but are constrained to be positive. These include only estimates of sexual reproduction (no clonal reproduction). Sometimes sexual reproduction is not recorded (e.g. because it was not the focus of the study). This should be noted in observations and recorded using Fec (see elsewhere in this guide). Where possible, the “known unknowns” should be recorded as NA. For example, if you know that the “adult class” reproduces sexually, but simply was not estimated you should record NA for that element’s fecundity, and “No” for Fec.</li>
+<li>The C matrix - The population sub-matrix model C (a sub-matrix of A), which describes the clonal-reproduction dynamics of a population under the conditions described above. A range of numeric values are possible, but these are constrained to be positive. These include only estimates of clonal reproduction. Where there is no clonality, this matrix should be included, but will be all 0 values.</li>
+</ul>
+<p>The values for the U, F and C matrices are only digitised for “Divided” matrices (indicated in the field Split)</p>
+</div>
+<div id="notes-for-matrix-construction" class="section level3" number="3.7.20">
+<h3><span class="header-section-number">3.7.20</span> Notes for Matrix construction</h3>
+<ul>
+<li>Each cell represents transition from the column stage to the row stage.</li>
+<li>You may enter a number or NA (Not Available).</li>
+<li>For survival rates, the values are restricted between 0 and 1. The sum of the survival rates from a single stage should not exceed one.</li>
+<li>Reproductive values do not have upper bounds but should not be a negative number. This also applies to compound cells where survival rates and reproductive values are combined.</li>
+<li>“0” should not be colored</li>
+<li>Values across the U, F, and C matrices should add up to the A matrix. If there is not enough information to divide compound cells in A matrix, the matrix should be marked “Indivisible” and only A matrix should be recorded.</li>
+</ul>
+</div>
+</div>
+<div id="protocol-for-reporting-an-error" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Protocol for reporting an error</h2>
+<div id="report-error-button" class="section level3" number="3.8.1">
+<h3><span class="header-section-number">3.8.1</span> Report Error button</h3>
+<p>Populations in “Review-ready” and “Released” status may be found to have an error. When the checker (Admins or coordinators) changes the status from “Review-ready” to an “error”, they must report the error through the <code>Report Error</code> button on the population page. Any user can also report the error through the <code>Report Error</code> button on the population page. The Admins, Coordinator, or the person assigned to fix database errors (“Error Handler”; a role selected through a tick box in Manage Users table) will be notified by email. If it is determined to be an actual error, the Admin/Coordinator/Error Handler will change the status to “Error.” If it is not a simple error and more information is needed, the publication can then be changed to “Awaiting info” status and assigned to a Compadrino, at which point the assigned Compadrino may continue to work on it. If the error is fixed by the Admin/Coordinator/Error Handler, the publication can go to “Released” status (since this will serve as the check for the publication if it was previously “Review-Ready,” or if it was previously “Released” it can return to the “Released” status after the error is fixed).</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="user-guide.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/jonesor/CompadreGuides/edit/master/02_DataEntryProtocol.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+},
+"split_by": "section"
+});
+});
+</script>
+
+</body>
+
+</html>
