@@ -8,16 +8,22 @@
 
 The object metadata is a data.frame detailing the ancillary metadata that give context to each matrix population model (MPM). These are detailed below.
 
+### `MatrixID`
+
+**Definition** Unique identification number given to each MPM and its associated metadata
+
+Possible values:
+
+* `MatrixID` - e.g. 238263
+
 ### `SpeciesAuthor` (Population form and the Species form)
 
 **Definition:** Latin name of the species as indicated in the publication; this may not be the same as the currently accepted name (See *SpeciesAccepted* below)
 
-
 Possible values:
 
-
 * `Genus_species` - This variable always includes the genus and the species names and, where appropriate, information on variety and subspecies (see below). If two or more demographic studies exist for a single species, these are digitized with a numeric suffix after Genus_species starting with “`2`” (e.g. “`Rosa_sempervirens`”, “`Rosa_sempervirens_2`”, “`Rosa_sempervirens_3`”).
-* …`var.`… - Where the publication refers to an intraspecific variety, this is indicated with “var.” followed by the variety name, e.g. “Pityopsis_aspera_var._aspera”
+* …`var.`… - Where the publication refers to an intraspecific variety, this is indicated with “var.” followed by the variety name, e.g. “`Pityopsis_aspera_var._aspera`”
 * …`subsp.`… - Where the study refers to an intraspecific subspecies, this is indicated with “subsp.” followed by the subspecies name, e.g. “`Anthyllis_vulneraria_subsp._alpicola`”
  
 ### `SpeciesAccepted` (Population form)
@@ -26,8 +32,15 @@ Possible values:
 
 Possible values:
 
-* Genus_species - e.g. `Taraxacum_officinale`
- 
+* Genus species - e.g. “`Taraxacum officinale`”, “`Icaricia icarioides fenderi`”, “`Iris pallida subsp. cengialti`”, etc.
+
+**Note on nomenclature in COMPADRE and COMADRE:** Species in COMPADRE are displayed following guidelines in the International Code of Nomenclature for algae, fungi, and plants (ICN) (i.e. abbreviated infraspecific type **is** displayed between the specific and subspecific epithets), and species in COMADRE are displayed following guidelines in the International Code of Zoological Nomenclature (ICZN) (i.e. abbreviated infraspecific type **is not** displayed between the specific and subspecific epithets).
+
+Examples: 
+
+* “`Anthyllis vulneraria subsp. alpicola`” and “`Hosta undulata var. undulata`” in COMPADRE
+* “`Panthera tigris sumatrae`” and “`Somateria mollissima borealis`” in COMADRE
+
 ### `CommonName` (Population form)
 
 **Definition:** Common name as used in the publication
@@ -36,7 +49,7 @@ Possible values:
 
 * Common_name - e.g. `American black bear`
  
-### `Genus`
+### `Genus` (Species form)
 
 **Definition:** Taxonomic genus name of study SpeciesAccepted, as per GBIF
 
@@ -44,7 +57,7 @@ Possible values:
 
 * genus - e.g. `Chorizanthe`
  
-### `Family`
+### `Family` (Species form)
 
 **Definition:** Family to which species belongs
 
@@ -52,7 +65,7 @@ Possible values:
 
 * family - e.g. `Polygonaceae`
  
-### `Order`
+### `Order` (Species form)
 
 **Definition:** Order to which species belongs
 
@@ -60,7 +73,7 @@ Possible values:
 
 * order - e.g. `Caryophyllales`
  
-### `Class`
+### `Class` (Species form)
 
 **Definition:** Class to which species belongs
 
@@ -68,7 +81,7 @@ Possible values:
 
 * class - e.g. `Magnoliopsida`
  
-### `Phylum`
+### `Phylum` (Species form)
 
 **Definition:** Phylum to which species belongs
 
@@ -76,7 +89,7 @@ Possible values:
 
 * phylum - e.g. `Magnoliophyta`
  
-### `Kingdom`
+### `Kingdom` (Species form)
 
 **Definition:** Kingdom to which species belongs
 
