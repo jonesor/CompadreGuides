@@ -307,25 +307,25 @@ Possible values:
 
 * integer - e.g. `3` (for three populations)
  
-### `Lat` (From the coordinates field. If it was recorded in DMS then it is transformed to decimal degrees; population form)
+### `Lat` (From the coordinates field. If it was recorded in DMS then it is transformed to decimal degrees; Population form)
 
-**Definition:** Degree value of latitude, in decimal format. Negative values indicate that the location is in the southern hemisphere
+**Definition:** Degree value of latitude in decimal degree format. Negative values indicate that the location is in the southern hemisphere
 
 Possible values:
 
 * -90-90 - e.g. `64.87`, `-43.7`
  
-### `Lon` (From the coordinates field. If it was recorded in DMS then it is transformed to decimal degrees; population form)
+### `Lon` (From the coordinates field. If it was recorded in DMS then it is transformed to decimal degrees; Population form)
 
-**Definition:** Degree value of longitude, in decimal format. Negative values indicate that the location is to the west of the Greenwich meridian (0 degrees)
+**Definition:** Degree value of longitude in decimal degree format. Negative values indicate that the location is to the west of the Greenwich meridian (0 degrees)
 
 Possible values:
 
 * -180-180 - e.g. `137.78`, `-78.32`
  
-### `Altitude` (population form)
+### `Altitude` (Population form)
 
-**Definition:** Altitude of studied population defined as height above sea level of the population in meters.
+**Definition:** Altitude of studied population defined as height above or below sea level in meters of the population. Negative numbers indicate populations below sea level
 
 Possible values:
 
@@ -333,7 +333,7 @@ Possible values:
  
 ### `Country` (Population form)
 
-**Definition:** Country/ies where study took place. We use ISO 3 three letter country codes (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). If the study involves multiple countries, these are separated by “;”.
+**Definition:** Country/ies where study took place. We use ISO 3 three letter country codes (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). If the study involves multiple countries, these are separated by “;”
 
 Possible values:
 
@@ -345,16 +345,16 @@ Possible values:
 
 Possible values:
 
-* `Africa` -
-* `Asia` -
-* `Europe` -
+* `Africa` 
+* `Asia` 
+* `Europe` 
 * `N America` - Includes Canada, USA & Mexico
 * `S America` - Countries in the Americas except Canada, USA and Mexico
 * `Oceania` - Various definitions for Oceania exist, but here we opted for this one: http://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_population
  
 ### `Ecoregion` (Population form)
 
-**Definition:** Indication of the ecoregion for the study, using the categories described in Figure 1 of Olson et al. (2001). For a more inclusive description of water ecoregions, see http://worldwildlife.org/biomes The one exception for this is the code LAB used for studies conducted in laboratory or greenhouse conditions.
+**Definition:** Indication of the ecoregion for the study, using the categories described in Figure 1 of Olson et al. (2001). For a more inclusive description of water ecoregions, see http://worldwildlife.org/biomes The exceptions for this are the codes `LAB` for studies conducted in laboratory or greenhouse conditions or `NA` for populations in which an assigning an ecoregion is not practical (e.g. human data pooled for an entire country)
 
 Possible values:
 
@@ -385,6 +385,7 @@ Possible values:
 * `TRU` - Marine - tropical upwellings
 * `TRC` - Marine - tropical coral
 * `LAB` - Laboratory or greenhouse conditions – controlled, usually indoor, conditions that mean the study species is not affected by the environment conditions typical of the actual geographic location of the study
+* `NA` - Populations in which an assigning an ecoregion is not practical (e.g. human data pooled for an entire country)
  
 ### `StudiedSex` (Matrix form)
 
@@ -398,27 +399,35 @@ Possible values:
 * `M/F` - Males and females separately in the same population matrix model
 * `A` - All sexes modeled together
  
-### `MatrixComposite` (Now Composition; matrix form)
+### `MatrixComposite` (Formerly Composition; Matrix form)
 
-**Definition:** Indicates the type of matrix population model (also see Figure 2 below for more information).
+**Definition:** Indicates the type of matrix population model (also see Figure 2 below for more information)
 
 Possible values:
 
-* `Individual` - A matrix population model constructed for a single study × species × population × treatment × period combination.
-* `Mean` - An average (mean) of other matrix population models (e.g. element-by-element arithmetic mean of a population’s matrices across several time periods available).
-* `Pooled` - A matrix population model that has been constructed by pooling individual-level demographic information across populations and/or periods. This type of matrix, when available, has always been provided by the author either in the publication or through personal communications.
-* `Seasonal` - A matrix population model that does not describe a full annual transition, but rather a seasonal ( 1 yr) transition.
+* `Individual` - A matrix population model constructed for a single study × species × population × treatment × period combination
+* `Mean` - An average (mean) of other matrix population models (e.g. element-by-element arithmetic mean of a population’s matrices across several time periods available)
+* `Pooled` - A matrix population model that has been constructed by pooling individual-level demographic information across populations and/or periods. This type of matrix, when available, has always been provided by the author either in the publication or through personal communications
  
-### `MatrixTreatment` (now Treatment; matrix form)
+### `MatrixSeasonal` (Matrix form)
 
-**Definition:** Describes if a treatment was applied or not and the nature of the treatment.
+**Definition:** Indicates whether a matrix population model is seasonal, e.g., a matrix population model that does not describe a full annual transition, but rather a seasonal (< 1 yr) transition
+
+Possible values:
+
+* `Yes` -	The matrix population model is seasonal
+* `No` -	The matrix population model is not seasonal
+ 
+### `MatrixTreatment` (Formerly Treatment; Matrix form)
+
+**Definition:** Describes if a treatment was applied or not and the nature of the treatment
 
 Possible values:
 
 * *treatment* - A brief description of the treatment applied to the population described by the matrix population model. We define treatment as an action intentionally imposed by humans. If more than one applies to a matrix, treatments are separated with a “`;`”
 * `Unmanipulated` - No experimental, human-imposed treatment was applied. Natural events of non-intentional occurrence (e.g. fire, hurricanes) are recorded as “`Unmanipulated`”, but these incidences are described in the “`Observations`” variable (below)
  
-### `MatrixCaptivity` (now captivity; matrix form)
+### `MatrixCaptivity` (Formerly Captivity; Matrix form)
 
 **Definition:** Whether the study species was studied in the wild or under controlled conditions for most of its life cycle
 
@@ -428,7 +437,7 @@ Possible values:
 * `C` - Captive: studied for most part of the life cycle of the species in a botanical garden, green house, laboratory, etc.
 * `CW` - Captured from Wild: If the species was taken from a wild population but studied in labs or gardens etc.
  
-### `MatrixStartYear`
+### `MatrixStartYear` (Matrix form)
 
 **Definition:** First year of study. Year t in annual matrix population model that describes population dynamics from time t to t+1.
 
@@ -436,16 +445,11 @@ Possible values:
 
 * *yyyy* - e.g. `1994`
  
-### `MatrixStartSeason` (now Seasonal PLUS 2 more fields: Start Season and End Seaon; Matrix form)
+### `MatrixStartSeason` (Now MatrixSeasonal PLUS 2 more fields: MatrixStartSeason and MatrixEndSeaon; Matrix form)
 
-**Definition:** First season of study. 
+**Definition:** First season of study 
 
-Possible values for Seasonal:
-
-* `No`
-* `Yes`
-
-Possible values for Start Season:
+Possible values:
 
 * `Spring`
 * `Summer`
@@ -453,23 +457,23 @@ Possible values for Start Season:
 * `Winter`
 * `NA`
  
-### `MatrixStartMonth` (Start Month; matrix form)
+### `MatrixStartMonth` (Matrix form)
 
-**Definition:** First month of study.
+**Definition:** First month of study
 
 Possible values:
 
-* *1-12* - e.g. `1` = January, `6`= June etc.
+* *1-12* - e.g. `1` = January, `6`= June, etc.
  
-### `MatrixEndYear` (End Year; matrix form)
+### `MatrixEndYear` (Matrix form)
 
-**Definition:** Last year of study. Year t+1 in matrix population model that describes population dynamics from time t to t+1.
+**Definition:** Last year of study. Year t+1 in matrix population model that describes population dynamics from time t to t+1
 
 Possible values:
 
 * *yyyy* - e.g. `1999`
  
-### `MatrixEndSeason` (End Season; matrix form)
+### `MatrixEndSeason` (Matrix form)
 
 **Definition:** Last season of study. Season *s+1* in periodic matrix population model that describes population dynamics from season *s* to *s+1*. Here season is used as described in manuscript by the authors (Summer in the Southern Hemisphere corresponds to Winter in the Northern Hemisphere)
 
@@ -481,80 +485,106 @@ Possible values:
 * `Winter`
 * `NA`
  
-### `MatrixEndMonth` (End Month; matrix form)
+### `MatrixEndMonth` (Matrix form)
 
-**Definition:** Last month of study.
+**Definition:** Last month of study
 
 Possible values:
 
-* *1-12* - e.g. `1` = January, `6` = June etc.
+* *1-12* - e.g. `1` = January, `6` = June, etc.
  
-### `MatrixSplit` (Split; matrix form)
+ ### `CensusType`
 
-**Definition:** This indicates whether the MPM **A** matrix has been divided into its constituent **U**, **F** and **C** submatrices. See Figure 3 below for further details.
+**Definition:** Sampling census used by the authors
 
 Possible values:
 
-* `Divisible` - The matrix population model A has been been divided into the process-based submatrices U, F and C.
-* `Indivisible` - The matrix population model **A** has not been divided into the process-based sub-matrices **U**, **F** and **C** because insufficient information is available to classify the various demographic processes for each sub-matrix. In indivisible matrices, only **A** has values given - the other matrices are filled with `NA` values.
+* `Prebreeding` - Population was censused before a birth pulse 
+* `Postbreeding` - Population was censused after a birth pulse
+* `Intermediate` - Population was censused between successive birth pulses (e.g. bears give birth while hidden in winter dens, which makes pre- or post-breeding censuses impractical
+* `Birth-flow` - Population for which reproduction occurs continually over an interval (e.g. humans)
  
-### `MatrixFec` (Fec; matrix form)
+### `MatrixSplit` (Matrix form)
 
-**Definition:** This records whether fecundity was measured at all for this matrix model.
-
-The rationale for this is that a fecundity (in the **F** matrix) may be recorded as 0 either because it was not measured, or because reproduction was measured and estimated to be zero. As a general rule, if any values for fecundity (e.g. in the **F** matrix) are non-zero, then `MatrixFec` should be recorded as ‘`Yes`’. If all values are zero, then you we check the paper carefully to check whther this is because no fecundity was detected, or whether no attempt was made to measure fecundity.
+**Definition:** This indicates whether the MPM **A** matrix has been divided into its constituent **U**, **F** and **C** submatrices. See Figure 3 below for further details
 
 Possible values:
 
-* `Yes` - Reproduction was included in the MPM, and thus values 0 should appear in the submatrix **F** if sexual reproduction occurred in these stages/ages. Note that it is possible that reproduction was measured and modelled but none occurred. In that case, values of 0 are possible in the **F** matrix.
-* `No` - Reproduction was not modelled by the matrix population model, either because it was not the goal of the study or due to logistical impossibility. In some **F** submatrices the elements where sexual reproduction would have appeared contain `NA` values, and in others they contain 0 values.
+* `Divisible` - The matrix population model A has been been divided into the process-based submatrices U, F and C
+* `Indivisible` - The matrix population model **A** has not been divided into the process-based sub-matrices **U**, **F** and **C** because insufficient information is available to classify the various demographic processes for each sub-matrix. In indivisible matrices, only **A** has values given - the other matrices are filled with `NA` values
+ 
+### `MatrixFec` (Matrix form)
+
+**Definition:** This records whether fecundity was measured at all for this matrix model
+
+The rationale for this is that a fecundity (in the **F** matrix) may be recorded as 0 either because it was not measured, or because reproduction was measured and estimated to be zero. As a general rule, if any values for fecundity (e.g. in the **F** matrix) are non-zero, then `MatrixFec` should be recorded as ‘`Yes`’. If all values are zero, then you we check the paper carefully to check whther this is because no fecundity was detected, or whether no attempt was made to measure fecundity
+
+Possible values:
+
+* `Yes` - Reproduction was included in the MPM, and thus values 0 should appear in the submatrix **F** if sexual reproduction occurred in these stages/ages. Note that it is possible that reproduction was measured and modelled but none occurred. In that case, values of 0 are possible in the **F** matrix
+* `No` - Reproduction was not modelled by the matrix population model, either because it was not the goal of the study or due to logistical impossibility. In some **F** submatrices the elements where sexual reproduction would have appeared contain `NA` values, and in others they contain 0 values
 * `NA` - it is not known whether fecundity was measured for the matrix
  
-### `Observation` (Matrix form)
+### `Observations` (Matrix form)
 
 **Definition:** This variable provides information that is not provided elsewhere but may nonetheless be important (e.g. plant canopy, burning intervals, etc.)
 
 Possible values:
 
-* any text - any text string giving useful additional information.
+* any text - Any text string giving useful additional information
  
-### `MatrixDimension` (Dimensions; matrix form)
+### `MatrixDimension` (Matrix form)
 
-**Definition:** Dimension of the matrix population model **A**.
+**Definition:** Dimension of the matrix population model **A**
 
 Possible values:
 
 * *integer* - e.g. `5`
  
-### `SurvivalIssue` (This is not a field, it needs to be calculated from the survival matrix. It is the summation of each column in the survival matrix. If a column sums to 1, then there’s an issue)
+### `SurvivalIssue` (This is not a field, it needs to be calculated from the survival matrix)
 
-**Definition:** Minimum stage-specific survival value in the matrix population model submatrix **U** when  1
+**Definition:** This is a calculated field used for checking matrix data. It is the maximum stage-specific survival value in the survival **U** submatrix. To calculate `SurvivalIssue`, we sum each column in the **U** matrix individually. The maximum value among those sums **is** the `SurvivalIssue`.
+
+**Note:** This value is only calculated with a number if `MatrixSplit` = “`Divided`”, that is, if the matrix is able to be split into submatrices. If `MatrixSplit` = “`Indivisible`”, the matrix is not divisible, so there is no survival **U** submatrix. In the case of indivisible matrices, the `SurvivalIssue` field will be empty (`NA`) and “Not Calculated” (`NC`) in the SQL database
 
 Possible values:
 
 * *numeric* - e.g. `0.9`, `1.2`, `1.45`
+* `NA` - Matrix population model is not divisible into submatrices
+ 
+### `_Database`
+
+**Description:** An internal check used for database creation and displays the database name (COMPADRE or COMADRE)
+ 
+### `_PopulationStatus`
+
+**Description:** An internal check used for database creation. All values should display as `Released`
+ 
+### `_PublicationStatus`
+
+**Description:** An internal check used for database creation. All values should display as `Released`
  
 ## Variables in `matrixClass`
 
-The object matrixClass is a list of data.frames detailing the class names used in each MPM.
-
-### `MatrixClassAuthor` (Class Author; matrix form)
-
-**Definition:** The stage description as indicated in the source by the publication author of the matrix population model. When possible, we add units (e.g. `cm`, `m`, `cm^2`).
+The object matrixClass is a list of data.frames detailing the class names used in each MPM
  
-### `MatrixClassOrganized` (Class Organized; matrix form)
+### `MatrixClassAuthor` (Class Author; Matrix form)
 
-**Definition:** We standardize all stages in a given population matrix model to one of three stages (prop, active, dorm) to facilitate analyses.
+**Definition:** The stage description as indicated in the source by the publication author of the matrix population model. When possible, we add units (e.g. `cm`, `m`, `cm^2`)
+ 
+### `MatrixClassOrganized` (Class Organized; Matrix form)
+
+**Definition:** We standardize all stages in a given population matrix model to one of three stages (prop, active, dorm) to facilitate analyses
 
 Possible values:
 
-* `prop` - Propagule (seed). This applies to every stage defined by the author as seed bank or seed. Users are encouraged to carefully examine matrices with these stages and to implement the appropriate calculations to avoid a spurious additional year being added when no seedbank exists in the study species, as explained by Caswell (2001, p. 60).
-* `active` - This includes stages that can neither be placed in the prop nor dorm (see below) stages.
-* `dorm` - A stage that is vegetatively dormant after having germinated and becoming established.
+* `prop` - Propagule (seed). This applies to every stage defined by the author as seed bank or seed. Users are encouraged to carefully examine matrices with these stages and to implement the appropriate calculations to avoid a spurious additional year being added when no seedbank exists in the study species, as explained by Caswell (2001, p. 60)
+* `active` - This includes stages that can neither be placed in the prop nor dorm (see below) stages
+* `dorm` - A stage that is vegetatively dormant after having germinated and becoming established
  
-### `MatrixClassNumber` (has to be calculated from matrix class organized. The number of classes in a matrix)
+### `MatrixClassNumber` (The number of classes in a matrix. This has to be calculated from `MatrixClassOrganized`)
 
-**Definition:** A numerical representation of classes in the population matrix model.
+**Definition:** A numerical representation of classes in the population matrix model
 
 Possible values:
 
@@ -562,22 +592,22 @@ Possible values:
  
 ## Variables in `mat`
 
-The object `mat` is a list of lists giving the actual MPMs in the form of the **A** matrix, and (where possible), the **U**, **F** and **C** matrices.
+The object `mat` is a list of lists giving the actual MPMs in the form of the **A** matrix, and (where possible), the **U**, **F** and **C** matrices
 
-### `matA` (matrix)
+### `matA` (Matrix)
 
-**Description:** The matrix population model **A** which describes the population dynamics of a population under conditions described by `MatrixComposite`, `MatrixTreatment`, `MatrixStartYear`, `MatrixEndYear`, `Population`, and `Observation` in the metadata.
+**Description:** The matrix population model **A** which describes the population dynamics of a population under conditions described by `MatrixComposite`, `MatrixTreatment`, `MatrixStartYear`, `MatrixEndYear`, `Population`, and `Observation` in the metadata
  
-### `matU` (survival matrix)
+### `matU` (Survival matrix)
 
 **Description:** The population sub-matrix model **U** (a sub-matrix of **A**), which describes the survival-dependent dynamics of a population under the conditions described above. A range of numeric values are possible, but are constrained to be between 0 and 1. These include only survival-dependent vital rates (no sexual or clonal reproduction). The values are only digitized for Divided matrices (indicated by variable `MatrixSplit`)
  
-### `matF` (fecundity matrix)
+### `matF` (Fecundity matrix)
 
 **Description:** The population sub-matrix model **F** (a sub-matrix of **A**), which describes the sexual-reproduction dynamics of a population under the conditions described above. A range of numeric values are possible, but are constrained to be positive. These include only estimates of sexual reproduction (no clonal reproduction).
 The values are only digitized for `Divided` matrices (indicated by variable `MatrixSplit`)
  
-### `matC` (clonal matrix)
+### `matC` (Clonal matrix)
 
 **Description:** The population sub-matrix model **C** (a sub-matrix of **A**), which describes the clonal-reproduction dynamics of a population under the conditions described above. A range of numeric values are possible, but these are constrained to be positive. These include only estimates of clonal reproduction.
 The values are only digitized for Divided matrices (indicated by variable `MatrixSplit`)
@@ -585,30 +615,40 @@ The values are only digitized for Divided matrices (indicated by variable `Matri
 ## Variables in `version`
 
 `version` is a list that provides some summary information.
+ 
+### `Version`
 
-`Version`
+**Description:** The version number of the database (Major_Year_Month_Patch). Past versions used (Major_Minor_Patch) format. Numbering follows semantic versioning (www.semver.org)
+ 
+### `Type`
 
-**Description:** The version number of the database (Major_Minor_Patch). e.g. `3.1.0`. Numbering follows semantic versioning (www.semver.org).
+**Description:** The type of database release
+
+Possible values:
+
+* `Release` -	The standard COMPADRE or COMADRE release
+* `Patch` - A release version that has been patched since the previous standard release. Patches are released if there are significant additions or error corrections to the database between standard releases
+* `Test` -	A version used strictly for internal testing of the databases. These versions do not follow semantic versioning, are not preserved indefinitely, and are not intended for public release
  
 ### `DateCreated`
 
-**Description:** Date of creation of the Rdata database object in the format *MMM_DD_YYYY*. E.g. `Aug_06_2015`.
+**Description:** Date of creation of the `Rdata` database object in the format `MMM_DD_YYYY`. E.g. Aug_06_2015
  
-### `NumberAcceptedSpecies`
+### `TimeCreated`
 
-**Description:** Total number of taxonomically accepted species. The total number of accepted species is based on variable SpeciesAccepted (above). E.g. `637`
- 
-### `NumberStudies`
-
-**Description:** Total number of species × studies in the database. e.g. `735`
- 
-### `NumberMatrices`
-
-**Description:** Total number of matrices (not including split matrices **U**, **F** and **C**) in the database.
+**Description:** Time of creation of the `Rdata` database object in the format `HH:MM`. E.g. 19:08. Times are in GMT
  
 ### `Agreement`
 
-**Description:** Link to the URL in the COMPADRE database containing the open-access conditions to the use of these data: http://www.compadre-db.org/page/UserAgreement.
+**Description:** The URL link for the data user agreement containing the open-access conditions to the use of these data (https://www.compadre-db.org/UserAgreement)
+ 
+### `How to Cite`
+
+**Description:** The URL link for instructions on how to cite the data (https://compadre-db.org/Help/HowToCite)
+ 
+### `GeneratorScriptVersion`
+
+**Description:** Version number for the code used to generate the COMPADRE and COMADRE databases. This version number is for internal tracking and troubleshooting
  
 ## Appendix - The calculation of mean matrix population models
 
