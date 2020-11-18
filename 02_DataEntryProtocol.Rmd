@@ -80,26 +80,26 @@ The DOI of the journal article. If you have the DOI, you could automatically fil
 
 ### Authors
 
-Publication authors. This is usually done by the database coordinator. Make sure all authors have been added and are in the right order. If an author is missing search for the last name in the search box; make sure to select the correct author. If the author is not in the list, use the button “Create author” to add a new one:
+Publication authors. This is usually done by the database coordinator. Make sure all authors have been added and are in the right order. If an author is missing search for the last name in the search box; make sure to select the correct author. If the author is not in the list, use the button “Create New Author” to add a new one:
 
 * *Author name*: The last name of the author.
-* *Author initials*: The initials of the first, middle and other names of the author, do not include the last name initials.
-* *Author email*: if it is the corresponding author, include the contact email. 
+* *Author initials*: The initials of the first, middle and other names of the author, **do not** include the last name initials.
+* *Author email*: If it is the corresponding author, include the contact email. 
 
-### Reference type
+### Reference Type
 
 Record the type of reference from which data were sourced. 
 
 * *Book*: Matrices are from a book
 * *Book Chapter*: Matrices are from a single chapter in a book
 * *Journal Article*: Matrices come from a Journal paper. 
-   + *Journal name*: Record the standard abbreviation of the journal using the BIOSIS format. For journal abbreviations, click “Full list of journal abbreviation” (https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html). If no abbreviation is available in the list, search past records of the journal from the website or look for it in the left corner of the paper. 
-   + *Year*: the year the paper was published.
+   + *Journal Name*: Record the standard abbreviation of the journal using the BIOSIS format. For journal abbreviations, click “Full list of journal abbreviation” (https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html). If no abbreviation is available in the list, search past records of the journal from the website or look for it in the left corner of the paper. 
+   + *Year*: The year the paper was published.
 * *Thesis*: Matrices are from a thesis such as PhD thesis, MSc thesis, etc.
    + *Thesis type*: Select the correct option.
 * *Report*: Matrices are from a report.
-*	*Conference*: Matrices are from a conference in forms such as a talk or a poster.
-* *Others*: Matrices are from other sources including, but not limited to archives.
+* *Conference*: Matrices are from a conference in forms such as a talk or a poster.
+* *Other*: Matrices are from other sources including, but not limited to archives.
 
 ### Purposes
 
@@ -118,17 +118,17 @@ We have categorised the purposes as follows:
 
 ### Embargo
 
-If the author does not wish to make personally communicated data available, the data will be under embargo until this date. On that date, an automatic reminder will go out to assigned Compadrino, Admin and Coordinator. The data will not become public until explicit permission has been given by the author. Update the embargo date if the author sets a new date. Leave blank when there is no embargo.
+If the author does not wish to make personally communicated data available, the data will be under embargo until this date. A week before that date, an automatic reminder will go out to the author instructing them to contact us if they wish to extend the embargo or remove the data from the database; otherwise, the data will be released and included in the next version update of the databases. Leave blank when there is no embargo.
 
-### Additional source
+### Additional Source
 
-Record all additional sources used to construct matrices or to obtain additional ancillary data. Additional sources should be formatted as LastName Journal YearPublished additional information (e.g. Godinez-Alvarez Bot Rev 2003, Schmidt J Ecol 2007 Appendix A1) both here and in the attached file names. Be sure to update both whenever changes are made to the data associated with the publication. Attach the necessary PDF/excel files/documents to the “Attach a document” field. 
+Record all additional sources used to construct matrices or to obtain additional ancillary data. Additional sources should be formatted as "LastName Journal YearPublished DocumentTitle" (e.g. Godinez-Alvarez Bot Rev 2003, Schmidt J Ecol 2007 Appendix A1) both here and in the attached file names. Be sure to update both whenever changes are made to the data associated with the publication. Attach the necessary PDF/Excel files/documents to the “Attach a Document” field. 
 
 ### Additional Notes
 
-This field is intended to record any important issues or general notes about the data for the use of the COMPADRINO team. These entries should only include sensible informative key points that others can understand. Use English only.
+This field is intended to record any important issues or general notes about the data for the use of the digitization team. These entries should only include sensible informative key points that others can understand. Use English only.
 
-### Missing data
+### Missing Data
 
 Data that is not yet available and thus not yet digitized for this publication. Update this information whenever changes are made to populations and matrices associated with this publication. 
 
@@ -140,42 +140,38 @@ Record all treatment categories used in the study. Include both environmental an
 
 Number of plots or transects sampled at each population and the size description of the plots. For example, 6(4x4m^2) means that in each population, there were 6 permanent plots of 4x4m2. If different populations have different plot sizes, record all of them separated by semicolon. (e.g. A: 2(15ha); B: 3(20ha))
 
-### Study start (year)/ Study End (year)
+### Study Start (Year)/Study End (Year)
 
-An alert will appear if the start year is greater than the end year, or if the year recorded is greater than 2020 
+The start and end years of the surveys/censuses/experiments in the study. Record `Simulation` if data are from a simulation and not associated with any real-world surveys/censuses/experiments. An alert will appear if the start year is greater than the end year, or if the year recorded is greater than the current year. 
 
-### Release version
+### Release Version
 
-The Version number of the database where the data were released (no longer applies). Do not enter anything here.
+The Version number of the database where the data were released (no longer applies). **Do not enter anything here.**
 
 ### Database source
 
-The institute that collated the data together in a mini database before COMPADRE and COMADRE were developed. 
+The institute that collated the data together in a mini database before COMPADRE and COMADRE were developed. **Do not enter anything here.** 
 
-### Under “Author contacts” tab
+### Under “Author Contacts” Tab
 
-Add *one or more* authors. Use “`Add author contact`” button to add all the authors that falls into the following categories:
+Add *one or more* authors. Use “`Add Author Contact`” button to add all the authors that fall into the following categories:
 
 * The corresponding author of the publication 
 * Other authors contacted when the corresponding author of the study was unreachable 
 * The authors were referred to by the corresponding author
 * Authors of additional sources contacted for information
 
-### Corresponding author
+### Corresponding Author
 
-Select the corresponding author from the list of the authors in the bibliographic information. If the author is not added into the database yet, click “Create New Author” to add a new author.
+Select the corresponding author from the list of the authors in the bibliographic information. If the author is not added into the database yet, click “Create New Author” to add a new author following the instructions for adding a new author above.
 
-	`Create New Author` and `Add New Author buttons`
+* `Edit Author` button in `Manage Authors` tab
 
-* Author email: If the email of the author is provided, add the email address
+* Update the contact information of the author if no email address in included in the author selection. Put year or “dead” in parentheses to keep track of multiple emails (e.g. aaa@compadre.org (dead); aaa@compadre.org (2016); bbb@compadre.org (2019)).
 
-`Edit author` button in `Manage Authors` tab
+### Date Contacted 
 
-*	Update the contact information of the author. Put year or “dead” in parentheses to keep track of multiple emails. (e.g. aaa@compadre.org (dead); aaa@compadre.org (2016); xxx@compadre.org (2019))
-
-### Date contacted 
-
-Record the date(s) when the publication author was contacted asking for information in US date format (mm/dd/yyyy). Authors should always be contacted from the compadrecontact@gmail.com email address rather than a personal email address.
+Record the date(s) when the publication author was contacted asking for information in US date format (mm/dd/yyyy). Authors should **always** be contacted from the contact@compadre-db.org email address rather than a personal email address. If you encounter technical difficulties when attempting to contact an author, contact your lead for additional instructions.
 
 Procedure for lack of response depends on the Year of Publication of the source:
 
@@ -184,15 +180,15 @@ Procedure for lack of response depends on the Year of Publication of the source:
 
 If you were not able to find an email address of any of the authors of a paper (and also Rob and Owen don’t know one), but that paper has a matrix population model that can be digitised – enter the matrix and all information that are available from the paper. All missing information get an NA and we list the species as “Review-Ready”, still enter the missing information into Missing Data field.
 
-### Date contacted again
+### Date Contacted Again
 
 Date(s) of the other attempts to contact this corresponding author. (mm/dd/yyyy; mm/dd/yyyy). Make another attempt to contact the author again if there has not been a response in 3 months.
 
-### Sent email content
+### Sent Email Content
 
 This records the information that was requested from the author. Use the same format as for “Missing Data” above. If multiple pieces of information are requested, separate with “;”. If the author has been asked for something other than the standard missing information, a short note should be left, e.g. “is the species clonal?”
 
-### Author’s reply email content
+### Author’s Reply Email Content
 Did the author reply to a request for further information. This should record a brief answer given by the author, or “No” (no response yet). Note: Always change Author’s Reply from “`NA`”" / “`Nothing`” to “`No`” when author has been contacted and update the entry as soon as a reply is received. Always reply to the author with a short thank-you note when a reply is received.
 Change it to the codes from “`Missing Data`” (M; I; L; S; O) when the information was received from the author. If the author has been asked for information other than the standard information, make a short note of what it is. Also, record the date author replied next to the information received. (e.g. `M; S (11/11/2018)`)
 
@@ -201,38 +197,38 @@ Change it to the codes from “`Missing Data`” (M; I; L; S; O) when the inform
 ### Status
 
 This is the status for the population. Please **READ** the website-status protocol to determine the status that should be assigned to the population. 
-* `Digitizing` – compadrino is working/editing the population
+* `Digitizing` – digitiser is working/editing the population
 * `Rejected/Deleted`
-* `Awaiting info` – compadrino has determined s/he requires more information to complete digitization
+* `Awaiting info` – digitiser has determined more information is required to complete digitization
 * `Review-Ready` – the population is ready to be reviewed by a database curator
 * `Released` – population can be now seen by public users
 * `Error` – an error has been found in the population and needs to be corrected
 
 ### Species Accepted
 
-Currently accepted Latin binomial name for the species. 
+Currently accepted Latin binomial or trinomial name for the species. 
 
-* Search for the correct species name. This might be different from the Latin name the author used (e.g. author used an old Latin name for the species). If you cannot find the correct species name in this field contact a website Admin.
+* Search for the correct species name. This might be different from the Latin name the author used (e.g. author used an old Latin name for the species). If you cannot find the correct species name in this field, contact a website administrator.
 
 ### Species Author
 
-The Latin binomial name of the species as reported in the publication. Note that this may not be the same as the current accepted name. If an author uses a Latin name with a typo, please leave it as is, as this variable represents the name as used by the authors. This applies, as well, if the author(s) used an outdated taxonomic name
+The Latin binomial name of the species as reported in the publication. **Note** that this may not be the same as the current accepted name. If an author uses a Latin name with a typo, please leave it as is, as this variable represents the name as used by the authors. This applies, as well, if the author(s) used an outdated taxonomic name.
 
 * Record as Genus_species. 
 * When intra-specific names are given by authors, record them as `Genus_species_subsp._subspecies`, `Genus_species_var._variety`, or `Genus_species_cf._colour form`. (e.g. `Sarracenia_alata`, `Sambucus_racemosa_subsp._sieboldiana`)
-* Always use an underscore “`_`" to substitute spaces (e.g. write “`Cryptantha_flava`” instead of “`Cryptantha flava`”). This only applies to the *Species Author* field
+* Always use an underscore “`_`" to substitute spaces for this field (e.g. write “`Cryptantha_flava`” instead of “`Cryptantha flava`”). This **only** applies to the *Species Author* field
 
-### Population name
+### Population Name
 
-The name of the population where the data for the matrix was recorded. Usually given by the author. When no name provided, use other characteristic information, such as a brief geographic location. If there are multiple populations in the study and their names are not pertinent/available, sequential names in alphabetical order are assigned for each population in the study.
+The name of the population where the data for the matrix was recorded. Usually given by the author. When no name provided, use other characteristic information, such as a brief geographic location (e.g. Monterey Bay, Gifford Pinchot Southeast, etc.). If there are multiple populations in the study and their names are not pertinent/available, sequential names in alphabetical order are assigned for each population in the study (e.g. Population A, Population B, etc.).
 
-### Species common name
+### Species Common Name
 
 The common name for the species. This is pulled automatically from the selected species but can be overwritten if desired/needed.
 
 ### Ecoregion
 
-Description of the Ecoregion for the study. Follow the link to obtain the ecoregion for the set of coordinates the population is located in: https://patrickbarks.shinyapps.io/biomes/ 
+Description of the Ecoregion associated with the population. Follow the link to obtain the ecoregion for the set of coordinates the population is located in: https://patrickbarks.shinyapps.io/biomes/ 
 
 The options are:
 
@@ -275,14 +271,14 @@ For a more inclusive description of water ecoregions, see http://worldwildlife.o
 
 ### Country
 
-Choose the ISO 3 Country Code(s) of where the study took place. You can search by the country’s name or the country’s code.
+Choose the ISO 3 Country Code(s) of where the population is located. You can search by the country’s name or the country’s code. Enter `NA` for populations only studied in international waters (see `Population Nautical Miles` below). 
 
-### Population nautical miles
-For oceanic studies, this is the distance in nautical miles from the closest land mass. If the population was studied both in French and Spanish waters 22 miles from land the country code field would be FRA; SPA and the nautical miles field would be NODC-22. If it was only studied in international waters (normally defined as 12 nautical miles) then you would record it as NODC-22.
+### Population Nautical Miles
+For oceanic studies, this is the distance in nautical miles from the closest land mass. If the population was studied both in French and Spanish waters 8 miles from land the country code field would be FRA; SPA and the nautical miles field would be NODC-8. If it was only studied in international waters (normally defined as 12 nautical miles from land) then you would record it as NODC-22 in this field and `NA` for `Country`.
 
 ### Continent
 
-Continent where study took place. Select the appropriate one:
+Continent where the population is located. Select the appropriate one:
 
 * `Africa`
 * `Asia`
@@ -292,42 +288,42 @@ Continent where study took place. Select the appropriate one:
 * `Antarctica`
 * `Oceania` (various definitions for Oceania exist, but here we opted for this one: https://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_population)
 
-### Matrix criteria size
+### Matrix Criteria Size
 
 Records whether the matrix model is based on size (e.g. stem length/number, body length/mass, etc).
 
-* `Yes` - The matrix population model contains stages based on size.
-*	`No` - The matrix population model is not based on size.
+* `Yes` - The matrix population model contains at least one stage based on size.
+* `No` - The matrix population model is not based on size.
 
 ### Matrix Criteria Ontogeny
 
 Records whether the matrix model is based on ontogenetic stage (e.g. seedbank, reproductive, vegetative, dormant, etc).
 
 * `Yes` - The matrix population model contains at least one class that is based on development/ontogeny (e.g. seedbank, reproductive, vegetative, dormant, etc).
-*	`No` - Matrix population model is not based on ontogeny.
+* `No` - Matrix population model is not based on ontogeny.
 
 ### Matrix Criteria Age
 
-Records whether there are any classes that are based on age.
+Records whether the matrix model is based on age.
 
 * `Yes` - The matrix population model contains at least one class that is based on age (e.g. individuals of 0 year old)
-*	`No` - The matrix population model is not based on age
+* `No` - The matrix population model is not based on age
 
 ### Coordinates and Altitude
 
 Get coordinates from https://www.gps-coordinates.net/ 
 
-Estimate the geographic coordinates to the nearest location possible. Check if they reasonably fit the location of the study by looking them up on Google maps or Google Earth. If the terrestrial plant or animal has aquatic coordinates, obtain the coordinates by estimating them from the study site provided by the authors. 
+Estimate the geographic coordinates to the nearest location possible. Check if they reasonably fit the location of the study by looking them up on Google Maps or Google Earth. If the terrestrial plant or animal has aquatic coordinates, obtain the coordinates by estimating them from the study site provided by the authors. 
 
 When geographic coordinates are not attainable, select an option that corresponds with the study situation. The possible options are `LAB`, `Simulation`, `NC`, `FRANK`, and `AFI.` 
 
-* `NC` (Not Calculated): When the matrices are built from mean or pooled data of multiple populations with different study locations. Record each geographic coordinate in the observation of matrix metadata.
+* `NC` (Not Calculated): When the matrices are built from mean or pooled data of multiple populations with different study locations. Record each geographic coordinate in the `Observations` field of the matrix form.
 
-*	`LAB` (Laboratory): When the study was carried out in a laboratory or under greenhouse conditions where study populations were not affected by the environmental conditions of the actual geographic location.
+* `LAB` (Laboratory): When the study was carried out in a laboratory or under greenhouse conditions where study populations were not affected by the environmental conditions of the actual geographic location.
 
-* `FRANK` (Frankenstein matrix): When the matrices are constructed from two or more sources that were in different conditions. Enter the main geographic coordinates when available. For FRANK studies, specify that it is a FRANK study in the observation with a brief summary of the methods. (e.g. FRANK; Survival rates estimated from the field study, but fecundity values obtained from a greenhouse study).
+* `FRANK` (Frankenstein matrix): When the matrices are constructed from two or more sources that were in different conditions. Enter the main geographic coordinates when available. For FRANK studies, specify that it is a FRANK study in the `Observations` field of the matrix form with a brief summary of the methods. (e.g. FRANK; Survival rates estimated from the field study, but fecundity values obtained from a greenhouse study).
 
-* `Simulation`: theoretic studies that are not or are loosely based on a real population.
+* `Simulation`: Theoretic studies that are not or are loosely based on a real population.
 
 * `AFI` (Asked for it): contacted the author for the information but the author hasn’t replied yet.
 
@@ -355,7 +351,7 @@ Cardinal direction
 * `N` - North
 * `S` - South
 
-Note: Cardinal direction might be given with a “+” or “-“ whereat “+” means North and “-“ means South.
+Note: Cardinal direction might be given with a “+” or “-” whereat “+” means North and “-” means South.
 
 ### Longitude Degrees / Longitude Minutes / Longitude Seconds
 
@@ -365,34 +361,34 @@ Records the degree (0-90), minute (0-60) and second (0-60) values of the locatio
 
 Cardinal direction
 * `W` - West
-*	`E` - East
-Note: Cardinal direction might be given with a “+” or “-“ wherby “+” means East and “-“ means West.
+* `E` - East
+Note: Cardinal direction might be given with a “+” or “-” wherby “+” means East and “-” means West.
 
 The following link is useful for converting between different ways of presenting lat/long information: http://www.earthpoint.us/Convert.aspx
 
 ### Altitude
 
-Altitude of studied population in m = Height above sea level of specific population in meters e.g. `208` (without “m”).
+Altitude of studied population in meters (m). Height above or below sea level of specific population (e.g. `208`, `-55`, `1677` (without “m”)).
 
-Note: Altitude is either given in the paper, by author communication, or we look it up with *Google Maps*. If you enter the coordinates into *Google Maps* you’ll see the altitude at the bottom right corner of the window. If you scroll around in *Google Maps* with your mouse the altitude will change, so pay attention that you read the altitude directly after entering the coordinates without scrolling around!
+Note: Altitude is either given in the paper, by author communication, or we look it up with *Google Maps*. If you enter the coordinates into *Google Maps* you’ll see the altitude at the bottom right corner of the window. **Note:** If you scroll around in *Google Maps* with your mouse the altitude will change, so pay attention that you read the altitude directly after entering the coordinates without scrolling around!
 
-### General notes on location information
+### General notes on location information:
 
-If you don’t have a detailed description of the geolocation-coordinates enter the following sentence into the Observation-Column: The GPS coordinates were approximated to the closest geographic location described in the reference. 
-Sometimes the Lat and Long given in the paper do NOT match the study area. In this case enter the following in the `Observation`-Column: GPS co-ordinates cited exactly as reported in original paper. These do not match written study site description.
+If you don’t have a detailed description of the geolocation-coordinates, enter the following sentence into the `Observations` field of the matrix form: The GPS coordinates were approximated to the closest geographic location described in the reference. 
+Sometimes the latitude and longitude given in the paper **DO NOT** match the study area. In this case enter the following in the `Observations` field of the matrix form: GPS coordinates cited exactly as reported in original paper. These do not match written study site description.
 
-Pay attention to the means: We don’t calculate ranges for mean matrices. In that case, choose the option `NC` for “not calculated” in the “`Coordinates format`” field. 
+Pay attention to the means: We **do not** calculate ranges for mean matrices. In that case, choose the option `NC` for “not calculated” in the “`Coordinates Format`” field. 
 
-## Protocol for the matrix metadata form
+## Protocol for the Matrix Metadata (New Matrix Set) form
 
 ### Composition
 
-Indicates the type of matrix population model
+Indicates the type of matrix population model.
 
 * `Individual` - single population studied over a single time period, for example, over one year
 * `Mean` - a mean matrix was calculated by averaging across more than one population studied over a single time period, for example, over one year
 * `Pooled` - a matrix was calculated by pooling data across more than one population studied over a single time period, for example, over one year
-* `NDY` - not done yet / unset
+* `NDY` - not digitised yet / unset
 
 ### Seasonal
 
@@ -400,8 +396,7 @@ A matrix population that does not describe a full annual transition, but rather 
 
 * Specify the seasons in the “Start Season” and “End Season” fields of the matrix form.
 
-A matrix can be seasonal even if it is constructed over several years e.g. spring in years 2000-2012. Make sure you detail that there are multiple years data in the observation column.
-
+A matrix can be seasonal even if it is constructed over several years (e.g. spring in years 2000-2012). Make sure you detail that there are multiple years data in the `Observations` field of the matrix form.
 
 ![](figures/image1.2.png)
 
@@ -436,43 +431,44 @@ We standardise all stages in a given population matrix model to one of three sta
 * active - This includes stages that can neither be placed in the “prop” nor “dorm” (see below) stages.
 * dorm - A stage that is vegetatively dormant after having germinated and becoming established.
 
-
 ### Start Year
 
-First year of study. Year t in annual matrix population model that describes population dynamics from time t to t+1. e.g. `1995.`
+First year of the matrix. Year t in matrix population model that describes population dynamics from time t to t+1 (e.g. `1995`).
 
 ### End Year
 
-Last year of study. Year t+1 in matrix population model that describes population dynamics from time t to t+1. e.g. `2001.`
+Last year of the matrix. Year t+1 in matrix population model that describes population dynamics from time t to t+1 (e.g. `2001`).
 
 ### Start Month/End Month
 
-Record the start and end months if provided
+Record the start and end months if provided.
 
-*	For monthly transition matrices, record the start month and end month (m to m+1). 
-* If demographic information was collected during a period of time, please state the period separated by a hyphen (e.g. `6-8` for June through August) in observations.
+* For monthly transition matrices, record the start month and end month (m to m+1). 
+* If demographic information was collected during a period of time, please state the period separated by a hyphen (e.g. `6-8` for June through August) in the `Observations` field in the matrix form.
 
 ### Start Season/End Season
 
 Record the start season and end season for the seasonal matrices.
 
-### Census type
+### Census Type
 
 Choose the type of sampling census the authors use (see Kendall et al. 2019 for additional details). The authors may have specified if they sampled before or after reproductive events. If this is not provided in the publication, please contact the corresponding author.
 
-* `Prebreeding` – censused the population just before breeding occurred.
-* `Postbreeding` – censused the population just after breeding occurred.
-*	`NDY`
+* `Prebreeding` - Population was censused before a birth pulse 
+* `Postbreeding` - Population was censused after a birth pulse
+* `Intermediate` - Population was censused between successive birth pulses (e.g. bears give birth while hidden in winter dens, which makes pre- or post-breeding censuses impractical
+* `Birth-flow` - Population for which reproduction occurs continually over an interval (e.g. humans)
+* `NDY`
 * `AFI`
 * `NA`
 
-### Projection interval
+### Projection Interval
 
-The time step (periodicity) of the transition matrix. Be aware this is NOT equal to sampling frequency. If a matrix has 6-month projection interval, it would be `0.5` since it is 0.5 years. In the same way, if a matrix has 5-year projection interval, it would be `5`.
+The time step (periodicity) of the transition matrix. Be aware this is **NOT** equal to sampling frequency. If a matrix has 6-month projection interval, it would be `0.5` since it is 0.5 years. In the same way, if a matrix has 5-year projection interval, it would be `5`.
 
 ### Split
 
-Divisible if enough information is given to divide the survival and reproductive portions of the matrix. The matrix is divisible when there is no reproductive portion in the A matrix. Usually, indivisible matrices contain mixed cells in A matrix that cannot be divided into U, F, and C matrices due to insufficient information. 
+Divisible if enough information is given to divide the survival and reproductive portions of the matrix. The matrix is divisible when there is no reproductive portion in the **A** matrix. Usually, indivisible matrices contain mixed cells in A matrix that cannot be divided into U, F, and C matrices due to insufficient information. 
 
 * An **A** matrix should ALWAYS be recorded, even if no reproduction data was available.
 * `Divided` - The matrix population model A has successfully been divided into the process-based sub matrices U, F and C.
@@ -492,6 +488,16 @@ This is how an indivisible matrix could look like (species: *Syngonanthus nitens
 The diagram below shows the life cycle of two hypothetical plant populations based on age (A) and size (B), with their corresponding matrix population models. A, and underlying basic demographic processes of survival (U sub-matrix; solid arrows), sexual reproduction (F sub-matrix; dashed arrows) and clonal reproduction (C sub-matrix; dotted arrows). This model includes “retrogression” or shrinkage in addition to “progression” or growth. In the Leslie matrix model example (A), the division of sub-matrices is more straightforward than in the Lefkovitch matrix model example (B). In the latter imaginary example, individuals can transition into the same stage as they can contribute with sexual and/or clonal offspring (e.g. small stage). In these cases, splitting A into sub-matrices U, F and C is only feasible when sufficient information is provided by the authors (see variable Split).
 
 ![](figures/image2.3.png)
+
+### Fecundity
+
+This records whether fecundity was measured at all for this matrix model. This will help distinguish whether a 0 in the fecundity transition(s) indicates no fecundity or fecundity was not measured. We include fecundity, recruitment, or sexual reproduction here ignoring the technical differences.
+
+The rationale for this is that a fecundity (in the F matrix) may be recorded as 0 either because it was not measured, or because reproduction was estimated to be zero. As a general rule, if any values for fecundity (e.g. in the F matrix) are non-zero, then Fec should be recorded as ‘Yes’. If all values are zero, then you should check the paper carefully to check whether this is because no fecundity was detected, or whether no attempt was made to measure fecundity. There are some technical differences between fecundity, sexual reproduction, and recruitment. For the purposes of Fec these differences do not matter - if estimates fecundity, recruitment or sexual reproduction are collected, Fec = “`Yes`”.
+
+* `Yes` - fecundity was measured for the matrix
+* `No` - fecundity was not measured for the matrix
+* `NA` - it is not known whether fecundity was measured for the matrix
 
 ### Treatment
 
@@ -520,29 +526,20 @@ Indication of the sex(es) considered when constructing the matrix population mod
 * `A` - All sexes together
 * `NA` - There are no distinct sexes (e.g. a virus)
 
-### Sources
+### Source(s)
 
 Where the data was obtained to construct the matrix. If the data is from an appendix that is attached at the end of the original publication, record it as “Paper” and NOT as “Online Appendix”. “Online Appendix” is only for appendices that are in separate documents. Reselect the option to unselect it.
 If sources other than those below are used, a short but useful description should be given. The aim of this field is that everybody can find the related information ASAP e.g. if something needs to be fixed.
 
+* Altered - the original published matrix was altered for accuracy. Include specific reason(s) for why the changes were made (e.g., seed bank issue, typo corrected through author communications, recalculating from pre-breeding to post-breeding, etc.) and information on how you calculated the matrix in the observation field.
 * Author communication - Matrices derived from personal communication with author.
-* Paper - Matrices derived from a published manuscript
-* Old matrices - Matrices derived from an old matrices file (no more detailed description is available)
-* Database - Matrices derived from one of the various databases that have been merged into COMPADRE/COMADRE see Database above.
 * Book: Matrices come from a book or book chapter
-* Online appendix: The matrices come from an online appendix that is not attached at the end of the original publication. Most be a separate document.
-* Calculated: compadrino self-calculated the matrix from a life table or other data sources. Include what the original data type is (e.g. life table, integral projection model, individual-based model, etc.) and information on how you calculated the matrix in the observation field.
-* Altered: the original published matrix was altered for accuracy. Include specific reason(s) for why the changes were made (e.g., seed bank issue, typo corrected through author communications, recalculating from pre-breeding to post-breeding, etc.) and information on how you calculated the matrix in the observation field.
-
-### Fec (Matrix fecundity)
-
-This records whether fecundity was measured at all for this matrix model. This will help distinguish whether a 0 in the fecundity transition(s) indicates no fecundity or fecundity was not measured. We include fecundity, recruitment, or sexual reproduction here ignoring the technical differences.
-
-The rationale for this is that a fecundity (in the F matrix) may be recorded as 0 either because it was not measured, or because reproduction was estimated to be zero. As a general rule, if any values for fecundity (e.g. in the F matrix) are non-zero, then Fec should be recorded as ‘Yes’. If all values are zero, then you should check the paper carefully to check whether this is because no fecundity was detected, or whether no attempt was made to measure fecundity. There are some technical differences between fecundity, sexual reproduction, and recruitment. For the purposes of Fec these differences do not matter - if estimates fecundity, recruitment or sexual reproduction are collected, Fec = “`Yes`”.
-
-* `Yes` - fecundity was measured for the matrix
-* `No` - fecundity was not measured for the matrix
-* `NA` - it is not known whether fecundity was measured for the matrix
+* Calculated - digitiser self-calculated the matrix from a life table or other data sources. Include what the original data type is (e.g. life table, integral projection model, individual-based model, etc.) and information on how you calculated the matrix in the observation field.
+* Database - Matrices derived from one of the various databases that have been merged into COMPADRE/COMADRE see Database above.
+* Old matrices - Matrices derived from an old matrices file (no more detailed description is available)
+* Online appendix - The matrices come from an online appendix that is not attached at the end of the original publication. Must be a separate document.
+* Other sources - The matrices came from a source not listed here. Include more details in the `Observations` field of the matrix form.
+* Paper - Matrices derived from a published manuscript.
 
 ### Observations
 
@@ -552,7 +549,7 @@ Some standardised sentences:
 
 * The GPS coordinates were approximated to the closest geographic location described in the reference. (see Geolocation)
 * GPS co-ordinates cited exactly as reported in original paper. These do not match written study site description. (see Geolocation)
-*	Geolocation / Altitude from descriptor: (if no matrices are entered yet but a geolocation information are available)
+* Geolocation / Altitude from descriptor: (if no matrices are entered yet but a geolocation information are available)
 * Matrix is calculated with stochastic model
 * X years since last fire
 * Calculated with demographic data from Author JournalName YearPublished
@@ -561,28 +558,26 @@ Some standardised sentences:
 
 ### Create/Edit Matrix 
 
-The population matrix models. Including the overall matrix (A) and, where possible, the sub-matrices U (survival), F (fecundity), C (clonality). A range of numeric values is possible in each element of the matrix. Sometimes only a U matrix is available because data on reproduction were not collected. In these cases the U matrix should be used as the A matrix, and a note taken in Observations (see the rest of this section for more details). i.e. an A matrix.
+After saving the "New Matrix Set" form, the matrices can be added from the population form under the "Population Matrices" tab. These are the population matrix models. Including the overall matrix (A) and, where possible, the sub-matrices U (survival), F (fecundity), C (clonality). A range of numeric values is possible in each element of the matrix. Sometimes only a U matrix is available because data on reproduction were not collected. In these cases the U matrix should be used as the A matrix, and a note recorded in `Observations`.
 
 * The A matrix - The overall matrix including all processes. The A matrix can usually be “split” into consituent processes represented by the U, F and C sub-matrices such that A = U + F + C. Transition probabilities are constrained between 0 and 1. Reproductive values are always positive but have no upper bound.
 * The U matrix - The population sub-matrix model U (a sub-matrix of A), describes the survival-dependent dynamics of a population under the conditions described above. Values are constrained to be between 0 and 1. These include only survival-dependent vital rates (no sexual or clonal reproduction). If only the U matrix is available, it should also be used as the A matrix (see “The F matrix” below).
 * The F matrix - The population sub-matrix model F (a sub-matrix of A), which describes the sexual-reproduction dynamics of a population under the conditions described above. A range of numeric values possible, but are constrained to be positive. These include only estimates of sexual reproduction (no clonal reproduction). Sometimes sexual reproduction is not recorded (e.g. because it was not the focus of the study). This should be noted in observations and recorded using Fec (see elsewhere in this guide). Where possible, the “known unknowns” should be recorded as NA. For example, if you know that the “adult class” reproduces sexually, but simply was not estimated you should record NA for that element’s fecundity, and “No” for Fec.
 * The C matrix - The population sub-matrix model C (a sub-matrix of A), which describes the clonal-reproduction dynamics of a population under the conditions described above. A range of numeric values are possible, but these are constrained to be positive. These include only estimates of clonal reproduction. Where there is no clonality, this matrix should be included, but will be all 0 values.
 
-The values for the U, F and C matrices are only digitised for “Divided” matrices (indicated in the field Split)
+The values for the U, F and C matrices are only digitised for “Divided” matrices (indicated in the field `Split`).
 
-### Notes for Matrix construction
+### Notes for matrix construction:
 
 * Each cell represents transition from the column stage to the row stage.
 * You may enter a number or NA (Not Available). 
-* For survival rates, the values are restricted between 0 and 1. The sum of the survival rates from a single stage should not exceed one. 
+* For survival rates, the values are restricted between 0 and 1. The sum of the survival rates from a single stage (column) should not exceed one. An popup alert will be generated when this happens. 
 * Reproductive values do not have upper bounds but should not be a negative number. This also applies to compound cells where survival rates and reproductive values are combined.
-* “0” should not be colored 
+* “0” should not be colored.
 * Values across the U, F, and C matrices should add up to the A matrix. If there is not enough information to divide compound cells in A matrix, the matrix should be marked “Indivisible” and only A matrix should be recorded.
 
 ## Protocol for reporting an error
 
-### Report Error button
+### “Report Error” button
 
-Populations in “Review-ready” and “Released” status may be found to have an error. When the checker (Admins or coordinators) changes the status from “Review-ready” to an “error”, they must report the error through the `Report Error` button on the population page. Any user can also report the error through the `Report Error` button on the population page. The Admins, Coordinator, or the person assigned to fix database errors (“Error Handler”; a role selected through a tick box in Manage Users table) will be notified by email. If it is determined to be an actual error, the Admin/Coordinator/Error Handler will change the status to “Error.” If it is not a simple error and more information is needed, the publication can then be changed to “Awaiting info” status and assigned to a Compadrino, at which point the assigned Compadrino may continue to work on it. If the error is fixed by the Admin/Coordinator/Error Handler, the publication can go to “Released” status (since this will serve as the check for the publication if it was previously “Review-Ready,” or if it was previously “Released” it can return to the “Released” status after the error is fixed).
-
-
+Populations in “Review-ready” and “Released” status may be found to have an error. When the checker (admins or coordinators) changes the status from “Review-ready” to an “Error”, they must report the error through the `Report Error` button on the population page. Any user can also report the error through the `Report Error` button on the population page. The admins, coordinator, or the person assigned to fix database errors (“Error Handler”; a role selected through a tick box in Manage Users table) will be notified by email. If it is determined to be an actual error, the admin/coordinator/error handler will change the status to “Error.” If it is not a simple error and more information is needed, the publication can then be changed to “Awaiting Info” status and assigned to a digitiser, at which point the assigned digitiser may continue to work on it. If the error is fixed by the admin/coordinator/error handler, the publication can go to “Released” status (since this will serve as the check for the publication if it was previously “Review-ready,” or if it was previously “Released” it can return to the “Released” status after the error is fixed).
