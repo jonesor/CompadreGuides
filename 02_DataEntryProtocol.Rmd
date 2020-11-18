@@ -4,29 +4,29 @@
 
 The COMPADRE Plant Matrix Database (COMPADRE hereafter) and the COMADRE Animal Matrix Database (COMADRE hereafter) are compiled from (mostly) published literature. The majority of this literature was published as peer-reviewed articles in academic journals, with a smaller number of data obtained from books, conference presentations, etc.
 
-The data digitisation team (The COMPADRinos) carefully examine the literature and extract information in order to reconstruct the matrix population models analysed by the original researchers. The extracted data are entered into our web-based digitization forms, which are then stored as structured SQL tables. Wherever there are doubts about aspects of the data source, the team attempts to contact the researchers to resolve them. There are three types of digitization forms in COMPADRE/COMADRE: (1) The PUBLICATION form which contains metadata on the publication, such as bibliographic and study level information; (2) The POPULATION form with metadata that allows for the interpretation of the matrix data, and it pertains to information at the species/population level; and (3) the MATRIX form, which contain the matrix population models themselves, as well as information that is matrix-specific.
+The data digitisation team carefully examine the literature and extract information in order to reconstruct the matrix population models analysed by the original researchers. The extracted data are entered into our web-based digitisation forms, which are then stored as structured SQL tables. Wherever there are doubts about aspects of the data source, the team attempts to contact the researchers to resolve them. There are three types of digitization forms in COMPADRE/COMADRE: (1) The PUBLICATION form which contains metadata on the publication, such as bibliographic and study level information; (2) The POPULATION form with metadata that allows for the interpretation of the matrix data, and it pertains to information at the species/population level; and (3) the MATRIX form which contains the matrix population models themselves, as well as information that is matrix-specific.
 
 These data are compiled using a set of R scripts and released to the public as open access data via the website: www.compadre-db.org.
 
-This document outlines the way that the digitisation team enters data into our website. It is primarily intended for internal use and, as such, it includes information on some variables which are not released into the public domain. Nevertheless, following our philosophy on open access, replicability and transparency, we provide open access to the document here. Users external to our team with questions can direct them at compadrecontact@gmail.com. Specific questions can also be directed to Rob Salguero-Gómez (rob.salguero@zoo.ox.ac.uk) or Owen Jones (jones@biology.sdu.dk).
+This document outlines the way that the digitisation team enters data into our website. It is primarily intended for internal use and, as such, it includes information on some variables which are not released into the public domain. Nevertheless, following our philosophy on open access, replicability and transparency, we provide open access to the document here. Users external to our team with questions can direct them at contact@compadre-db.org. Specific questions can also be directed to Rob Salguero-Gómez (rob.salguero@zoo.ox.ac.uk) or Owen Jones (jones@biology.sdu.dk).
 
 ## General information
 
-* If you find additional sources *always* attach them and note them in “Additional Source”. An additional source is a paper that references matrices from another source already in the database. 
-*	Download the PDF attached to the publication form assigned to you, all pieces of information extracted from PDFs must be highlighted directly on the PDF in yellow and re-upload the PDF to the publication form.
-* If a PDF contains matrices/data from other papers and/or studies, this must be noted as “Not primary source” in the notes variable of the publication form.
+* If you find additional sources, **always** attach them and note them in “Additional Source” in the publication form. An additional source is a paper that references matrices from another source already in the database. 
+* Download the PDF attached to the publication form assigned to you, all pieces of information extracted from PDFs **must** be highlighted directly on the PDF in yellow. After completing your work, upload the PDF with highlights to the publication form after adding `_highlights` to the end of the document name.
+* If a PDF contains matrices/data from other papers and/or studies, this must be noted as “Not primary source” in the "Additional Notes" field of the publication form. Double check that these matrices have not already been digitized into the database so as to avoid creating duplicate matrix entries.
 * If additional publications are found with respect to a given species, these must be inspected for any additional matrix population models with different model assumptions (e.g. different stages) and/or different study years, populations and/or treatments. If the paper provides new information, it must be included in the database as a new publication.
-* Authors must only be contacted from the official email: compadrecontact@gmail.com.
-* Where matrices can be split, please always include an “A” matrix as well as “U”, “F” & “C” matrices (for explanation see here in the protocol for matrix form). Present matrices from left-to-right in the order A, U, F, C. **Always** split matrices when possible.
-* There are also species that do not fall into the Kingdoms Plantae or Animalia. Fungi and Algae should be included in COMPADRE, with the plants. Any other species (e.g. bacteria) should be included in COMADRE.
+* Authors must only be contacted from the official email: contact@compadre-db.org. If you encounter technical difficulties when attempting to contact an author, contact your lead for additional instructions.
+* Where matrices can be split, always include an “A” matrix as well as “U”, “F” & “C” matrices (for explanation, see here in the protocol for matrix form). **Always** split matrices when possible.
+* There are also species that do not fall into the Kingdoms Plantae or Animalia. Fungi and algae should be included in COMPADRE with the plants. Any other species (e.g. bacteria and viruses) should be included in COMADRE.
 
 ## Values used throughout the database
 
 The following values are commonly used throughout the database.
 
 * `NA` - *Not available* - The information is not available either because the author does not have it or because the information is not recognized as “priority” (see below) for the digitisation.
-* `AFI` - *Asked for it* - The information is not yet in the database, but the COMPADRino has already contacted the author requesting it (i.e. the author has not yet replied).
-* `NDY` - *Not digitised yet* - The information has not yet been digitised. This is likely to occur when some priority information has been digitised for a given species, and the COMPADRino has moved onto another species without contacting an author for the missing information.
+* `AFI` - *Asked for it* - The information is not yet in the database, but the digitiser has already contacted the author requesting it (i.e. the author has not yet replied).
+* `NDY` - *Not digitised yet* - The information has not yet been digitised. This is likely to occur when some priority information has been digitised for a given species, and the digitiser has moved onto another species without contacting an author for the missing information.
 * `NC` - *Not calculated* - Information was not calculated because its calculation is not sensible. For instance, latitudes and longitudes of various populations of the same species are not averaged and assigned to the grand-mean population matrix of the species. This is the same for ranges, where author provides a range of latitudes and longitudes for a given population. Ranges are instead noted in the observation column.
 * `LAB` - *Laboratory* - The author collected demographic data for the studied species in a laboratory or under greenhouse conditions. Controlled, typically indoor, conditions that mean the study population is not affected by the environmental conditions typical of the **actual** geographic location of the study.
 * `FRANK` - *Frankenstein matrix* - Frankenstein matrices are MPMs where the author parameterised their model using demographic data from 2+ other papers/sources; in other words, when the matrix values come from a source that was not affected by the same conditions as the rest of the matrix. These MPMs should be clearly indicated with “`FRANK`” in the observation column. Furthermore, geographic location data, time information (start/end year, season etc.) should be recorded only if the author reports ONE main location for the matrix; if multiple locations are reported, then it should be recorded as `FRANK` and not `NA.`
@@ -35,18 +35,9 @@ The following values are commonly used throughout the database.
 ## Important References
 
 * Caswell, H. (2001) Matrix population models. Second Edition. Sunderland, MA: Sinauer Associates.
-*	Olson, D.M., Dinerstein, E., Wikramanayake, E.D., Burgess, N.D., Powell, G.V., Underwood, E.C., D’amico, J.A., Itoua, I., Strand, H.E. & Morrison, J.C. (2001) Terrestrial Ecoregions of the World: A New Map of Life on Earth A new global map of terrestrial ecoregions provides an innovative tool for conserving biodiversity. BioScience, 51, 933–938.
-*	Salguero-Gómez, R., Jones, O. R., Archer, C. R., Buckley, Y. M., Che-Castaldo, J., Caswell, H., Hodgson, D., Scheuerlein, A., Conde, D. A., Brinks, E., de Buhr, H., Farack, C., Gottschalk, F., Hartmann, A., Henning, A., Hoppe, G., Römer, G., Runge, J., Ruoff, T., Wille, J., Zeh, S., Davison, R., Vieregg, D., Baudisch, A., Altwegg, R., Colchero, F., Dong, M., de Kroon, H., Lebreton, J.-D., Metcalf, C. J. E., Neel, M. M., Parker, I. M., Takada, T., Valverde, T., Vélez-Espino, L. A., Wardle, G. M., Franco, M., Vaupel, J. W. (2015), The COMPADRE Plant Matrix Database: an open online repository for plant demography. Journal of Ecology, 103: 202–218. https://doi.org/10.1111/1365-2745.12334
+* Olson, D.M., Dinerstein, E., Wikramanayake, E.D., Burgess, N.D., Powell, G.V., Underwood, E.C., D’amico, J.A., Itoua, I., Strand, H.E. & Morrison, J.C. (2001) Terrestrial Ecoregions of the World: A New Map of Life on Earth A new global map of terrestrial ecoregions provides an innovative tool for conserving biodiversity. BioScience, 51, 933–938.
+* Salguero-Gómez, R., Jones, O. R., Archer, C. R., Buckley, Y. M., Che-Castaldo, J., Caswell, H., Hodgson, D., Scheuerlein, A., Conde, D. A., Brinks, E., de Buhr, H., Farack, C., Gottschalk, F., Hartmann, A., Henning, A., Hoppe, G., Römer, G., Runge, J., Ruoff, T., Wille, J., Zeh, S., Davison, R., Vieregg, D., Baudisch, A., Altwegg, R., Colchero, F., Dong, M., de Kroon, H., Lebreton, J.-D., Metcalf, C. J. E., Neel, M. M., Parker, I. M., Takada, T., Valverde, T., Vélez-Espino, L. A., Wardle, G. M., Franco, M., Vaupel, J. W. (2015), The COMPADRE Plant Matrix Database: an open online repository for plant demography. Journal of Ecology, 103: 202–218. https://doi.org/10.1111/1365-2745.12334
 * Kendall, B.E., Fujiwara, M., Diaz-Lopez, J., Schneider, S., Voigt, J., Wiesner, S. 2019. Persistent problems in the construction of matrix population models. Ecological Modelling 406, 33–43 https://doi.org/10.1016/j.ecolmodel.2019.03.011
-
-
-
-
-
-
-
-
-
 
 ## Protocol for the publication form
 
@@ -54,33 +45,34 @@ The following values are commonly used throughout the database.
 
 This is the status for the publication. Please READ the website-status protocol to determine the status that should be assigned to the publication. 
 
-* `Assigned` – the publication has been assigned to a node. The compadrino will get publications in this status. Once the compadrino has started working on the publication, it should be changed to “Digitizing”
-* `Digitizing` – compadrino is working/editing the population
+* `Assigned` – the publication has been assigned to a node. The digitiser will get publications in this status. Once the digitiser has started working on the publication, it should be changed to “Digitizing”
+* `Digitizing` – digitiser is working/editing the population
 * `Rejected/Deleted`
-* `Awaiting info` – compadrino has determined s/he requires more information to complete digitization
+* `Awaiting info` – digitiser has determined more information is required to complete digitization
 * `Review-Ready` – the population is ready to be reviewed by a database curator
 * `Released` – population can be now seen by public users
-*	`Error` – an error has been found in the population and needs to be corrected
+* `Error` – an error has been found in the population and needs to be corrected
 
 ### Node Assignment
 
-The node the publication has been assigned for. Only coordinators and Admins edit this field.
-
+The node the publication has been assigned for. Only coordinators and admins edit this field.
 
 ### Assigned to
 
-The name of the compadrino that has claimed or has been assigned the publication.
+The name of the digitiser that has claimed or has been assigned the publication.
 
 ### Database
 
-The database to which the publication belongs to, either Compadre (plants) or Comadre (animals). Usually determined by the database coordinator. When you are assigned a publication, always make sure the assigned database is correct.
+The database to which the publication belongs to, either COMPADRE (plants, fungi, and algae) or COMADRE (animals, bacteria, and viruses). Usually determined by the database coordinator. When you are assigned a publication, always make sure the assigned database is correct.
 
-* `Compadre` (plants)
-* `Comadre` (animals)
+* `Compadre` (plants, fungi, and algae)
+* `Comadre` (animals, bacteria, and viruses)
 
-### Attach a document
+### Attach a Document
 
-Attach all files used to digitize this publication. Include original journal article, additional sources, appendices, files from author communications, etc. Usually all proposed/assigned publication will have attached the original journal article. 
+Attach all files used to digitise this publication. Include original journal article, additional sources, appendices, files from author communications, PDF copies of emails from the author if data are in the text of the email, Excel files with data, etc. Usually all proposed/assigned publications will have the original journal article attached.
+
+**Important:** If you must calculate matrix entries from formulas/models and tables in the publication, do that work in an Excel file (or third party software such as Google Docs and save as an Excel file), and upload your work to the publication form.
 
 ### DOI/ISBN
 
