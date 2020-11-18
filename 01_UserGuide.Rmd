@@ -202,7 +202,7 @@ Possible values:
 Possible values:
 
 * `Internet` -	Matrices are from an internet source, e.g. website
-* `Unpublished` -	Matrices are unpublished and provided by the data collector
+* `Unpublished` - Matrices are unpublished and provided by the data collector
 * `Preprint` - Matrices are from an article preprint, e.g. bioRxiv
  
 ### `YearPublication` (Publication form)
