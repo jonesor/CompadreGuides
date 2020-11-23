@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol</title>
-  <meta name="description" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  <title>4 Public User Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol</title>
+  <meta name="description" content="4 Public User Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  <meta property="og:title" content="4 Public User Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  <meta property="og:description" content="4 Public User Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  <meta name="twitter:title" content="4 Public User Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
   
-  <meta name="twitter:description" content="3 Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
+  <meta name="twitter:description" content="4 Public User Data Entry Protocol | The COMPADRE and COMADRE User Guide and Data Entry Protocol" />
   
 
 <meta name="author" content="The Compadre Team" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="user-guide.html"/>
-<link rel="next" href="public-user-data-entry-protocol.html"/>
+<link rel="prev" href="data-entry-protocol.html"/>
+
 <script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -377,42 +377,49 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-entry-protocol" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Data Entry Protocol</h1>
-<div id="preamble" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Preamble</h2>
-<p>The COMPADRE Plant Matrix Database (COMPADRE hereafter) and the COMADRE Animal Matrix Database (COMADRE hereafter) are compiled from (mostly) published literature. The majority of this literature was published as peer-reviewed articles in academic journals, with a smaller number of data obtained from books, conference presentations, etc.</p>
-<p>The data digitisation team carefully examine the literature and extract information in order to reconstruct the matrix population models analysed by the original researchers. The extracted data are entered into our web-based digitisation forms, which are then stored as structured SQL tables. Wherever there are doubts about aspects of the data source, the team attempts to contact the researchers to resolve them. There are three types of digitization forms in COMPADRE/COMADRE: (1) The PUBLICATION form which contains metadata on the publication, such as bibliographic and study level information; (2) The POPULATION form with metadata that allows for the interpretation of the matrix data, and it pertains to information at the species/population level; and (3) the MATRIX form which contains the matrix population models themselves, as well as information that is matrix-specific.</p>
-<p>These data are compiled using a set of R scripts and released to the public as open access data via the website: www.compadre-db.org.</p>
-<p>This document outlines the way that the digitisation team enters data into our website. It is primarily intended for internal use and, as such, it includes information on some variables which are not released into the public domain. Nevertheless, following our philosophy on open access, replicability and transparency, we provide open access to the document here. Users external to our team with questions can direct them at <a href="mailto:contact@compadre-db.org" class="email">contact@compadre-db.org</a>. Specific questions can also be directed to Rob Salguero-Gómez (<a href="mailto:rob.salguero@zoo.ox.ac.uk" class="email">rob.salguero@zoo.ox.ac.uk</a>) or Owen Jones (<a href="mailto:jones@biology.sdu.dk" class="email">jones@biology.sdu.dk</a>).</p>
+<div id="public-user-data-entry-protocol" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Public User Data Entry Protocol</h1>
+<div id="preamble" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Preamble</h2>
+<p>Thank you for your interest in contributing your data to the COMPADRE Plant Matrix Database (COMPADRE hereafter) and the COMADRE Animal Matrix Database (COMADRE hereafter). Our online data entry portal is designed to make this process as straightforward and simple as possible. This guide describes the steps of the data entry process (from creating an account to submitting your completed data), the confirmation process that happens after data submission, and a comprehensive protocol for each form including definitions and examples. If you have any questions along the way, feel free to reach out to us at <a href="mailto:contact@compadre-db.org" class="email">contact@compadre-db.org</a>.</p>
 </div>
-<div id="general-information" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> General information</h2>
+<div id="account-creation" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Account Creation</h2>
+<p>The first step in the data entry process is account creation. You’ll find a link to create your account on the compadre-db.org homepage. On the right side of the top banner, click <code>Links</code> followed by <code>Register</code>.</p>
+<p>Registration for compadre-db.org is intentionally minimal since the data you choose to submit to the database are entered manually rather than pulled from an account form. All you’ll need to enter is your <code>Name</code>, <code>Email</code>, and a <code>Password</code> of your choosing. Once you select <code>Register</code>, a confirmation email will be sent to your account. After confirming your email, you’ll be able to login to your <code>User Dashboard</code> by clicking <code>Links</code> and <code>Login</code> on the right side of the top banner.</p>
+</div>
+<div id="protocol-overview" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Protocol Overview</h2>
+<p>Data you submit to the COMPADRE or COMADRE databases is entered manually using three types of digitization forms: (1) The <strong>Publication form</strong> which contains metadata on the publication, such as bibliographic and study level information; (2) The <strong>Population form</strong> form with metadata that allows for the interpretation of the matrix data, and it pertains to information at the species/population level; and (3) the <strong>Matrix form</strong> which contains the matrix population models themselves, as well as information that is matrix-specific.</p>
+<p><strong>Note:</strong> We use the term <strong>Publication</strong> in the <strong>Publication form</strong> for simplicity. In this form, you’ll be able to select whether your data come from a <code>Book</code>, <code>Book Chapter</code>, <code>Journal Article</code>, <code>Thesis</code> (which includes PhD Dissertations), <code>Report</code>, <code>Conference</code>, or <code>Other</code> (which includes preprints and unpublished data).</p>
+<p>You’ll enter and edit data using your <code>User Dashboard</code>. You can edit your data at any time prior to using the <code>Submit</code> button to send your data for review by our digitisation team. Once you <code>Submit</code> data for review, it cannot be changed unless our digitisation team sends it back to you for correction.</p>
+<p>After submission, a notification is sent to our digitisation team, and your data is queued for review. Once our team has determined all fields and forms are complete, the data will be released to our database and included in the next version release of COMPADRE or COMADRE. Version releases occur in the first month of each quarter of the calendar year and intermittently between the quarterly releases if deemed necessary by the digitisation team.</p>
+</div>
+<div id="the-user-dashboard" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> The User Dashboard</h2>
+<p>The <code>User Dashboard</code> is where you’ll create and manage your data submissions to COMPADRE and COMADRE. There are four links at the top of the dashboard.</p>
 <ul>
-<li>If you find additional sources, <strong>always</strong> attach them and note them in “Additional Source” in the publication form. An additional source is a paper that references matrices from another source already in the database.</li>
-<li>Download the PDF attached to the publication form assigned to you, all pieces of information extracted from PDFs <strong>must</strong> be highlighted directly on the PDF in yellow. After completing your work, upload the PDF with highlights to the publication form after adding <code>_highlights</code> to the end of the document name.</li>
-<li>If a PDF contains matrices/data from other papers and/or studies, this must be noted as “Not primary source” in the “Additional Notes” field of the publication form. Double check that these matrices have not already been digitized into the database so as to avoid creating duplicate matrix entries.</li>
-<li>If additional publications are found with respect to a given species, these must be inspected for any additional matrix population models with different model assumptions (e.g. different stages) and/or different study years, populations and/or treatments. If the paper provides new information, it must be included in the database as a new publication.</li>
-<li>Authors must only be contacted from the official email: <a href="mailto:contact@compadre-db.org" class="email">contact@compadre-db.org</a>. If you encounter technical difficulties when attempting to contact an author, contact your lead for additional instructions.</li>
-<li>Where matrices can be split, always include an “A” matrix as well as “U”, “F” &amp; “C” matrices (for explanation, see here in the protocol for matrix form). <strong>Always</strong> split matrices when possible.</li>
-<li>There are also species that do not fall into the Kingdoms Plantae or Animalia. Fungi and algae should be included in COMPADRE with the plants. Any other species (e.g. bacteria and viruses) should be included in COMADRE.</li>
+<li><code>Add New Publication</code> - Begins the data entry process by creating a new <code>Publication</code> in the <strong>Publication form</strong></li>
+<li><code>My Publications</code> - Contains a list of your <code>Publications</code>. From here, you can continue working where you left off or check the status of submitted data</li>
+<li><code>Add New Species</code> - Adds a new species if your species was not listed in the <code>Species</code> selection of the <strong>Population form</strong></li>
+<li><code>Manage Profile</code> - Allows you to change the <code>Name</code> and <code>Email</code> associated with your account</li>
 </ul>
 </div>
-<div id="values-used-throughout-the-database" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Values used throughout the database</h2>
+<div id="values-used-throughout-the-database" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Values used throughout the database</h2>
 <p>The following values are commonly used throughout the database.</p>
 <ul>
-<li><code>NA</code> - <em>Not available</em> - The information is not available either because the author does not have it or because the information is not recognized as “priority” (see below) for the digitisation.</li>
-<li><code>AFI</code> - <em>Asked for it</em> - The information is not yet in the database, but the digitiser has already contacted the author requesting it (i.e. the author has not yet replied).</li>
-<li><code>NDY</code> - <em>Not digitised yet</em> - The information has not yet been digitised. This is likely to occur when some priority information has been digitised for a given species, and the digitiser has moved onto another species without contacting an author for the missing information.</li>
-<li><code>NC</code> - <em>Not calculated</em> - Information was not calculated because its calculation is not sensible. For instance, latitudes and longitudes of various populations of the same species are not averaged and assigned to the grand-mean population matrix of the species. This is the same for ranges, where author provides a range of latitudes and longitudes for a given population. Ranges are instead noted in the observation column.</li>
-<li><code>LAB</code> - <em>Laboratory</em> - The author collected demographic data for the studied species in a laboratory or under greenhouse conditions. Controlled, typically indoor, conditions that mean the study population is not affected by the environmental conditions typical of the <strong>actual</strong> geographic location of the study.</li>
-<li><code>FRANK</code> - <em>Frankenstein matrix</em> - Frankenstein matrices are MPMs where the author parameterised their model using demographic data from 2+ other papers/sources; in other words, when the matrix values come from a source that was not affected by the same conditions as the rest of the matrix. These MPMs should be clearly indicated with “<code>FRANK</code>” in the observation column. Furthermore, geographic location data, time information (start/end year, season etc.) should be recorded only if the author reports ONE main location for the matrix; if multiple locations are reported, then it should be recorded as <code>FRANK</code> and not <code>NA.</code></li>
+<li><code>NA</code> - <em>Not available</em> - The information is not available either because the author does not have it or because the information is not applicable</li>
+<li><code>AFI</code> - <em>Asked for it</em> - (<strong>Note:</strong> This option for form fields primarily used by the digitisation team since we are not the source of the data.) The information is not yet in the database, but the digitiser has already contacted the author requesting it (i.e. the author has not yet replied)</li>
+<li><code>NDY</code> - <em>Not digitised yet</em> - The information has not yet been digitised. This is likely to occur when some priority information has been digitised for a given species, and the digitiser has moved onto another species without contacting an author for the missing information</li>
+<li><code>NC</code> - <em>Not calculated</em> - Information was not calculated because its calculation is not sensible. For instance, latitudes and longitudes of various populations of the same species are not averaged and assigned to the grand-mean population matrix of the species. This is the same for ranges, where the author provides a range of latitudes and longitudes for a given population. Ranges are instead noted in the <code>Observations</code> column of the <strong>Matrix form</strong></li>
+<li><code>LAB</code> - <em>Laboratory</em> - The author collected demographic data for the studied species in a laboratory or under greenhouse conditions. Controlled, typically indoor, conditions that mean the study population is not affected by the environmental conditions typical of the <strong>actual</strong> geographic location of the study</li>
+<li><code>FRANK</code> - <em>Frankenstein matrix</em> - Frankenstein matrices are MPMs where the author parameterised their model using demographic data from 2+ other papers/sources; in other words, when the matrix values come from a source that was not affected by the same conditions as the rest of the matrix. These MPMs should be clearly indicated with “<code>FRANK</code>” in the <code>Observations</code> column of the <strong>Matrix form</strong>. Furthermore, geographic location data, time information (start/end year, season etc.) should be recorded only if the author reports ONE main location for the matrix; if multiple locations are reported, then it should be recorded as <code>FRANK</code> and not <code>NA</code>.</li>
 <li><code>Simulation</code> - <em>A simulated matrix</em> - The matrix model is a simulation, and perhaps only loosely based on a specific real species. Typically, these simulated matrices are used to explore the behaviour of a population in a theoretical way. In those cases, there is no geographic location, ecoregion etc. For these data we do not calculate averages or ranges for locations and time periods but instead enter <code>Simulation</code> (not <code>NA</code>).</li>
 </ul>
 </div>
-<div id="important-references" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Important References</h2>
+<div id="important-references" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Important References</h2>
 <ul>
 <li>Caswell, H. (2001) Matrix population models. Second Edition. Sunderland, MA: Sinauer Associates.</li>
 <li>Olson, D.M., Dinerstein, E., Wikramanayake, E.D., Burgess, N.D., Powell, G.V., Underwood, E.C., D’amico, J.A., Itoua, I., Strand, H.E. &amp; Morrison, J.C. (2001) Terrestrial Ecoregions of the World: A New Map of Life on Earth A new global map of terrestrial ecoregions provides an innovative tool for conserving biodiversity. BioScience, 51, 933–938.</li>
@@ -420,10 +427,10 @@
 <li>Kendall, B.E., Fujiwara, M., Diaz-Lopez, J., Schneider, S., Voigt, J., Wiesner, S. 2019. Persistent problems in the construction of matrix population models. Ecological Modelling 406, 33–43 <a href="https://doi.org/10.1016/j.ecolmodel.2019.03.011" class="uri">https://doi.org/10.1016/j.ecolmodel.2019.03.011</a></li>
 </ul>
 </div>
-<div id="protocol-for-the-publication-form" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Protocol for the publication form</h2>
-<div id="status" class="section level3" number="3.5.1">
-<h3><span class="header-section-number">3.5.1</span> Status</h3>
+<div id="protocol-for-the-publication-form" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Protocol for the publication form</h2>
+<div id="status" class="section level3" number="4.7.1">
+<h3><span class="header-section-number">4.7.1</span> Status</h3>
 <p>This is the status for the publication. Please READ the website-status protocol to determine the status that should be assigned to the publication.</p>
 <ul>
 <li><code>Assigned</code> – the publication has been assigned to a node. The digitiser will get publications in this status. Once the digitiser has started working on the publication, it should be changed to “Digitizing”</li>
@@ -435,33 +442,33 @@
 <li><code>Error</code> – an error has been found in the population and needs to be corrected</li>
 </ul>
 </div>
-<div id="node-assignment" class="section level3" number="3.5.2">
-<h3><span class="header-section-number">3.5.2</span> Node Assignment</h3>
+<div id="node-assignment" class="section level3" number="4.7.2">
+<h3><span class="header-section-number">4.7.2</span> Node Assignment</h3>
 <p>The node the publication has been assigned for. Only coordinators and admins edit this field.</p>
 </div>
-<div id="assigned-to" class="section level3" number="3.5.3">
-<h3><span class="header-section-number">3.5.3</span> Assigned to</h3>
+<div id="assigned-to" class="section level3" number="4.7.3">
+<h3><span class="header-section-number">4.7.3</span> Assigned to</h3>
 <p>The name of the digitiser that has claimed or has been assigned the publication.</p>
 </div>
-<div id="database" class="section level3" number="3.5.4">
-<h3><span class="header-section-number">3.5.4</span> Database</h3>
+<div id="database" class="section level3" number="4.7.4">
+<h3><span class="header-section-number">4.7.4</span> Database</h3>
 <p>The database to which the publication belongs to, either COMPADRE (plants, fungi, and algae) or COMADRE (animals, bacteria, and viruses). Usually determined by the database coordinator. When you are assigned a publication, always make sure the assigned database is correct.</p>
 <ul>
 <li><code>Compadre</code> (plants, fungi, and algae)</li>
 <li><code>Comadre</code> (animals, bacteria, and viruses)</li>
 </ul>
 </div>
-<div id="attach-a-document" class="section level3" number="3.5.5">
-<h3><span class="header-section-number">3.5.5</span> Attach a Document</h3>
+<div id="attach-a-document" class="section level3" number="4.7.5">
+<h3><span class="header-section-number">4.7.5</span> Attach a Document</h3>
 <p>Attach all files used to digitise this publication. Include original journal article, additional sources, appendices, files from author communications, PDF copies of emails from the author if data are in the text of the email, Excel files with data, etc. Usually all proposed/assigned publications will have the original journal article attached.</p>
 <p><strong>Important:</strong> If you must calculate matrix entries from formulas/models and tables in the publication, do that work in an Excel file (or third party software such as Google Docs and save as an Excel file), and upload your work to the publication form.</p>
 </div>
-<div id="doiisbn" class="section level3" number="3.5.6">
-<h3><span class="header-section-number">3.5.6</span> DOI/ISBN</h3>
+<div id="doiisbn" class="section level3" number="4.7.6">
+<h3><span class="header-section-number">4.7.6</span> DOI/ISBN</h3>
 <p>The DOI of the journal article. If you have the DOI, you could automatically fill the bibliographic information fields. Check to make sure those fields were populated correctly.</p>
 </div>
-<div id="authors" class="section level3" number="3.5.7">
-<h3><span class="header-section-number">3.5.7</span> Authors</h3>
+<div id="authors" class="section level3" number="4.7.7">
+<h3><span class="header-section-number">4.7.7</span> Authors</h3>
 <p>Publication authors. This is usually done by the database coordinator. Make sure all authors have been added and are in the right order. If an author is missing search for the last name in the search box; make sure to select the correct author. If the author is not in the list, use the button “Create New Author” to add a new one:</p>
 <ul>
 <li><em>Author name</em>: The last name of the author.</li>
@@ -469,8 +476,8 @@
 <li><em>Author email</em>: If it is the corresponding author, include the contact email.</li>
 </ul>
 </div>
-<div id="reference-type" class="section level3" number="3.5.8">
-<h3><span class="header-section-number">3.5.8</span> Reference Type</h3>
+<div id="reference-type" class="section level3" number="4.7.8">
+<h3><span class="header-section-number">4.7.8</span> Reference Type</h3>
 <p>Record the type of reference from which data were sourced.</p>
 <ul>
 <li><em>Book</em>: Matrices are from a book</li>
@@ -489,8 +496,8 @@
 <li><em>Other</em>: Matrices are from other sources including, but not limited to archives.</li>
 </ul>
 </div>
-<div id="purposes" class="section level3" number="3.5.9">
-<h3><span class="header-section-number">3.5.9</span> Purposes</h3>
+<div id="purposes" class="section level3" number="4.7.9">
+<h3><span class="header-section-number">4.7.9</span> Purposes</h3>
 <p>Select all that apply. Describes the purpose(s) of the study detailed in the manuscript. This information is usually obvious from the abstract and the last paragraph of the introduction. Several purposes are possible per study.</p>
 <p>We have categorised the purposes as follows:</p>
 <ul>
@@ -504,44 +511,44 @@
 <li><em>Methodological advancement</em> - When the novelty of the paper is not an ecological question, but mostly to introduce a new mathematical tool often using already published matrices.</li>
 </ul>
 </div>
-<div id="embargo" class="section level3" number="3.5.10">
-<h3><span class="header-section-number">3.5.10</span> Embargo</h3>
+<div id="embargo" class="section level3" number="4.7.10">
+<h3><span class="header-section-number">4.7.10</span> Embargo</h3>
 <p>If the author does not wish to make personally communicated data available, the data will be under embargo until this date. A week before that date, an automatic reminder will go out to the author instructing them to contact us if they wish to extend the embargo or remove the data from the database; otherwise, the data will be released and included in the next version update of the databases. Leave blank when there is no embargo.</p>
 </div>
-<div id="additional-source" class="section level3" number="3.5.11">
-<h3><span class="header-section-number">3.5.11</span> Additional Source</h3>
+<div id="additional-source" class="section level3" number="4.7.11">
+<h3><span class="header-section-number">4.7.11</span> Additional Source</h3>
 <p>Record all additional sources used to construct matrices or to obtain additional ancillary data. Additional sources should be formatted as “LastName Journal YearPublished DocumentTitle” (e.g. Godinez-Alvarez Bot Rev 2003, Schmidt J Ecol 2007 Appendix A1) both here and in the attached file names. Be sure to update both whenever changes are made to the data associated with the publication. Attach the necessary PDF/Excel files/documents to the “Attach a Document” field.</p>
 </div>
-<div id="additional-notes" class="section level3" number="3.5.12">
-<h3><span class="header-section-number">3.5.12</span> Additional Notes</h3>
+<div id="additional-notes" class="section level3" number="4.7.12">
+<h3><span class="header-section-number">4.7.12</span> Additional Notes</h3>
 <p>This field is intended to record any important issues or general notes about the data for the use of the digitization team. These entries should only include sensible informative key points that others can understand. Use English only.</p>
 </div>
-<div id="missing-data" class="section level3" number="3.5.13">
-<h3><span class="header-section-number">3.5.13</span> Missing Data</h3>
+<div id="missing-data" class="section level3" number="4.7.13">
+<h3><span class="header-section-number">4.7.13</span> Missing Data</h3>
 <p>Data that is not yet available and thus not yet digitized for this publication. Update this information whenever changes are made to populations and matrices associated with this publication.</p>
 </div>
-<div id="treatment" class="section level3" number="3.5.14">
-<h3><span class="header-section-number">3.5.14</span> Treatment</h3>
+<div id="treatment" class="section level3" number="4.7.14">
+<h3><span class="header-section-number">4.7.14</span> Treatment</h3>
 <p>Record all treatment categories used in the study. Include both environmental and experimental treatments. Write “No” if nothing was manipulated.</p>
 </div>
-<div id="within-site-replication" class="section level3" number="3.5.15">
-<h3><span class="header-section-number">3.5.15</span> Within Site Replication</h3>
+<div id="within-site-replication" class="section level3" number="4.7.15">
+<h3><span class="header-section-number">4.7.15</span> Within Site Replication</h3>
 <p>Number of plots or transects sampled at each population and the size description of the plots. For example, 6(4x4m^2) means that in each population, there were 6 permanent plots of 4x4m2. If different populations have different plot sizes, record all of them separated by semicolon. (e.g. A: 2(15ha); B: 3(20ha))</p>
 </div>
-<div id="study-start-yearstudy-end-year" class="section level3" number="3.5.16">
-<h3><span class="header-section-number">3.5.16</span> Study Start (Year)/Study End (Year)</h3>
+<div id="study-start-yearstudy-end-year" class="section level3" number="4.7.16">
+<h3><span class="header-section-number">4.7.16</span> Study Start (Year)/Study End (Year)</h3>
 <p>The start and end years of the surveys/censuses/experiments in the study. Record <code>Simulation</code> if data are from a simulation and not associated with any real-world surveys/censuses/experiments. An alert will appear if the start year is greater than the end year, or if the year recorded is greater than the current year.</p>
 </div>
-<div id="release-version" class="section level3" number="3.5.17">
-<h3><span class="header-section-number">3.5.17</span> Release Version</h3>
+<div id="release-version" class="section level3" number="4.7.17">
+<h3><span class="header-section-number">4.7.17</span> Release Version</h3>
 <p>The Version number of the database where the data were released (no longer applies). <strong>Do not enter anything here.</strong></p>
 </div>
-<div id="database-source" class="section level3" number="3.5.18">
-<h3><span class="header-section-number">3.5.18</span> Database source</h3>
+<div id="database-source" class="section level3" number="4.7.18">
+<h3><span class="header-section-number">4.7.18</span> Database source</h3>
 <p>The institute that collated the data together in a mini database before COMPADRE and COMADRE were developed. <strong>Do not enter anything here.</strong></p>
 </div>
-<div id="under-author-contacts-tab" class="section level3" number="3.5.19">
-<h3><span class="header-section-number">3.5.19</span> Under “Author Contacts” Tab</h3>
+<div id="under-author-contacts-tab" class="section level3" number="4.7.19">
+<h3><span class="header-section-number">4.7.19</span> Under “Author Contacts” Tab</h3>
 <p>Add <em>one or more</em> authors. Use “<code>Add Author Contact</code>” button to add all the authors that fall into the following categories:</p>
 <ul>
 <li>The corresponding author of the publication</li>
@@ -550,16 +557,16 @@
 <li>Authors of additional sources contacted for information</li>
 </ul>
 </div>
-<div id="corresponding-author" class="section level3" number="3.5.20">
-<h3><span class="header-section-number">3.5.20</span> Corresponding Author</h3>
+<div id="corresponding-author" class="section level3" number="4.7.20">
+<h3><span class="header-section-number">4.7.20</span> Corresponding Author</h3>
 <p>Select the corresponding author from the list of the authors in the bibliographic information. If the author is not added into the database yet, click “Create New Author” to add a new author following the instructions for adding a new author above.</p>
 <ul>
 <li><p><code>Edit Author</code> button in <code>Manage Authors</code> tab</p></li>
 <li><p>Update the contact information of the author if no email address in included in the author selection. Put year or “dead” in parentheses to keep track of multiple emails (e.g. <a href="mailto:aaa@compadre.org" class="email">aaa@compadre.org</a> (dead); <a href="mailto:aaa@compadre.org" class="email">aaa@compadre.org</a> (2016); <a href="mailto:bbb@compadre.org" class="email">bbb@compadre.org</a> (2019)).</p></li>
 </ul>
 </div>
-<div id="date-contacted" class="section level3" number="3.5.21">
-<h3><span class="header-section-number">3.5.21</span> Date Contacted</h3>
+<div id="date-contacted" class="section level3" number="4.7.21">
+<h3><span class="header-section-number">4.7.21</span> Date Contacted</h3>
 <p>Record the date(s) when the publication author was contacted asking for information in US date format (mm/dd/yyyy). Authors should <strong>always</strong> be contacted from the <a href="mailto:contact@compadre-db.org" class="email">contact@compadre-db.org</a> email address rather than a personal email address. If you encounter technical difficulties when attempting to contact an author, contact your lead for additional instructions.</p>
 <p>Procedure for lack of response depends on the Year of Publication of the source:</p>
 <ul>
@@ -568,24 +575,24 @@
 </ul>
 <p>If you were not able to find an email address of any of the authors of a paper (and also Rob and Owen don’t know one), but that paper has a matrix population model that can be digitised – enter the matrix and all information that are available from the paper. All missing information get an NA and we list the species as “Review-Ready”, still enter the missing information into Missing Data field.</p>
 </div>
-<div id="date-contacted-again" class="section level3" number="3.5.22">
-<h3><span class="header-section-number">3.5.22</span> Date Contacted Again</h3>
+<div id="date-contacted-again" class="section level3" number="4.7.22">
+<h3><span class="header-section-number">4.7.22</span> Date Contacted Again</h3>
 <p>Date(s) of the other attempts to contact this corresponding author. (mm/dd/yyyy; mm/dd/yyyy). Make another attempt to contact the author again if there has not been a response in 3 months.</p>
 </div>
-<div id="sent-email-content" class="section level3" number="3.5.23">
-<h3><span class="header-section-number">3.5.23</span> Sent Email Content</h3>
+<div id="sent-email-content" class="section level3" number="4.7.23">
+<h3><span class="header-section-number">4.7.23</span> Sent Email Content</h3>
 <p>This records the information that was requested from the author. Use the same format as for “Missing Data” above. If multiple pieces of information are requested, separate with “;”. If the author has been asked for something other than the standard missing information, a short note should be left, e.g. “is the species clonal?”</p>
 </div>
-<div id="authors-reply-email-content" class="section level3" number="3.5.24">
-<h3><span class="header-section-number">3.5.24</span> Author’s Reply Email Content</h3>
+<div id="authors-reply-email-content" class="section level3" number="4.7.24">
+<h3><span class="header-section-number">4.7.24</span> Author’s Reply Email Content</h3>
 <p>Did the author reply to a request for further information. This should record a brief answer given by the author, or “No” (no response yet). Note: Always change Author’s Reply from “<code>NA</code>”" / “<code>Nothing</code>” to “<code>No</code>” when author has been contacted and update the entry as soon as a reply is received. Always reply to the author with a short thank-you note when a reply is received.
 Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when the information was received from the author. If the author has been asked for information other than the standard information, make a short note of what it is. Also, record the date author replied next to the information received. (e.g. <code>M; S (11/11/2018)</code>)</p>
 </div>
 </div>
-<div id="protocol-for-the-population-form" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Protocol for the Population form</h2>
-<div id="status-1" class="section level3" number="3.6.1">
-<h3><span class="header-section-number">3.6.1</span> Status</h3>
+<div id="protocol-for-the-population-form" class="section level2" number="4.8">
+<h2><span class="header-section-number">4.8</span> Protocol for the Population form</h2>
+<div id="status-1" class="section level3" number="4.8.1">
+<h3><span class="header-section-number">4.8.1</span> Status</h3>
 <p>This is the status for the population. Please <strong>READ</strong> the website-status protocol to determine the status that should be assigned to the population.
 * <code>Digitizing</code> – digitiser is working/editing the population
 * <code>Rejected/Deleted</code>
@@ -594,15 +601,15 @@ Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when
 * <code>Released</code> – population can be now seen by public users
 * <code>Error</code> – an error has been found in the population and needs to be corrected</p>
 </div>
-<div id="species-accepted" class="section level3" number="3.6.2">
-<h3><span class="header-section-number">3.6.2</span> Species Accepted</h3>
+<div id="species-accepted" class="section level3" number="4.8.2">
+<h3><span class="header-section-number">4.8.2</span> Species Accepted</h3>
 <p>Currently accepted Latin binomial or trinomial name for the species.</p>
 <ul>
 <li>Search for the correct species name. This might be different from the Latin name the author used (e.g. author used an old Latin name for the species). If you cannot find the correct species name in this field, contact a website administrator.</li>
 </ul>
 </div>
-<div id="species-author" class="section level3" number="3.6.3">
-<h3><span class="header-section-number">3.6.3</span> Species Author</h3>
+<div id="species-author" class="section level3" number="4.8.3">
+<h3><span class="header-section-number">4.8.3</span> Species Author</h3>
 <p>The Latin binomial name of the species as reported in the publication. <strong>Note</strong> that this may not be the same as the current accepted name. If an author uses a Latin name with a typo, please leave it as is, as this variable represents the name as used by the authors. This applies, as well, if the author(s) used an outdated taxonomic name.</p>
 <ul>
 <li>Record as Genus_species.</li>
@@ -610,16 +617,16 @@ Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when
 <li>Always use an underscore “<code>_</code>” to substitute spaces for this field (e.g. write “<code>Cryptantha_flava</code>” instead of “<code>Cryptantha flava</code>”). This <strong>only</strong> applies to the <em>Species Author</em> field</li>
 </ul>
 </div>
-<div id="population-name" class="section level3" number="3.6.4">
-<h3><span class="header-section-number">3.6.4</span> Population Name</h3>
+<div id="population-name" class="section level3" number="4.8.4">
+<h3><span class="header-section-number">4.8.4</span> Population Name</h3>
 <p>The name of the population where the data for the matrix was recorded. Usually given by the author. When no name provided, use other characteristic information, such as a brief geographic location (e.g. Monterey Bay, Gifford Pinchot Southeast, etc.). If there are multiple populations in the study and their names are not pertinent/available, sequential names in alphabetical order are assigned for each population in the study (e.g. Population A, Population B, etc.).</p>
 </div>
-<div id="species-common-name" class="section level3" number="3.6.5">
-<h3><span class="header-section-number">3.6.5</span> Species Common Name</h3>
+<div id="species-common-name" class="section level3" number="4.8.5">
+<h3><span class="header-section-number">4.8.5</span> Species Common Name</h3>
 <p>The common name for the species. This is pulled automatically from the selected species but can be overwritten if desired/needed.</p>
 </div>
-<div id="ecoregion" class="section level3" number="3.6.6">
-<h3><span class="header-section-number">3.6.6</span> Ecoregion</h3>
+<div id="ecoregion" class="section level3" number="4.8.6">
+<h3><span class="header-section-number">4.8.6</span> Ecoregion</h3>
 <p>Description of the Ecoregion associated with the population. Follow the link to obtain the ecoregion for the set of coordinates the population is located in: <a href="https://patrickbarks.shinyapps.io/biomes/" class="uri">https://patrickbarks.shinyapps.io/biomes/</a></p>
 <p>The options are:</p>
 <p><strong>Terrestrial ecoregions</strong></p>
@@ -659,16 +666,16 @@ Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when
 </ul>
 <p>For a more inclusive description of water ecoregions, see <a href="http://worldwildlife.org/biomes" class="uri">http://worldwildlife.org/biomes</a></p>
 </div>
-<div id="country" class="section level3" number="3.6.7">
-<h3><span class="header-section-number">3.6.7</span> Country</h3>
+<div id="country" class="section level3" number="4.8.7">
+<h3><span class="header-section-number">4.8.7</span> Country</h3>
 <p>Choose the ISO 3 Country Code(s) of where the population is located. You can search by the country’s name or the country’s code. Enter <code>NA</code> for populations only studied in international waters (see <code>Population Nautical Miles</code> below).</p>
 </div>
-<div id="population-nautical-miles" class="section level3" number="3.6.8">
-<h3><span class="header-section-number">3.6.8</span> Population Nautical Miles</h3>
+<div id="population-nautical-miles" class="section level3" number="4.8.8">
+<h3><span class="header-section-number">4.8.8</span> Population Nautical Miles</h3>
 <p>For oceanic studies, this is the distance in nautical miles from the closest land mass. If the population was studied both in French and Spanish waters 8 miles from land the country code field would be FRA; SPA and the nautical miles field would be NODC-8. If it was only studied in international waters (normally defined as 12 nautical miles from land) then you would record it as NODC-22 in this field and <code>NA</code> for <code>Country</code>.</p>
 </div>
-<div id="continent" class="section level3" number="3.6.9">
-<h3><span class="header-section-number">3.6.9</span> Continent</h3>
+<div id="continent" class="section level3" number="4.8.9">
+<h3><span class="header-section-number">4.8.9</span> Continent</h3>
 <p>Continent where the population is located. Select the appropriate one:</p>
 <ul>
 <li><code>Africa</code></li>
@@ -680,32 +687,32 @@ Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when
 <li><code>Oceania</code> (various definitions for Oceania exist, but here we opted for this one: <a href="https://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_population" class="uri">https://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_population</a>)</li>
 </ul>
 </div>
-<div id="matrix-criteria-size" class="section level3" number="3.6.10">
-<h3><span class="header-section-number">3.6.10</span> Matrix Criteria Size</h3>
+<div id="matrix-criteria-size" class="section level3" number="4.8.10">
+<h3><span class="header-section-number">4.8.10</span> Matrix Criteria Size</h3>
 <p>Records whether the matrix model is based on size (e.g. stem length/number, body length/mass, etc).</p>
 <ul>
 <li><code>Yes</code> - The matrix population model contains at least one stage based on size.</li>
 <li><code>No</code> - The matrix population model is not based on size.</li>
 </ul>
 </div>
-<div id="matrix-criteria-ontogeny" class="section level3" number="3.6.11">
-<h3><span class="header-section-number">3.6.11</span> Matrix Criteria Ontogeny</h3>
+<div id="matrix-criteria-ontogeny" class="section level3" number="4.8.11">
+<h3><span class="header-section-number">4.8.11</span> Matrix Criteria Ontogeny</h3>
 <p>Records whether the matrix model is based on ontogenetic stage (e.g. seedbank, reproductive, vegetative, dormant, etc).</p>
 <ul>
 <li><code>Yes</code> - The matrix population model contains at least one class that is based on development/ontogeny (e.g. seedbank, reproductive, vegetative, dormant, etc).</li>
 <li><code>No</code> - Matrix population model is not based on ontogeny.</li>
 </ul>
 </div>
-<div id="matrix-criteria-age" class="section level3" number="3.6.12">
-<h3><span class="header-section-number">3.6.12</span> Matrix Criteria Age</h3>
+<div id="matrix-criteria-age" class="section level3" number="4.8.12">
+<h3><span class="header-section-number">4.8.12</span> Matrix Criteria Age</h3>
 <p>Records whether the matrix model is based on age.</p>
 <ul>
 <li><code>Yes</code> - The matrix population model contains at least one class that is based on age (e.g. individuals of 0 year old)</li>
 <li><code>No</code> - The matrix population model is not based on age</li>
 </ul>
 </div>
-<div id="coordinates-and-altitude" class="section level3" number="3.6.13">
-<h3><span class="header-section-number">3.6.13</span> Coordinates and Altitude</h3>
+<div id="coordinates-and-altitude" class="section level3" number="4.8.13">
+<h3><span class="header-section-number">4.8.13</span> Coordinates and Altitude</h3>
 <p>Get coordinates from <a href="https://www.gps-coordinates.net/" class="uri">https://www.gps-coordinates.net/</a></p>
 <p>Estimate the geographic coordinates to the nearest location possible. Check if they reasonably fit the location of the study by looking them up on Google Maps or Google Earth. If the terrestrial plant or animal has aquatic coordinates, obtain the coordinates by estimating them from the study site provided by the authors.</p>
 <p>When geographic coordinates are not attainable, select an option that corresponds with the study situation. The possible options are <code>LAB</code>, <code>Simulation</code>, <code>NC</code>, <code>FRANK</code>, and <code>AFI.</code></p>
@@ -717,8 +724,8 @@ Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when
 <li><p><code>AFI</code> (Asked for it): contacted the author for the information but the author hasn’t replied yet.</p></li>
 </ul>
 </div>
-<div id="coordinates-format" class="section level3" number="3.6.14">
-<h3><span class="header-section-number">3.6.14</span> Coordinates Format</h3>
+<div id="coordinates-format" class="section level3" number="4.8.14">
+<h3><span class="header-section-number">4.8.14</span> Coordinates Format</h3>
 <p>Select the adequate format for the coordinates of the population. Options include:</p>
 <ul>
 <li><code>Degrees, minutes and seconds (DMS)</code></li>
@@ -730,46 +737,46 @@ Change it to the codes from “<code>Missing Data</code>” (M; I; L; S; O) when
 <li><code>AFI</code></li>
 </ul>
 </div>
-<div id="latitude-degrees-latitude-minutes-latitude-seconds" class="section level3" number="3.6.15">
-<h3><span class="header-section-number">3.6.15</span> Latitude Degrees / Latitude Minutes / Latitude Seconds</h3>
+<div id="latitude-degrees-latitude-minutes-latitude-seconds" class="section level3" number="4.8.15">
+<h3><span class="header-section-number">4.8.15</span> Latitude Degrees / Latitude Minutes / Latitude Seconds</h3>
 <p>Record the degree (0-90), minute (0-60) and second (0-60) values of the locations of the matrix.</p>
 <p>Note: if there are no seconds (or minutes) given, you should record as NA rather than 0.</p>
 </div>
-<div id="latitude-n-or-s" class="section level3" number="3.6.16">
-<h3><span class="header-section-number">3.6.16</span> Latitude N or S</h3>
+<div id="latitude-n-or-s" class="section level3" number="4.8.16">
+<h3><span class="header-section-number">4.8.16</span> Latitude N or S</h3>
 <p>Cardinal direction
 * <code>N</code> - North
 * <code>S</code> - South</p>
 <p>Note: Cardinal direction might be given with a “+” or “-” whereat “+” means North and “-” means South.</p>
 </div>
-<div id="longitude-degrees-longitude-minutes-longitude-seconds" class="section level3" number="3.6.17">
-<h3><span class="header-section-number">3.6.17</span> Longitude Degrees / Longitude Minutes / Longitude Seconds</h3>
+<div id="longitude-degrees-longitude-minutes-longitude-seconds" class="section level3" number="4.8.17">
+<h3><span class="header-section-number">4.8.17</span> Longitude Degrees / Longitude Minutes / Longitude Seconds</h3>
 <p>Records the degree (0-90), minute (0-60) and second (0-60) values of the locations of the matrix.</p>
 </div>
-<div id="longitude-w-or-e" class="section level3" number="3.6.18">
-<h3><span class="header-section-number">3.6.18</span> Longitude W or E</h3>
+<div id="longitude-w-or-e" class="section level3" number="4.8.18">
+<h3><span class="header-section-number">4.8.18</span> Longitude W or E</h3>
 <p>Cardinal direction
 * <code>W</code> - West
 * <code>E</code> - East
 Note: Cardinal direction might be given with a “+” or “-” wherby “+” means East and “-” means West.</p>
 <p>The following link is useful for converting between different ways of presenting lat/long information: <a href="http://www.earthpoint.us/Convert.aspx" class="uri">http://www.earthpoint.us/Convert.aspx</a></p>
 </div>
-<div id="altitude" class="section level3" number="3.6.19">
-<h3><span class="header-section-number">3.6.19</span> Altitude</h3>
+<div id="altitude" class="section level3" number="4.8.19">
+<h3><span class="header-section-number">4.8.19</span> Altitude</h3>
 <p>Altitude of studied population in meters (m). Height above or below sea level of specific population (e.g. <code>208</code>, <code>-55</code>, <code>1677</code> (without “m”)).</p>
 <p>Note: Altitude is either given in the paper, by author communication, or we look it up with <em>Google Maps</em>. If you enter the coordinates into <em>Google Maps</em> you’ll see the altitude at the bottom right corner of the window. <strong>Note:</strong> If you scroll around in <em>Google Maps</em> with your mouse the altitude will change, so pay attention that you read the altitude directly after entering the coordinates without scrolling around!</p>
 </div>
-<div id="general-notes-on-location-information" class="section level3" number="3.6.20">
-<h3><span class="header-section-number">3.6.20</span> General notes on location information:</h3>
+<div id="general-notes-on-location-information" class="section level3" number="4.8.20">
+<h3><span class="header-section-number">4.8.20</span> General notes on location information:</h3>
 <p>If you don’t have a detailed description of the geolocation-coordinates, enter the following sentence into the <code>Observations</code> field of the matrix form: The GPS coordinates were approximated to the closest geographic location described in the reference.
 Sometimes the latitude and longitude given in the paper <strong>DO NOT</strong> match the study area. In this case enter the following in the <code>Observations</code> field of the matrix form: GPS coordinates cited exactly as reported in original paper. These do not match written study site description.</p>
 <p>Pay attention to the means: We <strong>do not</strong> calculate ranges for mean matrices. In that case, choose the option <code>NC</code> for “not calculated” in the “<code>Coordinates Format</code>” field.</p>
 </div>
 </div>
-<div id="protocol-for-the-matrix-metadata-new-matrix-set-form" class="section level2" number="3.7">
-<h2><span class="header-section-number">3.7</span> Protocol for the Matrix Metadata (New Matrix Set) form</h2>
-<div id="composition" class="section level3" number="3.7.1">
-<h3><span class="header-section-number">3.7.1</span> Composition</h3>
+<div id="protocol-for-the-matrix-metadata-new-matrix-set-form" class="section level2" number="4.9">
+<h2><span class="header-section-number">4.9</span> Protocol for the Matrix Metadata (New Matrix Set) form</h2>
+<div id="composition" class="section level3" number="4.9.1">
+<h3><span class="header-section-number">4.9.1</span> Composition</h3>
 <p>Indicates the type of matrix population model.</p>
 <ul>
 <li><code>Individual</code> - single population studied over a single time period, for example, over one year</li>
@@ -778,8 +785,8 @@ Sometimes the latitude and longitude given in the paper <strong>DO NOT</strong> 
 <li><code>NDY</code> - not digitised yet / unset</li>
 </ul>
 </div>
-<div id="seasonal" class="section level3" number="3.7.2">
-<h3><span class="header-section-number">3.7.2</span> Seasonal</h3>
+<div id="seasonal" class="section level3" number="4.9.2">
+<h3><span class="header-section-number">4.9.2</span> Seasonal</h3>
 <p>A matrix population that does not describe a full annual transition, but rather a seasonal transition.</p>
 <ul>
 <li>Specify the seasons in the “Start Season” and “End Season” fields of the matrix form.</li>
@@ -790,15 +797,15 @@ Sometimes the latitude and longitude given in the paper <strong>DO NOT</strong> 
 A. For annual population matrix models (those that follow population dynamics from one year to the next, or sometimes more – some tree species are studied with a 5-year interval), element-by-element means are first calculated across the population matrix models describing the population dynamics for time periods within each population. Then the grand element-by-element mean is calculated across the matrix population models for the different populations. This procedure is repeated for models describing dynamics under each imposed treatment (pink matrices below) and for those describing the dynamics of unmanipulated populations (gray). Note that mean population matrix models are only calculated from population matrix models that share the same treatment (or absence of treatment).
 B. For seasonal or periodic population matrix models (e.g. for annual species), the mean seasonal population matrix model is calculated within populations and then across populations, both for matrices describing treated populations and for those describing populations with no imposed treatment (i.e. unmanipulated).</p>
 </div>
-<div id="dimensions" class="section level3" number="3.7.3">
-<h3><span class="header-section-number">3.7.3</span> Dimensions</h3>
+<div id="dimensions" class="section level3" number="4.9.3">
+<h3><span class="header-section-number">4.9.3</span> Dimensions</h3>
 <p>Select the dimension of the matrix.</p>
 <ul>
 <li>Expand the drop-down menu and type in the number to navigate faster.</li>
 </ul>
 </div>
-<div id="class-author" class="section level3" number="3.7.4">
-<h3><span class="header-section-number">3.7.4</span> Class Author</h3>
+<div id="class-author" class="section level3" number="4.9.4">
+<h3><span class="header-section-number">4.9.4</span> Class Author</h3>
 <p>The stage description as indicated in the source by the publication author.</p>
 <ul>
 <li>If author has used abbreviations, include the explanations of it.</li>
@@ -812,8 +819,8 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <li>Also write down abbreviations - if the author used them frequently (e.g. if the author explains his stages in the text and after that only uses “S1, S2, J1, J2, J3, A, R” write them down, too (= s1 = dormant seeds)</li>
 </ul>
 </div>
-<div id="class-organized" class="section level3" number="3.7.5">
-<h3><span class="header-section-number">3.7.5</span> Class Organized</h3>
+<div id="class-organized" class="section level3" number="4.9.5">
+<h3><span class="header-section-number">4.9.5</span> Class Organized</h3>
 <p>We standardise all stages in a given population matrix model to one of three stages (prop, active, dorm) to facilitate analyses.</p>
 <ul>
 <li>prop - Propagule (seed). This applies to every stage defined by the author as seed bank or seed. Users are encouraged to carefully examine matrices with these stages and to implement the appropriate calculations to avoid a spurious additional year being added when no seedbank exists in the study species, as explained by Caswell (2001, p. 60).</li>
@@ -821,28 +828,28 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <li>dorm - A stage that is vegetatively dormant after having germinated and becoming established.</li>
 </ul>
 </div>
-<div id="start-year" class="section level3" number="3.7.6">
-<h3><span class="header-section-number">3.7.6</span> Start Year</h3>
+<div id="start-year" class="section level3" number="4.9.6">
+<h3><span class="header-section-number">4.9.6</span> Start Year</h3>
 <p>First year of the matrix. Year t in matrix population model that describes population dynamics from time t to t+1 (e.g. <code>1995</code>).</p>
 </div>
-<div id="end-year" class="section level3" number="3.7.7">
-<h3><span class="header-section-number">3.7.7</span> End Year</h3>
+<div id="end-year" class="section level3" number="4.9.7">
+<h3><span class="header-section-number">4.9.7</span> End Year</h3>
 <p>Last year of the matrix. Year t+1 in matrix population model that describes population dynamics from time t to t+1 (e.g. <code>2001</code>).</p>
 </div>
-<div id="start-monthend-month" class="section level3" number="3.7.8">
-<h3><span class="header-section-number">3.7.8</span> Start Month/End Month</h3>
+<div id="start-monthend-month" class="section level3" number="4.9.8">
+<h3><span class="header-section-number">4.9.8</span> Start Month/End Month</h3>
 <p>Record the start and end months if provided.</p>
 <ul>
 <li>For monthly transition matrices, record the start month and end month (m to m+1).</li>
 <li>If demographic information was collected during a period of time, please state the period separated by a hyphen (e.g. <code>6-8</code> for June through August) in the <code>Observations</code> field in the matrix form.</li>
 </ul>
 </div>
-<div id="start-seasonend-season" class="section level3" number="3.7.9">
-<h3><span class="header-section-number">3.7.9</span> Start Season/End Season</h3>
+<div id="start-seasonend-season" class="section level3" number="4.9.9">
+<h3><span class="header-section-number">4.9.9</span> Start Season/End Season</h3>
 <p>Record the start season and end season for the seasonal matrices.</p>
 </div>
-<div id="census-type" class="section level3" number="3.7.10">
-<h3><span class="header-section-number">3.7.10</span> Census Type</h3>
+<div id="census-type" class="section level3" number="4.9.10">
+<h3><span class="header-section-number">4.9.10</span> Census Type</h3>
 <p>Choose the type of sampling census the authors use (see Kendall et al. 2019 for additional details). The authors may have specified if they sampled before or after reproductive events. If this is not provided in the publication, please contact the corresponding author.</p>
 <ul>
 <li><code>Prebreeding</code> - Population was censused before a birth pulse</li>
@@ -854,12 +861,12 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <li><code>NA</code></li>
 </ul>
 </div>
-<div id="projection-interval" class="section level3" number="3.7.11">
-<h3><span class="header-section-number">3.7.11</span> Projection Interval</h3>
+<div id="projection-interval" class="section level3" number="4.9.11">
+<h3><span class="header-section-number">4.9.11</span> Projection Interval</h3>
 <p>The time step (periodicity) of the transition matrix. Be aware this is <strong>NOT</strong> equal to sampling frequency. If a matrix has 6-month projection interval, it would be <code>0.5</code> since it is 0.5 years. In the same way, if a matrix has 5-year projection interval, it would be <code>5</code>.</p>
 </div>
-<div id="split" class="section level3" number="3.7.12">
-<h3><span class="header-section-number">3.7.12</span> Split</h3>
+<div id="split" class="section level3" number="4.9.12">
+<h3><span class="header-section-number">4.9.12</span> Split</h3>
 <p>Divisible if enough information is given to divide the survival and reproductive portions of the matrix. The matrix is divisible when there is no reproductive portion in the <strong>A</strong> matrix. Usually, indivisible matrices contain mixed cells in A matrix that cannot be divided into U, F, and C matrices due to insufficient information.</p>
 <ul>
 <li>An <strong>A</strong> matrix should ALWAYS be recorded, even if no reproduction data was available.</li>
@@ -873,8 +880,8 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <p>The diagram below shows the life cycle of two hypothetical plant populations based on age (A) and size (B), with their corresponding matrix population models. A, and underlying basic demographic processes of survival (U sub-matrix; solid arrows), sexual reproduction (F sub-matrix; dashed arrows) and clonal reproduction (C sub-matrix; dotted arrows). This model includes “retrogression” or shrinkage in addition to “progression” or growth. In the Leslie matrix model example (A), the division of sub-matrices is more straightforward than in the Lefkovitch matrix model example (B). In the latter imaginary example, individuals can transition into the same stage as they can contribute with sexual and/or clonal offspring (e.g. small stage). In these cases, splitting A into sub-matrices U, F and C is only feasible when sufficient information is provided by the authors (see variable Split).</p>
 <p><img src="figures/image2.3.png" /></p>
 </div>
-<div id="fecundity" class="section level3" number="3.7.13">
-<h3><span class="header-section-number">3.7.13</span> Fecundity</h3>
+<div id="fecundity" class="section level3" number="4.9.13">
+<h3><span class="header-section-number">4.9.13</span> Fecundity</h3>
 <p>This records whether fecundity was measured at all for this matrix model. This will help distinguish whether a 0 in the fecundity transition(s) indicates no fecundity or fecundity was not measured. We include fecundity, recruitment, or sexual reproduction here ignoring the technical differences.</p>
 <p>The rationale for this is that a fecundity (in the F matrix) may be recorded as 0 either because it was not measured, or because reproduction was estimated to be zero. As a general rule, if any values for fecundity (e.g. in the F matrix) are non-zero, then Fec should be recorded as ‘Yes’. If all values are zero, then you should check the paper carefully to check whether this is because no fecundity was detected, or whether no attempt was made to measure fecundity. There are some technical differences between fecundity, sexual reproduction, and recruitment. For the purposes of Fec these differences do not matter - if estimates fecundity, recruitment or sexual reproduction are collected, Fec = “<code>Yes</code>”.</p>
 <ul>
@@ -883,8 +890,8 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <li><code>NA</code> - it is not known whether fecundity was measured for the matrix</li>
 </ul>
 </div>
-<div id="treatment-1" class="section level3" number="3.7.14">
-<h3><span class="header-section-number">3.7.14</span> Treatment</h3>
+<div id="treatment-1" class="section level3" number="4.9.14">
+<h3><span class="header-section-number">4.9.14</span> Treatment</h3>
 <p>A brief description of experimental treatments of the population intentionally imposed by humans.</p>
 <ul>
 <li>Write “Unmanipulated” if no experimental, human-imposed treatment was applied. Natural events of non-intentional occurrence should be recorded in the treatment in the publication form and in observations column here, especially if they are used as an explanatory factor in the study.<br />
@@ -892,8 +899,8 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <li>For example, population dynamics could be compared in disturbed vs. undisturbed areas. In these cases MatrixTreatment should be recorded as “Unmanipulated”, a note should be added in Observation and the name of the population should include a clear indication of the conditions. e.g. “Population 1 - disturbed”, “Population 2 - undisturbed”.</li>
 </ul>
 </div>
-<div id="captivity" class="section level3" number="3.7.15">
-<h3><span class="header-section-number">3.7.15</span> Captivity</h3>
+<div id="captivity" class="section level3" number="4.9.15">
+<h3><span class="header-section-number">4.9.15</span> Captivity</h3>
 <p>Select the following options:</p>
 <ul>
 <li><code>W</code> – Wild: Studied in natural conditions</li>
@@ -902,8 +909,8 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <li><code>C;W</code> – Mixed studies that incorporate vital rates from both captive and wild populations</li>
 </ul>
 </div>
-<div id="studied-sex" class="section level3" number="3.7.16">
-<h3><span class="header-section-number">3.7.16</span> Studied Sex</h3>
+<div id="studied-sex" class="section level3" number="4.9.16">
+<h3><span class="header-section-number">4.9.16</span> Studied Sex</h3>
 <p>Indication of the sex(es) considered when constructing the matrix population model.</p>
 <ul>
 <li><code>M</code> - Studied only males</li>
@@ -914,8 +921,8 @@ B. For seasonal or periodic population matrix models (e.g. for annual species),
 <li><code>NA</code> - There are no distinct sexes (e.g. a virus)</li>
 </ul>
 </div>
-<div id="sources" class="section level3" number="3.7.17">
-<h3><span class="header-section-number">3.7.17</span> Source(s)</h3>
+<div id="sources" class="section level3" number="4.9.17">
+<h3><span class="header-section-number">4.9.17</span> Source(s)</h3>
 <p>Where the data was obtained to construct the matrix. If the data is from an appendix that is attached at the end of the original publication, record it as “Paper” and NOT as “Online Appendix”. “Online Appendix” is only for appendices that are in separate documents. Reselect the option to unselect it.
 If sources other than those below are used, a short but useful description should be given. The aim of this field is that everybody can find the related information ASAP e.g. if something needs to be fixed.</p>
 <ul>
@@ -930,8 +937,8 @@ If sources other than those below are used, a short but useful description shoul
 <li>Paper - Matrices derived from a published manuscript.</li>
 </ul>
 </div>
-<div id="observations" class="section level3" number="3.7.18">
-<h3><span class="header-section-number">3.7.18</span> Observations</h3>
+<div id="observations" class="section level3" number="4.9.18">
+<h3><span class="header-section-number">4.9.18</span> Observations</h3>
 <p>Add any useful information about the population matrix. (e.g. geographic coordinates of pooled populations, unusual estimations or treatments, etc.)</p>
 <p>Some standardised sentences:</p>
 <ul>
@@ -945,8 +952,8 @@ If sources other than those below are used, a short but useful description shoul
 <li>Matrix Class Author is not clarified</li>
 </ul>
 </div>
-<div id="createedit-matrix" class="section level3" number="3.7.19">
-<h3><span class="header-section-number">3.7.19</span> Create/Edit Matrix</h3>
+<div id="createedit-matrix" class="section level3" number="4.9.19">
+<h3><span class="header-section-number">4.9.19</span> Create/Edit Matrix</h3>
 <p>After saving the “New Matrix Set” form, the matrices can be added from the population form under the “Population Matrices” tab. These are the population matrix models. Including the overall matrix (A) and, where possible, the sub-matrices U (survival), F (fecundity), C (clonality). A range of numeric values is possible in each element of the matrix. Sometimes only a U matrix is available because data on reproduction were not collected. In these cases the U matrix should be used as the A matrix, and a note recorded in <code>Observations</code>.</p>
 <ul>
 <li>The A matrix - The overall matrix including all processes. The A matrix can usually be “split” into consituent processes represented by the U, F and C sub-matrices such that A = U + F + C. Transition probabilities are constrained between 0 and 1. Reproductive values are always positive but have no upper bound.</li>
@@ -956,8 +963,8 @@ If sources other than those below are used, a short but useful description shoul
 </ul>
 <p>The values for the U, F and C matrices are only digitised for “Divided” matrices (indicated in the field <code>Split</code>).</p>
 </div>
-<div id="notes-for-matrix-construction" class="section level3" number="3.7.20">
-<h3><span class="header-section-number">3.7.20</span> Notes for matrix construction:</h3>
+<div id="notes-for-matrix-construction" class="section level3" number="4.9.20">
+<h3><span class="header-section-number">4.9.20</span> Notes for matrix construction:</h3>
 <ul>
 <li>Each cell represents transition from the column stage to the row stage.</li>
 <li>You may enter a number or NA (Not Available).</li>
@@ -968,10 +975,10 @@ If sources other than those below are used, a short but useful description shoul
 </ul>
 </div>
 </div>
-<div id="protocol-for-reporting-an-error" class="section level2" number="3.8">
-<h2><span class="header-section-number">3.8</span> Protocol for reporting an error</h2>
-<div id="report-error-button" class="section level3" number="3.8.1">
-<h3><span class="header-section-number">3.8.1</span> “Report Error” button</h3>
+<div id="protocol-for-reporting-an-error" class="section level2" number="4.10">
+<h2><span class="header-section-number">4.10</span> Protocol for reporting an error</h2>
+<div id="report-error-button" class="section level3" number="4.10.1">
+<h3><span class="header-section-number">4.10.1</span> “Report Error” button</h3>
 <p>Populations in “Review-ready” and “Released” status may be found to have an error. When the checker (admins or coordinators) changes the status from “Review-ready” to an “Error”, they must report the error through the <code>Report Error</code> button on the population page. Any user can also report the error through the <code>Report Error</code> button on the population page. The admins, coordinator, or the person assigned to fix database errors (“Error Handler”; a role selected through a tick box in Manage Users table) will be notified by email. If it is determined to be an actual error, the admin/coordinator/error handler will change the status to “Error.” If it is not a simple error and more information is needed, the publication can then be changed to “Awaiting Info” status and assigned to a digitiser, at which point the assigned digitiser may continue to work on it. If the error is fixed by the admin/coordinator/error handler, the publication can go to “Released” status (since this will serve as the check for the publication if it was previously “Review-ready,” or if it was previously “Released” it can return to the “Released” status after the error is fixed).</p>
 
 </div>
@@ -982,8 +989,8 @@ If sources other than those below are used, a short but useful description shoul
           </div>
         </div>
       </div>
-<a href="user-guide.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="public-user-data-entry-protocol.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-entry-protocol.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -1014,7 +1021,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jonesor/CompadreGuides/edit/master/02_DataEntryProtocol.Rmd",
+"link": "https://github.com/jonesor/CompadreGuides/edit/master/03_PublicUserDataEntryProtocol.Rmd",
 "text": "Edit"
 },
 "history": {
