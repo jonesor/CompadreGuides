@@ -1,35 +1,44 @@
-# Data Entry Protocol
+# Public User Data Entry Protocol
 
 ## Preamble
 
-The COMPADRE Plant Matrix Database (COMPADRE hereafter) and the COMADRE Animal Matrix Database (COMADRE hereafter) are compiled from (mostly) published literature. The majority of this literature was published as peer-reviewed articles in academic journals, with a smaller number of data obtained from books, conference presentations, etc.
+Thank you for your interest in contributing your data to the COMPADRE Plant Matrix Database (COMPADRE hereafter) and the COMADRE Animal Matrix Database (COMADRE hereafter). Our online data entry portal is designed to make this process as straightforward and simple as possible. This guide describes the steps of the data entry process (from creating an account to submitting your completed data), the confirmation process that happens after data submission, and a comprehensive protocol for each form including definitions and examples. If you have any questions along the way, feel free to reach out to us at contact@compadre-db.org. 
 
-The data digitisation team carefully examine the literature and extract information in order to reconstruct the matrix population models analysed by the original researchers. The extracted data are entered into our web-based digitisation forms, which are then stored as structured SQL tables. Wherever there are doubts about aspects of the data source, the team attempts to contact the researchers to resolve them. There are three types of digitization forms in COMPADRE/COMADRE: (1) The PUBLICATION form which contains metadata on the publication, such as bibliographic and study level information; (2) The POPULATION form with metadata that allows for the interpretation of the matrix data, and it pertains to information at the species/population level; and (3) the MATRIX form which contains the matrix population models themselves, as well as information that is matrix-specific.
+## Account Creation
 
-These data are compiled using a set of R scripts and released to the public as open access data via the website: www.compadre-db.org.
+The first step in the data entry process is account creation. You'll find a link to create your account on the compadre-db.org homepage. On the right side of the top banner, click `Links` followed by `Register`.
 
-This document outlines the way that the digitisation team enters data into our website. It is primarily intended for internal use and, as such, it includes information on some variables which are not released into the public domain. Nevertheless, following our philosophy on open access, replicability and transparency, we provide open access to the document here. Users external to our team with questions can direct them at contact@compadre-db.org. Specific questions can also be directed to Rob Salguero-Gómez (rob.salguero@zoo.ox.ac.uk) or Owen Jones (jones@biology.sdu.dk).
+Registration for compadre-db.org is intentionally minimal since the data you choose to submit to the database are entered manually rather than pulled from an account form. All you'll need to enter is your `Name`, `Email`, and a `Password` of your choosing. Once you select `Register`, a confirmation email will be sent to your account. After confirming your email, you'll be able to login to your `User Dashboard` by clicking `Links` and `Login` on the right side of the top banner.
 
-## General information
+## Protocol Overview
 
-* If you find additional sources, **always** attach them and note them in “Additional Source” in the publication form. An additional source is a paper that references matrices from another source already in the database. 
-* Download the PDF attached to the publication form assigned to you, all pieces of information extracted from PDFs **must** be highlighted directly on the PDF in yellow. After completing your work, upload the PDF with highlights to the publication form after adding `_highlights` to the end of the document name.
-* If a PDF contains matrices/data from other papers and/or studies, this must be noted as “Not primary source” in the "Additional Notes" field of the publication form. Double check that these matrices have not already been digitized into the database so as to avoid creating duplicate matrix entries.
-* If additional publications are found with respect to a given species, these must be inspected for any additional matrix population models with different model assumptions (e.g. different stages) and/or different study years, populations and/or treatments. If the paper provides new information, it must be included in the database as a new publication.
-* Authors must only be contacted from the official email: contact@compadre-db.org. If you encounter technical difficulties when attempting to contact an author, contact your lead for additional instructions.
-* Where matrices can be split, always include an “A” matrix as well as “U”, “F” & “C” matrices (for explanation, see here in the protocol for matrix form). **Always** split matrices when possible.
-* There are also species that do not fall into the Kingdoms Plantae or Animalia. Fungi and algae should be included in COMPADRE with the plants. Any other species (e.g. bacteria and viruses) should be included in COMADRE.
+Data you submit to the COMPADRE or COMADRE databases is entered manually using three types of digitization forms: (1) The **Publication form** which contains metadata on the publication, such as bibliographic and study level information; (2) The **Population form** form with metadata that allows for the interpretation of the matrix data, and it pertains to information at the species/population level; and (3) the **Matrix form** which contains the matrix population models themselves, as well as information that is matrix-specific.
+
+**Note:** We use the term **Publication** in the **Publication form** for simplicity. In this form, you'll be able to select whether your data come from a `Book`, `Book Chapter`, `Journal Article`, `Thesis` (which includes PhD Dissertations), `Report`, `Conference`, or `Other` (which includes preprints and unpublished data).
+
+You'll enter and edit data using your `User Dashboard`. You can edit your data at any time prior to using the `Submit` button to send your data for review by our digitisation team. Once you `Submit` data for review, it cannot be changed unless our digitisation team sends it back to you for correction.
+
+After submission, a notification is sent to our digitisation team, and your data is queued for review. Once our team has determined all fields and forms are complete, the data will be released to our database and included in the next version release of COMPADRE or COMADRE. Version releases occur in the first month of each quarter of the calendar year and intermittently between the quarterly releases if deemed necessary by the digitisation team. 
+
+## The User Dashboard
+
+The `User Dashboard` is where you'll create and manage your data submissions to COMPADRE and COMADRE. There are four links at the top of the dashboard.
+
+* `Add New Publication` - Begins the data entry process by creating a new `Publication` in the **Publication form**
+* `My Publications` - Contains a list of your `Publications`. From here, you can continue working where you left off or check the status of submitted data
+* `Add New Species` - Adds a new species if your species was not listed in the `Species` selection of the **Population form**
+* `Manage Profile` - Allows you to change the `Name` and `Email` associated with your account
 
 ## Values used throughout the database
 
 The following values are commonly used throughout the database.
 
-* `NA` - *Not available* - The information is not available either because the author does not have it or because the information is not recognized as “priority” (see below) for the digitisation.
-* `AFI` - *Asked for it* - The information is not yet in the database, but the digitiser has already contacted the author requesting it (i.e. the author has not yet replied).
-* `NDY` - *Not digitised yet* - The information has not yet been digitised. This is likely to occur when some priority information has been digitised for a given species, and the digitiser has moved onto another species without contacting an author for the missing information.
-* `NC` - *Not calculated* - Information was not calculated because its calculation is not sensible. For instance, latitudes and longitudes of various populations of the same species are not averaged and assigned to the grand-mean population matrix of the species. This is the same for ranges, where author provides a range of latitudes and longitudes for a given population. Ranges are instead noted in the observation column.
-* `LAB` - *Laboratory* - The author collected demographic data for the studied species in a laboratory or under greenhouse conditions. Controlled, typically indoor, conditions that mean the study population is not affected by the environmental conditions typical of the **actual** geographic location of the study.
-* `FRANK` - *Frankenstein matrix* - Frankenstein matrices are MPMs where the author parameterised their model using demographic data from 2+ other papers/sources; in other words, when the matrix values come from a source that was not affected by the same conditions as the rest of the matrix. These MPMs should be clearly indicated with “`FRANK`” in the observation column. Furthermore, geographic location data, time information (start/end year, season etc.) should be recorded only if the author reports ONE main location for the matrix; if multiple locations are reported, then it should be recorded as `FRANK` and not `NA.`
+* `NA` - *Not available* - The information is not available either because the author does not have it or because the information is not applicable
+* `AFI` - *Asked for it* - (**Note:** This option for form fields primarily used by the digitisation team since we are not the source of the data.) The information is not yet in the database, but the digitiser has already contacted the author requesting it (i.e. the author has not yet replied)
+* `NDY` - *Not digitised yet* - The information has not yet been digitised. This is likely to occur when some priority information has been digitised for a given species, and the digitiser has moved onto another species without contacting an author for the missing information
+* `NC` - *Not calculated* - Information was not calculated because its calculation is not sensible. For instance, latitudes and longitudes of various populations of the same species are not averaged and assigned to the grand-mean population matrix of the species. This is the same for ranges, where the author provides a range of latitudes and longitudes for a given population. Ranges are instead noted in the `Observations` column of the **Matrix form**
+* `LAB` - *Laboratory* - The author collected demographic data for the studied species in a laboratory or under greenhouse conditions. Controlled, typically indoor, conditions that mean the study population is not affected by the environmental conditions typical of the **actual** geographic location of the study
+* `FRANK` - *Frankenstein matrix* - Frankenstein matrices are MPMs where the author parameterised their model using demographic data from 2+ other papers/sources; in other words, when the matrix values come from a source that was not affected by the same conditions as the rest of the matrix. These MPMs should be clearly indicated with “`FRANK`” in the `Observations` column of the **Matrix form**. Furthermore, geographic location data, time information (start/end year, season etc.) should be recorded only if the author reports ONE main location for the matrix; if multiple locations are reported, then it should be recorded as `FRANK` and not `NA`.
 * `Simulation` - *A simulated matrix* - The matrix model is a simulation, and perhaps only loosely based on a specific real species. Typically, these simulated matrices are used to explore the behaviour of a population in a theoretical way. In those cases, there is no geographic location, ecoregion etc. For these data we do not calculate averages or ranges for locations and time periods but instead enter `Simulation` (not `NA`).
 
 ## Important References
